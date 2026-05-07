@@ -1,0 +1,102 @@
+{
+  "en/doc01.txt": {
+    "total_terms": 32,
+    "raw_text": "Computer science is the study of computation and information. It involves algorithms, data structures, and programming languages. Modern computing relies on machine learning and artificial intelligence to solve complex problems. Software engineering practices help developers build reliable and efficient systems for users worldwide.",
+    "language": "english"
+  },
+  "en/doc02.txt": {
+    "total_terms": 31,
+    "raw_text": "Basketball is a popular sport played by two teams of five players. The game involves shooting a ball through a hoop to score points. Championship tournaments attract millions of viewers globally. Professional athletes train rigorously to improve their performance and compete at the highest level of the sport.",
+    "language": "english"
+  },
+  "en/doc03.txt": {
+    "total_terms": 34,
+    "raw_text": "Artificial intelligence transforms how machines learn and make decisions. Deep learning networks process vast amounts of data to recognize patterns. Natural language processing enables computers to understand human speech. Researchers continue advancing intelligent systems that can reason and adapt to new information autonomously.",
+    "language": "english"
+  },
+  "en/doc04.txt": {
+    "total_terms": 32,
+    "raw_text": "The ancient civilizations of Egypt and Mesopotamia developed writing systems thousands of years ago. Historical records reveal fascinating details about governance, trade, and culture. Archaeological discoveries continue to reshape our understanding of human history. Museums preserve these artifacts for future generations to study and appreciate.",
+    "language": "english"
+  },
+  "en/doc05.txt": {
+    "total_terms": 38,
+    "raw_text": "Machine learning algorithms improve through experience and data analysis. Supervised learning uses labeled examples to train predictive models. Unsupervised learning discovers hidden patterns in unlabeled datasets. Neural networks power recommendation engines and autonomous vehicles. Data scientists evaluate models using accuracy metrics and validation techniques.",
+    "language": "english"
+  },
+  "en/doc06.txt": {
+    "total_terms": 35,
+    "raw_text": "Ocean ecosystems contain remarkable biodiversity from coral reefs to deep sea trenches. Marine biologists study fish populations and their migration patterns. Climate change threatens ocean temperatures and acidification levels. Conservation efforts aim to protect endangered species and preserve marine habitats for future sustainability.",
+    "language": "english"
+  },
+  "en/doc07.txt": {
+    "total_terms": 34,
+    "raw_text": "Robotics combines computer science and engineering to design autonomous machines. Industrial robots perform manufacturing tasks with precision and speed. Medical robots assist surgeons during complex procedures with greater accuracy. Autonomous drones navigate environments using sensors and computer vision algorithms for various applications.",
+    "language": "english"
+  },
+  "en/doc08.txt": {
+    "total_terms": 32,
+    "raw_text": "Space exploration has expanded our knowledge of the solar system and beyond. Rockets carry satellites and probes into orbit around distant planets. Astronomers use telescopes to observe galaxies and black holes. The international space station serves as a laboratory for scientific experiments in microgravity conditions.",
+    "language": "english"
+  },
+  "en/doc09.txt": {
+    "total_terms": 36,
+    "raw_text": "Renewable energy sources include solar panels, wind turbines, and hydroelectric dams. Green technology reduces carbon emissions and combats global warming. Engineers design efficient batteries to store sustainable power. Governments invest in clean energy infrastructure to decrease dependence on fossil fuels and protect the environment.",
+    "language": "english"
+  },
+  "en/doc10.txt": {
+    "total_terms": 36,
+    "raw_text": "Data structures organize information efficiently for computer processing. Arrays store elements in contiguous memory locations for fast access. Linked lists allow dynamic insertion and deletion of nodes. Trees represent hierarchical relationships between data items. Graphs model networks and connections between various entities in complex systems.",
+    "language": "english"
+  },
+  "ar/doc01.txt": {
+    "total_terms": 32,
+    "raw_text": "الذكاء الاصطناعي هو فرع من علوم الحاسوب يهتم بتصميم أنظمة قادرة على التعلم والتفكير. تستخدم الشبكات العصبية معالجة البيانات الضخمة لاكتشاف الأنماط. تتيح معالجة اللغات الطبيعية للحاسوب فهم الكلام البشري وتحليل النصوص العربية بفعالية.",
+    "language": "arabic"
+  },
+  "ar/doc02.txt": {
+    "total_terms": 33,
+    "raw_text": "كرة القدم هي الرياضة الأكثر شعبية في العالم العربي. يتنافس اللاعبون في بطولات كبرى تجذب ملايين المشاهدين. التدريب المستمر واللياقة البدنية ضروريان للأداء المتميز. الأندية الكبرى تستثمر في اللاعبين الشباب لبناء فرق قوية قادرة على الفوز بالبطولات.",
+    "language": "arabic"
+  },
+  "ar/doc03.txt": {
+    "total_terms": 30,
+    "raw_text": "تقنية المعلومات تساعد المؤسسات على إدارة البيانات وتحسين العمليات. قواعد البيانات تخزن الملفات الضخمة وتتيح البحث السريع عن المعلومات. مهندسو البرمجيات يطوّرون تطبيقات ذكية تلبي احتياجات المستخدمين في مختلف القطاعات الاقتصادية والتعليمية.",
+    "language": "arabic"
+  },
+  "ar/doc04.txt": {
+    "total_terms": 31,
+    "raw_text": "الحضارة الإسلامية قدمت إسهامات عظيمة في العلوم والرياضيات والطب. العلماء العرب ترجموا الكتب اليونانية وأضافوا اكتشافات جديدة. الخوارزميات والجبر من أهم إنجازات الرياضيات العربية. المكتبات الكبرى كانت مراكز للمعرفة والبحث العلمي في العصور القديمة.",
+    "language": "arabic"
+  },
+  "ar/doc05.txt": {
+    "total_terms": 31,
+    "raw_text": "التعليم الإلكتروني أصبح أساسيا في العصر الحديث. الجامعات تقدم محاضرات رقمية عبر منصات الإنترنت. الطلاب يستفيدون من الموارد التعليمية المتاحة إلكترونيا. تطبيقات الذكاء الاصطناعي تساعد في تخصيص المحتوى التعليمي حسب مستوى كل طالب وقدراته الفردية.",
+    "language": "arabic"
+  },
+  "ar/doc06.txt": {
+    "total_terms": 34,
+    "raw_text": "الطاقة المتجددة تشمل الطاقة الشمسية وطاقة الرياح والطاقة المائية. الألواح الشمسية تحول ضوء الشمس إلى كهرباء نظيفة. توربينات الرياح تنتج طاقة مستدامة دون انبعاثات ضارة. الحكومات تستثمر في البنية التحتية الخضراء للحد من التلوث وحماية البيئة الطبيعية.",
+    "language": "arabic"
+  },
+  "ar/doc07.txt": {
+    "total_terms": 34,
+    "raw_text": "الطب الحديث يستخدم التقنيات المتقدمة لتشخيص الأمراض وعلاجها. الأجهزة الطبية تساعد الأطباء في إجراء العمليات الجراحية بدقة عالية. البحث العلمي في المجال الصحي يساهم في تطوير أدوية جديدة فعالة. المستشفيات تعتمد على الأنظمة الإلكترونية لإدارة سجلات المرضى.",
+    "language": "arabic"
+  },
+  "ar/doc08.txt": {
+    "total_terms": 33,
+    "raw_text": "اقتصاد المعرفة يعتمد على الابتكار والإبداع في مجالات التكنولوجيا. الشركات الناشئة تقدم حلولا ذكية لمشاكل معقدة. رواد الأعمال يستثمرون في الذكاء الاصطناعي وتحليل البيانات. الأسواق الرقمية توفر فرص جديدة للتجارة الإلكترونية والتسويق عبر محركات البحث.",
+    "language": "arabic"
+  },
+  "ar/doc09.txt": {
+    "total_terms": 35,
+    "raw_text": "علم الفلك يكشف أسرار الكون والنجوم والمجرات. المراصد الفلكية تستخدم التلسكوبات المتقدمة لرصد الكواكب البعيدة. رواد الفضاء يستهلون رحلات استكشافية إلى المحطة الفضائية الدولية. الأبحاث الفضائية تساعد في فهم أصل الكون وتطور المجموعة الشمسية عبر الزمن.",
+    "language": "arabic"
+  },
+  "ar/doc10.txt": {
+    "total_terms": 32,
+    "raw_text": "هندسة البرمجيات تهتم بتصميم وتطوير البرمجيات بشكل منهجي. الخوارزميات وهيكل البيانات أساسيات البرمجة الحاسوبية. المبرمجون يستخدمون لغات البرمجة لكتابة التعليمات التي تنفذها الحواسيب. اختبار البرمجيات يضمن جودة المنتج وموثوقيته قبل نشره للمستخدمين النهائيين.",
+    "language": "arabic"
+  }
+}

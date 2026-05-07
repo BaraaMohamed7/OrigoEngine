@@ -1,0 +1,1 @@
+Data structures organize information efficiently for computer processing. Arrays store elements in contiguous memory locations for fast access. Linked lists allow dynamic insertion and deletion of nodes. Trees represent hierarchical relationships between data items. Graphs model networks and connections between various entities in complex systems.

@@ -1,0 +1,2899 @@
+{
+  "comput": {
+    "en/doc01.txt": [
+      0,
+      6,
+      18
+    ],
+    "en/doc03.txt": [
+      24
+    ],
+    "en/doc07.txt": [
+      2,
+      36
+    ],
+    "en/doc10.txt": [
+      6
+    ]
+  },
+  "scienc": {
+    "en/doc01.txt": [
+      1
+    ],
+    "en/doc07.txt": [
+      3
+    ]
+  },
+  "studi": {
+    "en/doc01.txt": [
+      4
+    ],
+    "en/doc04.txt": [
+      42
+    ],
+    "en/doc06.txt": [
+      14
+    ]
+  },
+  "inform": {
+    "en/doc01.txt": [
+      8
+    ],
+    "en/doc03.txt": [
+      41
+    ],
+    "en/doc10.txt": [
+      3
+    ]
+  },
+  "involv": {
+    "en/doc01.txt": [
+      10
+    ],
+    "en/doc02.txt": [
+      14
+    ]
+  },
+  "algorithm": {
+    "en/doc01.txt": [
+      11
+    ],
+    "en/doc05.txt": [
+      2
+    ],
+    "en/doc07.txt": [
+      38
+    ]
+  },
+  "data": {
+    "en/doc01.txt": [
+      12
+    ],
+    "en/doc03.txt": [
+      16
+    ],
+    "en/doc05.txt": [
+      7,
+      34
+    ],
+    "en/doc10.txt": [
+      0,
+      32
+    ]
+  },
+  "structur": {
+    "en/doc01.txt": [
+      13
+    ],
+    "en/doc10.txt": [
+      1
+    ]
+  },
+  "program": {
+    "en/doc01.txt": [
+      15
+    ]
+  },
+  "languag": {
+    "en/doc01.txt": [
+      16
+    ],
+    "en/doc03.txt": [
+      21
+    ]
+  },
+  "modern": {
+    "en/doc01.txt": [
+      17
+    ]
+  },
+  "reli": {
+    "en/doc01.txt": [
+      19
+    ]
+  },
+  "machin": {
+    "en/doc01.txt": [
+      21
+    ],
+    "en/doc03.txt": [
+      4
+    ],
+    "en/doc05.txt": [
+      0
+    ],
+    "en/doc07.txt": [
+      9
+    ]
+  },
+  "learn": {
+    "en/doc01.txt": [
+      22
+    ],
+    "en/doc03.txt": [
+      5,
+      10
+    ],
+    "en/doc05.txt": [
+      1,
+      10,
+      19
+    ]
+  },
+  "artifici": {
+    "en/doc01.txt": [
+      24
+    ],
+    "en/doc03.txt": [
+      0
+    ]
+  },
+  "intellig": {
+    "en/doc01.txt": [
+      25
+    ],
+    "en/doc03.txt": [
+      1,
+      32
+    ]
+  },
+  "solv": {
+    "en/doc01.txt": [
+      27
+    ]
+  },
+  "complex": {
+    "en/doc01.txt": [
+      28
+    ],
+    "en/doc07.txt": [
+      24
+    ],
+    "en/doc10.txt": [
+      43
+    ]
+  },
+  "problem": {
+    "en/doc01.txt": [
+      29
+    ]
+  },
+  "softwar": {
+    "en/doc01.txt": [
+      30
+    ]
+  },
+  "engin": {
+    "en/doc01.txt": [
+      31
+    ],
+    "en/doc05.txt": [
+      30
+    ],
+    "en/doc07.txt": [
+      5
+    ],
+    "en/doc09.txt": [
+      20
+    ]
+  },
+  "practic": {
+    "en/doc01.txt": [
+      32
+    ]
+  },
+  "help": {
+    "en/doc01.txt": [
+      33
+    ]
+  },
+  "develop": {
+    "en/doc01.txt": [
+      34
+    ],
+    "en/doc04.txt": [
+      7
+    ]
+  },
+  "build": {
+    "en/doc01.txt": [
+      35
+    ]
+  },
+  "reliabl": {
+    "en/doc01.txt": [
+      36
+    ]
+  },
+  "effici": {
+    "en/doc01.txt": [
+      38
+    ],
+    "en/doc09.txt": [
+      22
+    ],
+    "en/doc10.txt": [
+      4
+    ]
+  },
+  "system": {
+    "en/doc01.txt": [
+      39
+    ],
+    "en/doc03.txt": [
+      33
+    ],
+    "en/doc04.txt": [
+      9
+    ],
+    "en/doc08.txt": [
+      9
+    ],
+    "en/doc10.txt": [
+      44
+    ]
+  },
+  "user": {
+    "en/doc01.txt": [
+      41
+    ]
+  },
+  "worldwid": {
+    "en/doc01.txt": [
+      42
+    ]
+  },
+  "basketbal": {
+    "en/doc02.txt": [
+      0
+    ]
+  },
+  "popular": {
+    "en/doc02.txt": [
+      3
+    ]
+  },
+  "sport": {
+    "en/doc02.txt": [
+      4,
+      47
+    ]
+  },
+  "plai": {
+    "en/doc02.txt": [
+      5
+    ]
+  },
+  "two": {
+    "en/doc02.txt": [
+      7
+    ]
+  },
+  "team": {
+    "en/doc02.txt": [
+      8
+    ]
+  },
+  "five": {
+    "en/doc02.txt": [
+      10
+    ]
+  },
+  "player": {
+    "en/doc02.txt": [
+      11
+    ]
+  },
+  "game": {
+    "en/doc02.txt": [
+      13
+    ]
+  },
+  "shoot": {
+    "en/doc02.txt": [
+      15
+    ]
+  },
+  "ball": {
+    "en/doc02.txt": [
+      17
+    ]
+  },
+  "hoop": {
+    "en/doc02.txt": [
+      20
+    ]
+  },
+  "score": {
+    "en/doc02.txt": [
+      22
+    ]
+  },
+  "point": {
+    "en/doc02.txt": [
+      23
+    ]
+  },
+  "championship": {
+    "en/doc02.txt": [
+      24
+    ]
+  },
+  "tournament": {
+    "en/doc02.txt": [
+      25
+    ]
+  },
+  "attract": {
+    "en/doc02.txt": [
+      26
+    ]
+  },
+  "million": {
+    "en/doc02.txt": [
+      27
+    ]
+  },
+  "viewer": {
+    "en/doc02.txt": [
+      29
+    ]
+  },
+  "global": {
+    "en/doc02.txt": [
+      30
+    ],
+    "en/doc09.txt": [
+      18
+    ]
+  },
+  "profession": {
+    "en/doc02.txt": [
+      31
+    ]
+  },
+  "athlet": {
+    "en/doc02.txt": [
+      32
+    ]
+  },
+  "train": {
+    "en/doc02.txt": [
+      33
+    ],
+    "en/doc05.txt": [
+      15
+    ]
+  },
+  "rigor": {
+    "en/doc02.txt": [
+      34
+    ]
+  },
+  "improv": {
+    "en/doc02.txt": [
+      36
+    ],
+    "en/doc05.txt": [
+      3
+    ]
+  },
+  "perform": {
+    "en/doc02.txt": [
+      38
+    ],
+    "en/doc07.txt": [
+      12
+    ]
+  },
+  "compet": {
+    "en/doc02.txt": [
+      40
+    ]
+  },
+  "highest": {
+    "en/doc02.txt": [
+      43
+    ]
+  },
+  "level": {
+    "en/doc02.txt": [
+      44
+    ],
+    "en/doc06.txt": [
+      28
+    ]
+  },
+  "transform": {
+    "en/doc03.txt": [
+      2
+    ]
+  },
+  "make": {
+    "en/doc03.txt": [
+      7
+    ]
+  },
+  "decis": {
+    "en/doc03.txt": [
+      8
+    ]
+  },
+  "deep": {
+    "en/doc03.txt": [
+      9
+    ],
+    "en/doc06.txt": [
+      9
+    ]
+  },
+  "network": {
+    "en/doc03.txt": [
+      11
+    ],
+    "en/doc05.txt": [
+      27
+    ],
+    "en/doc10.txt": [
+      36
+    ]
+  },
+  "process": {
+    "en/doc03.txt": [
+      12,
+      22
+    ],
+    "en/doc10.txt": [
+      7
+    ]
+  },
+  "vast": {
+    "en/doc03.txt": [
+      13
+    ]
+  },
+  "amount": {
+    "en/doc03.txt": [
+      14
+    ]
+  },
+  "recogn": {
+    "en/doc03.txt": [
+      18
+    ]
+  },
+  "pattern": {
+    "en/doc03.txt": [
+      19
+    ],
+    "en/doc05.txt": [
+      22
+    ],
+    "en/doc06.txt": [
+      20
+    ]
+  },
+  "natur": {
+    "en/doc03.txt": [
+      20
+    ]
+  },
+  "enabl": {
+    "en/doc03.txt": [
+      23
+    ]
+  },
+  "understand": {
+    "en/doc03.txt": [
+      26
+    ],
+    "en/doc04.txt": [
+      30
+    ]
+  },
+  "human": {
+    "en/doc03.txt": [
+      27
+    ],
+    "en/doc04.txt": [
+      32
+    ]
+  },
+  "speech": {
+    "en/doc03.txt": [
+      28
+    ]
+  },
+  "research": {
+    "en/doc03.txt": [
+      29
+    ]
+  },
+  "continu": {
+    "en/doc03.txt": [
+      30
+    ],
+    "en/doc04.txt": [
+      26
+    ]
+  },
+  "advanc": {
+    "en/doc03.txt": [
+      31
+    ]
+  },
+  "reason": {
+    "en/doc03.txt": [
+      36
+    ]
+  },
+  "adapt": {
+    "en/doc03.txt": [
+      38
+    ]
+  },
+  "new": {
+    "en/doc03.txt": [
+      40
+    ]
+  },
+  "autonom": {
+    "en/doc03.txt": [
+      42
+    ],
+    "en/doc05.txt": [
+      32
+    ],
+    "en/doc07.txt": [
+      8,
+      29
+    ]
+  },
+  "ancient": {
+    "en/doc04.txt": [
+      1
+    ]
+  },
+  "civil": {
+    "en/doc04.txt": [
+      2
+    ]
+  },
+  "egypt": {
+    "en/doc04.txt": [
+      4
+    ]
+  },
+  "mesopotamia": {
+    "en/doc04.txt": [
+      6
+    ]
+  },
+  "write": {
+    "en/doc04.txt": [
+      8
+    ]
+  },
+  "thousand": {
+    "en/doc04.txt": [
+      10
+    ]
+  },
+  "year": {
+    "en/doc04.txt": [
+      12
+    ]
+  },
+  "ago": {
+    "en/doc04.txt": [
+      13
+    ]
+  },
+  "histor": {
+    "en/doc04.txt": [
+      14
+    ]
+  },
+  "record": {
+    "en/doc04.txt": [
+      15
+    ]
+  },
+  "reveal": {
+    "en/doc04.txt": [
+      16
+    ]
+  },
+  "fascin": {
+    "en/doc04.txt": [
+      17
+    ]
+  },
+  "detail": {
+    "en/doc04.txt": [
+      18
+    ]
+  },
+  "govern": {
+    "en/doc04.txt": [
+      20
+    ],
+    "en/doc09.txt": [
+      28
+    ]
+  },
+  "trade": {
+    "en/doc04.txt": [
+      21
+    ]
+  },
+  "cultur": {
+    "en/doc04.txt": [
+      23
+    ]
+  },
+  "archaeolog": {
+    "en/doc04.txt": [
+      24
+    ]
+  },
+  "discoveri": {
+    "en/doc04.txt": [
+      25
+    ]
+  },
+  "reshap": {
+    "en/doc04.txt": [
+      28
+    ]
+  },
+  "histori": {
+    "en/doc04.txt": [
+      33
+    ]
+  },
+  "museum": {
+    "en/doc04.txt": [
+      34
+    ]
+  },
+  "preserv": {
+    "en/doc04.txt": [
+      35
+    ],
+    "en/doc06.txt": [
+      37
+    ]
+  },
+  "artifact": {
+    "en/doc04.txt": [
+      37
+    ]
+  },
+  "futur": {
+    "en/doc04.txt": [
+      39
+    ],
+    "en/doc06.txt": [
+      41
+    ]
+  },
+  "gener": {
+    "en/doc04.txt": [
+      40
+    ]
+  },
+  "appreci": {
+    "en/doc04.txt": [
+      44
+    ]
+  },
+  "experi": {
+    "en/doc05.txt": [
+      5
+    ],
+    "en/doc08.txt": [
+      41
+    ]
+  },
+  "analysi": {
+    "en/doc05.txt": [
+      8
+    ]
+  },
+  "supervis": {
+    "en/doc05.txt": [
+      9
+    ]
+  },
+  "us": {
+    "en/doc05.txt": [
+      11,
+      38
+    ],
+    "en/doc07.txt": [
+      33
+    ],
+    "en/doc08.txt": [
+      23
+    ]
+  },
+  "label": {
+    "en/doc05.txt": [
+      12
+    ]
+  },
+  "exampl": {
+    "en/doc05.txt": [
+      13
+    ]
+  },
+  "predict": {
+    "en/doc05.txt": [
+      16
+    ]
+  },
+  "model": {
+    "en/doc05.txt": [
+      17,
+      37
+    ],
+    "en/doc10.txt": [
+      35
+    ]
+  },
+  "unsupervis": {
+    "en/doc05.txt": [
+      18
+    ]
+  },
+  "discov": {
+    "en/doc05.txt": [
+      20
+    ]
+  },
+  "hidden": {
+    "en/doc05.txt": [
+      21
+    ]
+  },
+  "unlabel": {
+    "en/doc05.txt": [
+      24
+    ]
+  },
+  "dataset": {
+    "en/doc05.txt": [
+      25
+    ]
+  },
+  "neural": {
+    "en/doc05.txt": [
+      26
+    ]
+  },
+  "power": {
+    "en/doc05.txt": [
+      28
+    ],
+    "en/doc09.txt": [
+      27
+    ]
+  },
+  "recommend": {
+    "en/doc05.txt": [
+      29
+    ]
+  },
+  "vehicl": {
+    "en/doc05.txt": [
+      33
+    ]
+  },
+  "scientist": {
+    "en/doc05.txt": [
+      35
+    ]
+  },
+  "evalu": {
+    "en/doc05.txt": [
+      36
+    ]
+  },
+  "accuraci": {
+    "en/doc05.txt": [
+      39
+    ],
+    "en/doc07.txt": [
+      28
+    ]
+  },
+  "metric": {
+    "en/doc05.txt": [
+      40
+    ]
+  },
+  "valid": {
+    "en/doc05.txt": [
+      42
+    ]
+  },
+  "techniqu": {
+    "en/doc05.txt": [
+      43
+    ]
+  },
+  "ocean": {
+    "en/doc06.txt": [
+      0,
+      24
+    ]
+  },
+  "ecosystem": {
+    "en/doc06.txt": [
+      1
+    ]
+  },
+  "contain": {
+    "en/doc06.txt": [
+      2
+    ]
+  },
+  "remark": {
+    "en/doc06.txt": [
+      3
+    ]
+  },
+  "biodivers": {
+    "en/doc06.txt": [
+      4
+    ]
+  },
+  "coral": {
+    "en/doc06.txt": [
+      6
+    ]
+  },
+  "reef": {
+    "en/doc06.txt": [
+      7
+    ]
+  },
+  "sea": {
+    "en/doc06.txt": [
+      10
+    ]
+  },
+  "trench": {
+    "en/doc06.txt": [
+      11
+    ]
+  },
+  "marin": {
+    "en/doc06.txt": [
+      12,
+      38
+    ]
+  },
+  "biologist": {
+    "en/doc06.txt": [
+      13
+    ]
+  },
+  "fish": {
+    "en/doc06.txt": [
+      15
+    ]
+  },
+  "popul": {
+    "en/doc06.txt": [
+      16
+    ]
+  },
+  "migrat": {
+    "en/doc06.txt": [
+      19
+    ]
+  },
+  "climat": {
+    "en/doc06.txt": [
+      21
+    ]
+  },
+  "chang": {
+    "en/doc06.txt": [
+      22
+    ]
+  },
+  "threaten": {
+    "en/doc06.txt": [
+      23
+    ]
+  },
+  "temperatur": {
+    "en/doc06.txt": [
+      25
+    ]
+  },
+  "acidif": {
+    "en/doc06.txt": [
+      27
+    ]
+  },
+  "conserv": {
+    "en/doc06.txt": [
+      29
+    ]
+  },
+  "effort": {
+    "en/doc06.txt": [
+      30
+    ]
+  },
+  "aim": {
+    "en/doc06.txt": [
+      31
+    ]
+  },
+  "protect": {
+    "en/doc06.txt": [
+      33
+    ],
+    "en/doc09.txt": [
+      41
+    ]
+  },
+  "endang": {
+    "en/doc06.txt": [
+      34
+    ]
+  },
+  "speci": {
+    "en/doc06.txt": [
+      35
+    ]
+  },
+  "habitat": {
+    "en/doc06.txt": [
+      39
+    ]
+  },
+  "sustain": {
+    "en/doc06.txt": [
+      42
+    ],
+    "en/doc09.txt": [
+      26
+    ]
+  },
+  "robot": {
+    "en/doc07.txt": [
+      0,
+      11,
+      20
+    ]
+  },
+  "combin": {
+    "en/doc07.txt": [
+      1
+    ]
+  },
+  "design": {
+    "en/doc07.txt": [
+      7
+    ],
+    "en/doc09.txt": [
+      21
+    ]
+  },
+  "industri": {
+    "en/doc07.txt": [
+      10
+    ]
+  },
+  "manufactur": {
+    "en/doc07.txt": [
+      13
+    ]
+  },
+  "task": {
+    "en/doc07.txt": [
+      14
+    ]
+  },
+  "precis": {
+    "en/doc07.txt": [
+      16
+    ]
+  },
+  "speed": {
+    "en/doc07.txt": [
+      18
+    ]
+  },
+  "medic": {
+    "en/doc07.txt": [
+      19
+    ]
+  },
+  "assist": {
+    "en/doc07.txt": [
+      21
+    ]
+  },
+  "surgeon": {
+    "en/doc07.txt": [
+      22
+    ]
+  },
+  "procedur": {
+    "en/doc07.txt": [
+      25
+    ]
+  },
+  "greater": {
+    "en/doc07.txt": [
+      27
+    ]
+  },
+  "drone": {
+    "en/doc07.txt": [
+      30
+    ]
+  },
+  "navig": {
+    "en/doc07.txt": [
+      31
+    ]
+  },
+  "environ": {
+    "en/doc07.txt": [
+      32
+    ],
+    "en/doc09.txt": [
+      43
+    ]
+  },
+  "sensor": {
+    "en/doc07.txt": [
+      34
+    ]
+  },
+  "vision": {
+    "en/doc07.txt": [
+      37
+    ]
+  },
+  "variou": {
+    "en/doc07.txt": [
+      40
+    ],
+    "en/doc10.txt": [
+      40
+    ]
+  },
+  "applic": {
+    "en/doc07.txt": [
+      41
+    ]
+  },
+  "space": {
+    "en/doc08.txt": [
+      0,
+      33
+    ]
+  },
+  "explor": {
+    "en/doc08.txt": [
+      1
+    ]
+  },
+  "expand": {
+    "en/doc08.txt": [
+      3
+    ]
+  },
+  "knowledg": {
+    "en/doc08.txt": [
+      5
+    ]
+  },
+  "solar": {
+    "en/doc08.txt": [
+      8
+    ],
+    "en/doc09.txt": [
+      4
+    ]
+  },
+  "beyond": {
+    "en/doc08.txt": [
+      11
+    ]
+  },
+  "rocket": {
+    "en/doc08.txt": [
+      12
+    ]
+  },
+  "carri": {
+    "en/doc08.txt": [
+      13
+    ]
+  },
+  "satellit": {
+    "en/doc08.txt": [
+      14
+    ]
+  },
+  "probe": {
+    "en/doc08.txt": [
+      16
+    ]
+  },
+  "into": {
+    "en/doc08.txt": [
+      17
+    ]
+  },
+  "orbit": {
+    "en/doc08.txt": [
+      18
+    ]
+  },
+  "around": {
+    "en/doc08.txt": [
+      19
+    ]
+  },
+  "distant": {
+    "en/doc08.txt": [
+      20
+    ]
+  },
+  "planet": {
+    "en/doc08.txt": [
+      21
+    ]
+  },
+  "astronom": {
+    "en/doc08.txt": [
+      22
+    ]
+  },
+  "telescop": {
+    "en/doc08.txt": [
+      24
+    ]
+  },
+  "observ": {
+    "en/doc08.txt": [
+      26
+    ]
+  },
+  "galaxi": {
+    "en/doc08.txt": [
+      27
+    ]
+  },
+  "black": {
+    "en/doc08.txt": [
+      29
+    ]
+  },
+  "hole": {
+    "en/doc08.txt": [
+      30
+    ]
+  },
+  "intern": {
+    "en/doc08.txt": [
+      32
+    ]
+  },
+  "station": {
+    "en/doc08.txt": [
+      34
+    ]
+  },
+  "serv": {
+    "en/doc08.txt": [
+      35
+    ]
+  },
+  "laboratori": {
+    "en/doc08.txt": [
+      38
+    ]
+  },
+  "scientif": {
+    "en/doc08.txt": [
+      40
+    ]
+  },
+  "micrograv": {
+    "en/doc08.txt": [
+      43
+    ]
+  },
+  "condit": {
+    "en/doc08.txt": [
+      44
+    ]
+  },
+  "renew": {
+    "en/doc09.txt": [
+      0
+    ]
+  },
+  "energi": {
+    "en/doc09.txt": [
+      1,
+      32
+    ]
+  },
+  "sourc": {
+    "en/doc09.txt": [
+      2
+    ]
+  },
+  "includ": {
+    "en/doc09.txt": [
+      3
+    ]
+  },
+  "panel": {
+    "en/doc09.txt": [
+      5
+    ]
+  },
+  "wind": {
+    "en/doc09.txt": [
+      6
+    ]
+  },
+  "turbin": {
+    "en/doc09.txt": [
+      7
+    ]
+  },
+  "hydroelectr": {
+    "en/doc09.txt": [
+      9
+    ]
+  },
+  "dam": {
+    "en/doc09.txt": [
+      10
+    ]
+  },
+  "green": {
+    "en/doc09.txt": [
+      11
+    ]
+  },
+  "technologi": {
+    "en/doc09.txt": [
+      12
+    ]
+  },
+  "reduc": {
+    "en/doc09.txt": [
+      13
+    ]
+  },
+  "carbon": {
+    "en/doc09.txt": [
+      14
+    ]
+  },
+  "emiss": {
+    "en/doc09.txt": [
+      15
+    ]
+  },
+  "combat": {
+    "en/doc09.txt": [
+      17
+    ]
+  },
+  "warm": {
+    "en/doc09.txt": [
+      19
+    ]
+  },
+  "batteri": {
+    "en/doc09.txt": [
+      23
+    ]
+  },
+  "store": {
+    "en/doc09.txt": [
+      25
+    ],
+    "en/doc10.txt": [
+      9
+    ]
+  },
+  "invest": {
+    "en/doc09.txt": [
+      29
+    ]
+  },
+  "clean": {
+    "en/doc09.txt": [
+      31
+    ]
+  },
+  "infrastructur": {
+    "en/doc09.txt": [
+      33
+    ]
+  },
+  "decreas": {
+    "en/doc09.txt": [
+      35
+    ]
+  },
+  "depend": {
+    "en/doc09.txt": [
+      36
+    ]
+  },
+  "fossil": {
+    "en/doc09.txt": [
+      38
+    ]
+  },
+  "fuel": {
+    "en/doc09.txt": [
+      39
+    ]
+  },
+  "organ": {
+    "en/doc10.txt": [
+      2
+    ]
+  },
+  "arrai": {
+    "en/doc10.txt": [
+      8
+    ]
+  },
+  "element": {
+    "en/doc10.txt": [
+      10
+    ]
+  },
+  "contigu": {
+    "en/doc10.txt": [
+      12
+    ]
+  },
+  "memori": {
+    "en/doc10.txt": [
+      13
+    ]
+  },
+  "locat": {
+    "en/doc10.txt": [
+      14
+    ]
+  },
+  "fast": {
+    "en/doc10.txt": [
+      16
+    ]
+  },
+  "access": {
+    "en/doc10.txt": [
+      17
+    ]
+  },
+  "link": {
+    "en/doc10.txt": [
+      18
+    ]
+  },
+  "list": {
+    "en/doc10.txt": [
+      19
+    ]
+  },
+  "allow": {
+    "en/doc10.txt": [
+      20
+    ]
+  },
+  "dynam": {
+    "en/doc10.txt": [
+      21
+    ]
+  },
+  "insert": {
+    "en/doc10.txt": [
+      22
+    ]
+  },
+  "delet": {
+    "en/doc10.txt": [
+      24
+    ]
+  },
+  "node": {
+    "en/doc10.txt": [
+      26
+    ]
+  },
+  "tree": {
+    "en/doc10.txt": [
+      27
+    ]
+  },
+  "repres": {
+    "en/doc10.txt": [
+      28
+    ]
+  },
+  "hierarch": {
+    "en/doc10.txt": [
+      29
+    ]
+  },
+  "relationship": {
+    "en/doc10.txt": [
+      30
+    ]
+  },
+  "item": {
+    "en/doc10.txt": [
+      33
+    ]
+  },
+  "graph": {
+    "en/doc10.txt": [
+      34
+    ]
+  },
+  "connect": {
+    "en/doc10.txt": [
+      38
+    ]
+  },
+  "entiti": {
+    "en/doc10.txt": [
+      41
+    ]
+  },
+  "ذكاء": {
+    "ar/doc01.txt": [
+      0
+    ],
+    "ar/doc05.txt": [
+      22
+    ],
+    "ar/doc08.txt": [
+      20
+    ]
+  },
+  "اصطناعي": {
+    "ar/doc01.txt": [
+      1
+    ],
+    "ar/doc05.txt": [
+      23
+    ],
+    "ar/doc08.txt": [
+      21
+    ]
+  },
+  "رع": {
+    "ar/doc01.txt": [
+      3
+    ]
+  },
+  "علوم": {
+    "ar/doc01.txt": [
+      5
+    ],
+    "ar/doc04.txt": [
+      6
+    ]
+  },
+  "حاسوب": {
+    "ar/doc01.txt": [
+      6,
+      26
+    ],
+    "ar/doc10.txt": [
+      13
+    ]
+  },
+  "يه": {
+    "ar/doc01.txt": [
+      7
+    ]
+  },
+  "تصميم": {
+    "ar/doc01.txt": [
+      8
+    ],
+    "ar/doc10.txt": [
+      3
+    ]
+  },
+  "انظمه": {
+    "ar/doc01.txt": [
+      9
+    ],
+    "ar/doc07.txt": [
+      32
+    ]
+  },
+  "قادره": {
+    "ar/doc01.txt": [
+      10
+    ],
+    "ar/doc02.txt": [
+      33
+    ]
+  },
+  "علي": {
+    "ar/doc01.txt": [
+      11
+    ],
+    "ar/doc02.txt": [
+      34
+    ],
+    "ar/doc03.txt": [
+      4
+    ],
+    "ar/doc07.txt": [
+      31
+    ],
+    "ar/doc08.txt": [
+      3
+    ]
+  },
+  "تعلم": {
+    "ar/doc01.txt": [
+      12
+    ]
+  },
+  "تفكير": {
+    "ar/doc01.txt": [
+      13
+    ]
+  },
+  "تستخدم": {
+    "ar/doc01.txt": [
+      14
+    ],
+    "ar/doc09.txt": [
+      9
+    ]
+  },
+  "شبك": {
+    "ar/doc01.txt": [
+      15
+    ]
+  },
+  "عصب": {
+    "ar/doc01.txt": [
+      16
+    ]
+  },
+  "معالجه": {
+    "ar/doc01.txt": [
+      17,
+      23
+    ]
+  },
+  "يان": {
+    "ar/doc01.txt": [
+      18
+    ],
+    "ar/doc03.txt": [
+      6,
+      10
+    ],
+    "ar/doc08.txt": [
+      23
+    ],
+    "ar/doc10.txt": [
+      10
+    ]
+  },
+  "ضخمه": {
+    "ar/doc01.txt": [
+      19
+    ],
+    "ar/doc03.txt": [
+      13
+    ]
+  },
+  "اكتشاف": {
+    "ar/doc01.txt": [
+      20
+    ],
+    "ar/doc04.txt": [
+      15
+    ]
+  },
+  "انماط": {
+    "ar/doc01.txt": [
+      21
+    ]
+  },
+  "تتيح": {
+    "ar/doc01.txt": [
+      22
+    ],
+    "ar/doc03.txt": [
+      14
+    ]
+  },
+  "لغ": {
+    "ar/doc01.txt": [
+      24
+    ]
+  },
+  "طبيع": {
+    "ar/doc01.txt": [
+      25
+    ],
+    "ar/doc06.txt": [
+      36
+    ]
+  },
+  "هم": {
+    "ar/doc01.txt": [
+      27
+    ],
+    "ar/doc09.txt": [
+      28
+    ]
+  },
+  "لام": {
+    "ar/doc01.txt": [
+      28
+    ]
+  },
+  "شري": {
+    "ar/doc01.txt": [
+      29
+    ]
+  },
+  "تحل": {
+    "ar/doc01.txt": [
+      30
+    ],
+    "ar/doc08.txt": [
+      22
+    ]
+  },
+  "نصوص": {
+    "ar/doc01.txt": [
+      31
+    ]
+  },
+  "عرب": {
+    "ar/doc01.txt": [
+      32
+    ],
+    "ar/doc04.txt": [
+      10,
+      23
+    ]
+  },
+  "عال": {
+    "ar/doc01.txt": [
+      33
+    ],
+    "ar/doc07.txt": [
+      17
+    ]
+  },
+  "ره": {
+    "ar/doc02.txt": [
+      0
+    ]
+  },
+  "قدم": {
+    "ar/doc02.txt": [
+      1
+    ]
+  },
+  "رياضه": {
+    "ar/doc02.txt": [
+      3
+    ]
+  },
+  "اكثر": {
+    "ar/doc02.txt": [
+      4
+    ]
+  },
+  "شعب": {
+    "ar/doc02.txt": [
+      5
+    ]
+  },
+  "عالم": {
+    "ar/doc02.txt": [
+      7
+    ]
+  },
+  "عربي": {
+    "ar/doc02.txt": [
+      8
+    ]
+  },
+  "يتنافس": {
+    "ar/doc02.txt": [
+      9
+    ]
+  },
+  "اعب": {
+    "ar/doc02.txt": [
+      10,
+      28
+    ]
+  },
+  "طول": {
+    "ar/doc02.txt": [
+      12,
+      36
+    ]
+  },
+  "ري": {
+    "ar/doc02.txt": [
+      13
+    ]
+  },
+  "تجذب": {
+    "ar/doc02.txt": [
+      14
+    ]
+  },
+  "ملاي": {
+    "ar/doc02.txt": [
+      15
+    ]
+  },
+  "مشاهد": {
+    "ar/doc02.txt": [
+      16
+    ]
+  },
+  "تدريب": {
+    "ar/doc02.txt": [
+      17
+    ]
+  },
+  "مستمر": {
+    "ar/doc02.txt": [
+      18
+    ]
+  },
+  "ياقه": {
+    "ar/doc02.txt": [
+      19
+    ]
+  },
+  "دن": {
+    "ar/doc02.txt": [
+      20
+    ]
+  },
+  "ضروري": {
+    "ar/doc02.txt": [
+      21
+    ]
+  },
+  "اداء": {
+    "ar/doc02.txt": [
+      22
+    ]
+  },
+  "متميز": {
+    "ar/doc02.txt": [
+      23
+    ]
+  },
+  "اند": {
+    "ar/doc02.txt": [
+      24
+    ]
+  },
+  "بري": {
+    "ar/doc02.txt": [
+      25
+    ],
+    "ar/doc04.txt": [
+      25
+    ]
+  },
+  "تستثمر": {
+    "ar/doc02.txt": [
+      26
+    ],
+    "ar/doc06.txt": [
+      26
+    ]
+  },
+  "شباب": {
+    "ar/doc02.txt": [
+      29
+    ]
+  },
+  "ناء": {
+    "ar/doc02.txt": [
+      30
+    ]
+  },
+  "رق": {
+    "ar/doc02.txt": [
+      31
+    ]
+  },
+  "قو": {
+    "ar/doc02.txt": [
+      32
+    ]
+  },
+  "وز": {
+    "ar/doc02.txt": [
+      35
+    ]
+  },
+  "تقن": {
+    "ar/doc03.txt": [
+      0
+    ]
+  },
+  "معلوم": {
+    "ar/doc03.txt": [
+      1,
+      18
+    ]
+  },
+  "تساعد": {
+    "ar/doc03.txt": [
+      2
+    ],
+    "ar/doc05.txt": [
+      24
+    ],
+    "ar/doc07.txt": [
+      10
+    ],
+    "ar/doc09.txt": [
+      26
+    ]
+  },
+  "مؤسس": {
+    "ar/doc03.txt": [
+      3
+    ]
+  },
+  "اداره": {
+    "ar/doc03.txt": [
+      5
+    ],
+    "ar/doc07.txt": [
+      34
+    ]
+  },
+  "تحس": {
+    "ar/doc03.txt": [
+      7
+    ]
+  },
+  "عملي": {
+    "ar/doc03.txt": [
+      8
+    ],
+    "ar/doc07.txt": [
+      14
+    ]
+  },
+  "قواعد": {
+    "ar/doc03.txt": [
+      9
+    ]
+  },
+  "تخزن": {
+    "ar/doc03.txt": [
+      11
+    ]
+  },
+  "ملف": {
+    "ar/doc03.txt": [
+      12
+    ]
+  },
+  "حث": {
+    "ar/doc03.txt": [
+      15
+    ],
+    "ar/doc04.txt": [
+      29
+    ],
+    "ar/doc07.txt": [
+      18
+    ],
+    "ar/doc08.txt": [
+      34
+    ]
+  },
+  "سريع": {
+    "ar/doc03.txt": [
+      16
+    ]
+  },
+  "مهندسو": {
+    "ar/doc03.txt": [
+      19
+    ]
+  },
+  "رمجي": {
+    "ar/doc03.txt": [
+      20
+    ],
+    "ar/doc10.txt": [
+      1,
+      5,
+      24
+    ]
+  },
+  "يطور": {
+    "ar/doc03.txt": [
+      21
+    ]
+  },
+  "تطبيق": {
+    "ar/doc03.txt": [
+      22
+    ],
+    "ar/doc05.txt": [
+      21
+    ]
+  },
+  "ذك": {
+    "ar/doc03.txt": [
+      23
+    ],
+    "ar/doc08.txt": [
+      13
+    ]
+  },
+  "تلبي": {
+    "ar/doc03.txt": [
+      24
+    ]
+  },
+  "احتياج": {
+    "ar/doc03.txt": [
+      25
+    ]
+  },
+  "مستخدم": {
+    "ar/doc03.txt": [
+      26
+    ],
+    "ar/doc10.txt": [
+      31
+    ]
+  },
+  "مختلف": {
+    "ar/doc03.txt": [
+      28
+    ]
+  },
+  "قطاع": {
+    "ar/doc03.txt": [
+      29
+    ]
+  },
+  "اقتصاد": {
+    "ar/doc03.txt": [
+      30
+    ],
+    "ar/doc08.txt": [
+      0
+    ]
+  },
+  "تعليم": {
+    "ar/doc03.txt": [
+      31
+    ],
+    "ar/doc05.txt": [
+      0,
+      18
+    ],
+    "ar/doc10.txt": [
+      19
+    ]
+  },
+  "حضاره": {
+    "ar/doc04.txt": [
+      0
+    ]
+  },
+  "اسلام": {
+    "ar/doc04.txt": [
+      1
+    ]
+  },
+  "قدمت": {
+    "ar/doc04.txt": [
+      2
+    ]
+  },
+  "اسهام": {
+    "ar/doc04.txt": [
+      3
+    ]
+  },
+  "عظيمه": {
+    "ar/doc04.txt": [
+      4
+    ]
+  },
+  "رياضي": {
+    "ar/doc04.txt": [
+      7,
+      22
+    ]
+  },
+  "طب": {
+    "ar/doc04.txt": [
+      8
+    ],
+    "ar/doc07.txt": [
+      0,
+      9
+    ]
+  },
+  "علماء": {
+    "ar/doc04.txt": [
+      9
+    ]
+  },
+  "ترجموا": {
+    "ar/doc04.txt": [
+      11
+    ]
+  },
+  "تب": {
+    "ar/doc04.txt": [
+      12
+    ]
+  },
+  "يون": {
+    "ar/doc04.txt": [
+      13
+    ]
+  },
+  "اضافوا": {
+    "ar/doc04.txt": [
+      14
+    ]
+  },
+  "جديده": {
+    "ar/doc04.txt": [
+      16
+    ],
+    "ar/doc07.txt": [
+      27
+    ],
+    "ar/doc08.txt": [
+      28
+    ]
+  },
+  "خوارزمي": {
+    "ar/doc04.txt": [
+      17
+    ],
+    "ar/doc10.txt": [
+      8
+    ]
+  },
+  "جبر": {
+    "ar/doc04.txt": [
+      18
+    ]
+  },
+  "اهم": {
+    "ar/doc04.txt": [
+      20
+    ]
+  },
+  "انجاز": {
+    "ar/doc04.txt": [
+      21
+    ]
+  },
+  "مكتب": {
+    "ar/doc04.txt": [
+      24
+    ]
+  },
+  "انت": {
+    "ar/doc04.txt": [
+      26
+    ]
+  },
+  "مراكز": {
+    "ar/doc04.txt": [
+      27
+    ]
+  },
+  "معرفه": {
+    "ar/doc04.txt": [
+      28
+    ],
+    "ar/doc08.txt": [
+      1
+    ]
+  },
+  "علمي": {
+    "ar/doc04.txt": [
+      30
+    ],
+    "ar/doc07.txt": [
+      19
+    ]
+  },
+  "عصور": {
+    "ar/doc04.txt": [
+      32
+    ]
+  },
+  "قديمه": {
+    "ar/doc04.txt": [
+      33
+    ]
+  },
+  "كتروني": {
+    "ar/doc05.txt": [
+      1
+    ]
+  },
+  "اصبح": {
+    "ar/doc05.txt": [
+      2
+    ]
+  },
+  "اساس": {
+    "ar/doc05.txt": [
+      3
+    ]
+  },
+  "عصر": {
+    "ar/doc05.txt": [
+      5
+    ]
+  },
+  "حديث": {
+    "ar/doc05.txt": [
+      6
+    ],
+    "ar/doc07.txt": [
+      1
+    ]
+  },
+  "جامع": {
+    "ar/doc05.txt": [
+      7
+    ]
+  },
+  "تقدم": {
+    "ar/doc05.txt": [
+      8
+    ],
+    "ar/doc08.txt": [
+      11
+    ]
+  },
+  "محاضر": {
+    "ar/doc05.txt": [
+      9
+    ]
+  },
+  "رقم": {
+    "ar/doc05.txt": [
+      10
+    ],
+    "ar/doc08.txt": [
+      25
+    ]
+  },
+  "عبر": {
+    "ar/doc05.txt": [
+      11
+    ],
+    "ar/doc08.txt": [
+      32
+    ],
+    "ar/doc09.txt": [
+      34
+    ]
+  },
+  "منص": {
+    "ar/doc05.txt": [
+      12
+    ]
+  },
+  "انترنت": {
+    "ar/doc05.txt": [
+      13
+    ]
+  },
+  "طلاب": {
+    "ar/doc05.txt": [
+      14
+    ]
+  },
+  "يستفيد": {
+    "ar/doc05.txt": [
+      15
+    ]
+  },
+  "موارد": {
+    "ar/doc05.txt": [
+      17
+    ]
+  },
+  "متاحه": {
+    "ar/doc05.txt": [
+      19
+    ]
+  },
+  "تر": {
+    "ar/doc05.txt": [
+      20
+    ]
+  },
+  "تخصيص": {
+    "ar/doc05.txt": [
+      26
+    ]
+  },
+  "محتوي": {
+    "ar/doc05.txt": [
+      27
+    ]
+  },
+  "تعليمي": {
+    "ar/doc05.txt": [
+      28
+    ]
+  },
+  "حسب": {
+    "ar/doc05.txt": [
+      29
+    ]
+  },
+  "مستوي": {
+    "ar/doc05.txt": [
+      30
+    ]
+  },
+  "طالب": {
+    "ar/doc05.txt": [
+      32
+    ]
+  },
+  "قدراته": {
+    "ar/doc05.txt": [
+      33
+    ]
+  },
+  "رد": {
+    "ar/doc05.txt": [
+      34
+    ]
+  },
+  "طاقه": {
+    "ar/doc06.txt": [
+      0,
+      3,
+      5,
+      7,
+      20
+    ]
+  },
+  "متجدده": {
+    "ar/doc06.txt": [
+      1
+    ]
+  },
+  "تشمل": {
+    "ar/doc06.txt": [
+      2
+    ]
+  },
+  "شمس": {
+    "ar/doc06.txt": [
+      4,
+      10,
+      13
+    ],
+    "ar/doc09.txt": [
+      33
+    ]
+  },
+  "رياح": {
+    "ar/doc06.txt": [
+      6,
+      18
+    ]
+  },
+  "مائ": {
+    "ar/doc06.txt": [
+      8
+    ]
+  },
+  "واح": {
+    "ar/doc06.txt": [
+      9
+    ]
+  },
+  "تحول": {
+    "ar/doc06.txt": [
+      11
+    ]
+  },
+  "ضوء": {
+    "ar/doc06.txt": [
+      12
+    ]
+  },
+  "الي": {
+    "ar/doc06.txt": [
+      14
+    ],
+    "ar/doc09.txt": [
+      20
+    ]
+  },
+  "هرباء": {
+    "ar/doc06.txt": [
+      15
+    ]
+  },
+  "نظيفه": {
+    "ar/doc06.txt": [
+      16
+    ]
+  },
+  "تورب": {
+    "ar/doc06.txt": [
+      17
+    ]
+  },
+  "تنتج": {
+    "ar/doc06.txt": [
+      19
+    ]
+  },
+  "مستدامه": {
+    "ar/doc06.txt": [
+      21
+    ]
+  },
+  "انبعاث": {
+    "ar/doc06.txt": [
+      23
+    ]
+  },
+  "ضاره": {
+    "ar/doc06.txt": [
+      24
+    ]
+  },
+  "حكوم": {
+    "ar/doc06.txt": [
+      25
+    ]
+  },
+  "بن": {
+    "ar/doc06.txt": [
+      28
+    ]
+  },
+  "تحت": {
+    "ar/doc06.txt": [
+      29
+    ]
+  },
+  "خضراء": {
+    "ar/doc06.txt": [
+      30
+    ]
+  },
+  "حد": {
+    "ar/doc06.txt": [
+      31
+    ]
+  },
+  "تلوث": {
+    "ar/doc06.txt": [
+      33
+    ]
+  },
+  "حما": {
+    "ar/doc06.txt": [
+      34
+    ]
+  },
+  "يئه": {
+    "ar/doc06.txt": [
+      35
+    ]
+  },
+  "يستخدم": {
+    "ar/doc07.txt": [
+      2
+    ],
+    "ar/doc10.txt": [
+      15
+    ]
+  },
+  "تقني": {
+    "ar/doc07.txt": [
+      3
+    ]
+  },
+  "متقدمه": {
+    "ar/doc07.txt": [
+      4
+    ],
+    "ar/doc09.txt": [
+      11
+    ]
+  },
+  "تشخيص": {
+    "ar/doc07.txt": [
+      5
+    ]
+  },
+  "امراض": {
+    "ar/doc07.txt": [
+      6
+    ]
+  },
+  "علاج": {
+    "ar/doc07.txt": [
+      7
+    ]
+  },
+  "اجهزه": {
+    "ar/doc07.txt": [
+      8
+    ]
+  },
+  "اطباء": {
+    "ar/doc07.txt": [
+      11
+    ]
+  },
+  "اجراء": {
+    "ar/doc07.txt": [
+      13
+    ]
+  },
+  "جراح": {
+    "ar/doc07.txt": [
+      15
+    ]
+  },
+  "دقه": {
+    "ar/doc07.txt": [
+      16
+    ]
+  },
+  "مجال": {
+    "ar/doc07.txt": [
+      21
+    ],
+    "ar/doc08.txt": [
+      7
+    ]
+  },
+  "صحي": {
+    "ar/doc07.txt": [
+      22
+    ]
+  },
+  "يسا": {
+    "ar/doc07.txt": [
+      23
+    ]
+  },
+  "تطوير": {
+    "ar/doc07.txt": [
+      25
+    ],
+    "ar/doc10.txt": [
+      4
+    ]
+  },
+  "ادو": {
+    "ar/doc07.txt": [
+      26
+    ]
+  },
+  "عاله": {
+    "ar/doc07.txt": [
+      28
+    ]
+  },
+  "مستشفي": {
+    "ar/doc07.txt": [
+      29
+    ]
+  },
+  "تعتمد": {
+    "ar/doc07.txt": [
+      30
+    ]
+  },
+  "كتر": {
+    "ar/doc07.txt": [
+      33
+    ],
+    "ar/doc08.txt": [
+      30
+    ]
+  },
+  "سجل": {
+    "ar/doc07.txt": [
+      35
+    ]
+  },
+  "مرضي": {
+    "ar/doc07.txt": [
+      36
+    ]
+  },
+  "يعتمد": {
+    "ar/doc08.txt": [
+      2
+    ]
+  },
+  "ابتكار": {
+    "ar/doc08.txt": [
+      4
+    ]
+  },
+  "ابداع": {
+    "ar/doc08.txt": [
+      5
+    ]
+  },
+  "تكنولوج": {
+    "ar/doc08.txt": [
+      8
+    ]
+  },
+  "شرك": {
+    "ar/doc08.txt": [
+      9
+    ]
+  },
+  "ناشئه": {
+    "ar/doc08.txt": [
+      10
+    ]
+  },
+  "حلولا": {
+    "ar/doc08.txt": [
+      12
+    ]
+  },
+  "مشاكل": {
+    "ar/doc08.txt": [
+      14
+    ]
+  },
+  "معقده": {
+    "ar/doc08.txt": [
+      15
+    ]
+  },
+  "رواد": {
+    "ar/doc08.txt": [
+      16
+    ],
+    "ar/doc09.txt": [
+      15
+    ]
+  },
+  "اعمال": {
+    "ar/doc08.txt": [
+      17
+    ]
+  },
+  "يستثمر": {
+    "ar/doc08.txt": [
+      18
+    ]
+  },
+  "اسواق": {
+    "ar/doc08.txt": [
+      24
+    ]
+  },
+  "توفر": {
+    "ar/doc08.txt": [
+      26
+    ]
+  },
+  "رص": {
+    "ar/doc08.txt": [
+      27
+    ]
+  },
+  "تجاره": {
+    "ar/doc08.txt": [
+      29
+    ]
+  },
+  "تسويق": {
+    "ar/doc08.txt": [
+      31
+    ]
+  },
+  "محرك": {
+    "ar/doc08.txt": [
+      33
+    ]
+  },
+  "علم": {
+    "ar/doc09.txt": [
+      0
+    ]
+  },
+  "لك": {
+    "ar/doc09.txt": [
+      1,
+      8
+    ]
+  },
+  "يكشف": {
+    "ar/doc09.txt": [
+      2
+    ]
+  },
+  "اسرار": {
+    "ar/doc09.txt": [
+      3
+    ]
+  },
+  "ون": {
+    "ar/doc09.txt": [
+      4,
+      30
+    ]
+  },
+  "نجوم": {
+    "ar/doc09.txt": [
+      5
+    ]
+  },
+  "مجر": {
+    "ar/doc09.txt": [
+      6
+    ]
+  },
+  "مراصد": {
+    "ar/doc09.txt": [
+      7
+    ]
+  },
+  "تلسكوب": {
+    "ar/doc09.txt": [
+      10
+    ]
+  },
+  "رصد": {
+    "ar/doc09.txt": [
+      12
+    ]
+  },
+  "واكب": {
+    "ar/doc09.txt": [
+      13
+    ]
+  },
+  "عيده": {
+    "ar/doc09.txt": [
+      14
+    ]
+  },
+  "ضاء": {
+    "ar/doc09.txt": [
+      16
+    ]
+  },
+  "يستهل": {
+    "ar/doc09.txt": [
+      17
+    ]
+  },
+  "رحل": {
+    "ar/doc09.txt": [
+      18
+    ]
+  },
+  "استكشاف": {
+    "ar/doc09.txt": [
+      19
+    ]
+  },
+  "محطه": {
+    "ar/doc09.txt": [
+      21
+    ]
+  },
+  "ضائ": {
+    "ar/doc09.txt": [
+      22,
+      25
+    ]
+  },
+  "دول": {
+    "ar/doc09.txt": [
+      23
+    ]
+  },
+  "ابحاث": {
+    "ar/doc09.txt": [
+      24
+    ]
+  },
+  "اصل": {
+    "ar/doc09.txt": [
+      29
+    ]
+  },
+  "تطور": {
+    "ar/doc09.txt": [
+      31
+    ]
+  },
+  "مجموعه": {
+    "ar/doc09.txt": [
+      32
+    ]
+  },
+  "زمن": {
+    "ar/doc09.txt": [
+      35
+    ]
+  },
+  "هندسه": {
+    "ar/doc10.txt": [
+      0
+    ]
+  },
+  "ته": {
+    "ar/doc10.txt": [
+      2
+    ]
+  },
+  "شكل": {
+    "ar/doc10.txt": [
+      6
+    ]
+  },
+  "منهجي": {
+    "ar/doc10.txt": [
+      7
+    ]
+  },
+  "هيكل": {
+    "ar/doc10.txt": [
+      9
+    ]
+  },
+  "اساسي": {
+    "ar/doc10.txt": [
+      11
+    ]
+  },
+  "رمجه": {
+    "ar/doc10.txt": [
+      12,
+      17
+    ]
+  },
+  "مبرمج": {
+    "ar/doc10.txt": [
+      14
+    ]
+  },
+  "غات": {
+    "ar/doc10.txt": [
+      16
+    ]
+  },
+  "تابه": {
+    "ar/doc10.txt": [
+      18
+    ]
+  },
+  "تي": {
+    "ar/doc10.txt": [
+      20
+    ]
+  },
+  "تنفذ": {
+    "ar/doc10.txt": [
+      21
+    ]
+  },
+  "حواسيب": {
+    "ar/doc10.txt": [
+      22
+    ]
+  },
+  "اختبار": {
+    "ar/doc10.txt": [
+      23
+    ]
+  },
+  "يضمن": {
+    "ar/doc10.txt": [
+      25
+    ]
+  },
+  "جوده": {
+    "ar/doc10.txt": [
+      26
+    ]
+  },
+  "منتج": {
+    "ar/doc10.txt": [
+      27
+    ]
+  },
+  "موثوقيته": {
+    "ar/doc10.txt": [
+      28
+    ]
+  },
+  "نشره": {
+    "ar/doc10.txt": [
+      30
+    ]
+  },
+  "نهائي": {
+    "ar/doc10.txt": [
+      32
+    ]
+  }
+}
