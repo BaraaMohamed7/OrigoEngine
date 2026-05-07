@@ -27,7 +27,8 @@ def get_english_stopwords() -> set:
 def get_arabic_stopwords() -> set:
     global _ARABIC_STOPWORDS
     if _ARABIC_STOPWORDS is None:
-        _ARABIC_STOPWORDS = _load_stopwords("arabic_stopwords.txt")
+        raw = _load_stopwords("arabic_stopwords.txt")
+        _ARABIC_STOPWORDS = {normalize_arabic(w) for w in raw} | raw
     return _ARABIC_STOPWORDS
 
 
