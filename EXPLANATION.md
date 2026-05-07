@@ -653,3 +653,520 @@ Line 101:    print(f"\nIndex saved to {output_dir}/")
 **What gets saved:**
 - `index_data/index.json` — the full positional inverted index
 - `index_data/doc_store.json` — document metadata (term count, raw text, language)
+
+---
+
+## `query_engine.py` — Boolean & Proximity Search
+
+### `parse_query(query)`
+
+```
+Line 6:  def parse_query(query: str):
+Line 7:     proximity_pattern = r"(\S+)\s*/(\d+)\s*(\S+)"
+                                              ← regex to detect proximity queries
+                                              ← matches: word1 /number word2
+                                              ← e.g. "machine /2 learning" → ("machine", "2", "learning")
+                                              ← \S+ = one or more non-whitespace characters
+                                              ← \s* = optional whitespace after the number
+Line 8:      match = re.search(proximity_pattern, query)
+Line 10:     if match:                           ← proximity pattern found
+Line 11:         term1 = match.group(1)          ← first word (before /k)
+Line 12:         k = int(match.group(2))         ← k value (the number after /)
+Line 13:         term2 = match.group(3)          ← second word (after /k)
+Line 14:         return ("proximity", term1, k, term2)
+Line 15:     else:                               ← no /k pattern → boolean query
+Line 16:         return ("boolean", query.split())
+```
+
+**Why return a tuple?** The type field ("proximity" or "boolean") tells `search()` which code path to take. This makes the query routing explicit and extensible — if you add OR queries later, just add another type.
+
+### `boolean_search(terms, index)`
+
+```
+Line 19: def boolean_search(terms: list, index: dict) → set:
+Line 20:     if not terms:                      ← EDGE CASE: empty terms list
+Line 21:         return set()                   ← no terms → no results
+Line 22:
+Line 23:     first_term = terms[0]               ← start with the posting list of the first term
+Line 24:     result = set(index.get(first_term, {}).keys())
+                                              ← index.get(first_term, {}) returns the posting dict for this term
+                                              ← {} if term not in index (defensive)
+                                              ← .keys() gives us all doc_ids containing this term
+                                              ← e.g. {"en/doc01.txt", "en/doc05.txt"}
+Line 26:     for term in terms[1:]:             ← for each remaining term
+Line 27:         result &= set(index.get(term, {}).keys())
+                                              ← INTERSECT with posting list of next term
+                                              ← AND logic: only docs containing ALL terms survive
+                                              ← e.g. {"doc01", "doc05"} & {"doc01", "doc03"} = {"doc01"}
+Line 29:     return result                       ← set of doc_ids containing all terms
+```
+
+**Why AND (intersection)?** A multi-word query like "machine learning" should return docs that contain BOTH words. An OR search would return too many irrelevant results.
+
+### `proximity_search(term1, term2, k, index)`
+
+```
+Line 32: def proximity_search(term1: str, term2: str, k: int, index: dict) → set:
+Line 33:     postings1 = index.get(term1, {})   ← {doc_id: [positions]} for term1
+Line 34:     postings2 = index.get(term2, {})   ← {doc_id: [positions]} for term2
+Line 36:     common_docs = set(postings1.keys()) & set(postings2.keys())
+                                              ← only docs containing BOTH terms can qualify
+Line 38:     results = set()
+Line 39:     for doc_id in common_docs:         ← check each common doc
+Line 40:         positions1 = postings1[doc_id]  ← e.g. [4, 21] — positions of term1 in this doc
+Line 41:         positions2 = postings2[doc_id]  ← e.g. [5, 10] — positions of term2 in this doc
+Line 42:         found = False                   ← flag: did we find any pair within k?
+Line 43:         for p1 in positions1:           ← check every position of term1
+Line 44:             for p2 in positions2:        ← against every position of term2
+Line 45:                 if abs(p1 - p2) <= k:  ← are they within k positions?
+Line 46:                     results.add(doc_id) ← yes → this doc qualifies
+Line 47:                     found = True        ← no need to check more pairs in this doc
+Line 48:                     break               ← break out of inner loop
+Line 49:             if found:                   ← already found a match in this doc
+Line 50:                 break                   ← break out of outer loop too
+Line 51:
+Line 52:     return results
+```
+
+**Why positions matter:** If "machine" is at position 4 and "learn" at position 5, then `|4-5| = 1 ≤ k=2` → they're nearby. This is impossible without positional information.
+
+**Example:** Query `"machine /2 learning"` → preprocessed to `"machin"` and `"learn"` → check positions in each common doc.
+
+### `search(query, index)` — The Main Entry Point
+
+```
+Line 55: def search(query: str, index: dict) → tuple[str, set, list]:
+                                              ← returns (type, doc_ids, processed_terms)
+Line 56:     parsed = parse_query(query)       ← route to proximity or boolean
+Line 58:     if parsed[0] == "proximity":
+Line 59:         _, raw_term1, k, raw_term2 = parsed
+Line 60:         lang = detect_language(raw_term1 + " " + raw_term2)
+                                              ← detect language from both terms combined
+Line 62:         tokens1 = preprocess(raw_term1, lang)  ← preprocess term1 alone
+Line 63:         tokens2 = preprocess(raw_term2, lang)  ← preprocess term2 alone
+                                              ← NOTE: each term is preprocessed separately
+                                              ← because proximity search needs exact positions per term
+Line 65:         if not tokens1 or not tokens2:  ← EDGE CASE: term becomes empty after preprocessing
+Line 66:             return ("proximity", set(), [])
+Line 68:         term1 = tokens1[0][0]          ← extract the stemmed term from (term, position) tuple
+Line 69:         term2 = tokens2[0][0]
+Line 70:         result_docs = proximity_search(term1, term2, k, index)
+Line 71:         return ("proximity", result_docs, [term1, term2])
+Line 73:     else:                               ← boolean query
+Line 74:         _, raw_terms = parsed
+Line 75:         if not raw_terms:               ← EDGE CASE: empty query
+Line 76:             return ("boolean", set(), [])
+Line 78:         lang = detect_language(" ".join(raw_terms))
+Line 79:         preprocessed = preprocess(" ".join(raw_terms), lang)
+                                              ← preprocess the WHOLE query as one string
+                                              ← this gives us position info but we only need the terms
+Line 81:         terms = [term for term, pos in preprocessed]
+                                              ← extract just the term strings, discard positions
+Line 83:         if not terms:                  ← EDGE CASE: all words were stopwords
+Line 84:             return ("boolean", set(), [])
+Line 86:         result_docs = boolean_search(terms, index)
+Line 87:         return ("boolean", result_docs, terms)
+```
+
+**Why preprocess terms separately for proximity?** For `"machine /2 learning"`, we need the exact stemmed form of each individual word. If we preprocessed the whole string, the regex parser might interfere with tokenization.
+
+---
+
+## `kgram_index.py` — K-gram Index for Spelling
+
+### `get_kgrams(term, k=2)`
+
+```
+Line 1:  def get_kgrams(term: str, k: int = 2) → list[str]:
+Line 2:     padded = f"${term}$"               ← add start/end markers
+                                              ← "hello" → "$hello$"
+                                              ← The $ markers ensure the start and end of the word
+                                              ←  are part of k-grams, helping match word boundaries
+Line 3:     return [padded[i:i + k] for i in range(len(padded) - k + 1)]
+                                              ← slide a window of size k across the padded string
+                                              ← "$hello$" → ["$h", "he", "el", "ll", "lo", "o$"]
+```
+
+### `build_kgram_index(index, k=2)`
+
+```
+Line 7:  def build_kgram_index(index: dict, k: int = 2) → dict[str, set[str]]:
+Line 8:     kgram_index: dict[str, set[str]] = {}
+Line 9:     for term in index.keys():           ← iterate over all unique terms in the index
+Line 10:        for kgram in get_kgrams(term, k):
+                                              ← e.g. "comput" → ["$c", "co", "om", "mp", "pu", "ut", "t$"]
+Line 11:            if kgram not in kgram_index:
+Line 12:                kgram_index[kgram] = set()  ← create set for this k-gram
+Line 13:            kgram_index[kgram].add(term) ← add the term to the k-gram's set
+Line 14:    return kgram_index
+```
+
+**Why a set for each k-gram?** Multiple terms can share the same k-gram. E.g., `"co"` maps to `{"comput", "compet", "complex", "contain", ...}`. Sets give O(1) lookup and automatic deduplication.
+
+---
+
+## `spelling.py` — Spelling Correction
+
+### `jaccard(kgrams_a, kgrams_b)`
+
+```
+Line 4:  def jaccard(kgrams_a: set, kgrams_b: set) → float:
+Line 5:     intersection = len(kgrams_a & kgrams_b)  ← shared k-grams
+Line 6:     union = len(kgrams_a | kgrams_b)        ← all unique k-grams
+Line 7:     return intersection / union if union > 0 else 0.0
+                                              ← Jaccard = |A∩B| / |A∪B|
+                                              ← Returns 0 if both sets are empty (avoids division by zero)
+```
+
+**Example:**
+```
+"comput" k-grams: {"$c", "co", "om", "mp", "pu", "ut", "t$"}
+"compit" k-grams: {"$c", "co", "om", "mp", "pi", "it", "t$"}
+Intersection: {"$c", "co", "om", "mp", "t$"} = 5
+Union: 9
+Jaccard = 5/9 ≈ 0.56 → above 0.3 threshold → candidate
+```
+
+### `levenshtein(s1, s2)`
+
+```
+Line 10: def levenshtein(s1: str, s2: str) → int:
+Line 11:    m, n = len(s1), len(s2)
+Line 13:    if m == 0:                          ← EDGE CASE: empty first string
+Line 14:        return n                        ← cost = insert all chars of s2
+Line 15:    if n == 0:                          ← EDGE CASE: empty second string
+Line 16:        return m                        ← cost = delete all chars of s1
+Line 18:    dp = [[0] * (n + 1) for _ in range(m + 1)]
+                                              ← create (m+1) × (n+1) DP table
+                                              ← dp[i][j] = minimum edits to transform s1[:i] into s2[:j]
+Line 20:    for i in range(m + 1):
+Line 21:        dp[i][0] = i                   ← base case: transforming s1[:i] → "" needs i deletions
+Line 22:    for j in range(n + 1):
+Line 23:        dp[0][j] = j                   ← base case: transforming "" → s2[:j] needs j insertions
+Line 25:    for i in range(1, m + 1):           ← fill table row by row
+Line 26:        for j in range(1, n + 1):       ← column by column
+Line 27:            if s1[i - 1] == s2[j - 1]:  ← characters match → no edit needed
+Line 28:                dp[i][j] = dp[i - 1][j - 1]
+                                              ← carry over the diagonal value (no cost added)
+Line 29:            else:                       ← characters don't match → 3 options:
+Line 30:                dp[i][j] = 1 + min(
+Line 31:                    dp[i - 1][j],       ← option 1: delete from s1 (move up)
+Line 32:                    dp[i][j - 1],       ← option 2: insert into s1 (move left)
+Line 33:                    dp[i - 1][j - 1],   ← option 3: substitute (move diagonal)
+Line 34:                )
+Line 36:    return dp[m][n]                     ← bottom-right cell = minimum edit distance
+```
+
+**Example:** `levenshtein("speling", "spelling")`
+```
+       ""  s  p  e  l  l  i  n  g
+   ""   0  1  2  3  4  5  6  7  8
+    s   1  0  1  2  3  4  5  6  7
+    p   2  1  0  1  2  3  4  5  6
+    e   3  2  1  0  1  2  3  4  5
+    l   4  3  2  1  0  1  2  3  4
+    i   5  4  3  2  1  1  2  3  4
+    n   6  5  4  3  2  2  2  2  3
+    g   7  6  5  4  3  3  3  3  2
+                                            Wait... "speling" has 7 chars, "spelling" has 8
+                                            lev("speling", "spelling") = 1 (insert 'l')
+```
+
+### `suggest_correction(misspelled, index, kgram_index, k=2)`
+
+```
+Line 39: def suggest_correction(misspelled, index, kgram_index, k=2):
+Line 40:    if misspelled in index:              ← EDGE CASE: word is already correct
+Line 41:        return None                     ← no suggestion needed
+Line 43:    query_kgrams = set(get_kgrams(misspelled, k))
+                                              ← get all k-grams of the misspelled word
+Line 45:    candidates = set()
+Line 46:    for kgram in query_kgrams:          ← for each k-gram in the misspelled word
+Line 47:        candidates |= kgram_index.get(kgram, set())
+                                              ← union all terms that share this k-gram
+                                              ← these are POTENTIAL corrections
+Line 49:    filtered = [                        ← narrow down candidates using Jaccard similarity
+Line 50:        c for c in candidates
+Line 51:        if jaccard(query_kgrams, set(get_kgrams(c, k))) >= 0.3
+                                              ← only keep candidates with Jaccard ≥ 0.3
+                                              ← 0.3 is a common threshold for k-gram filtering
+Line 52:    ]
+Line 54:    ranked = sorted(filtered, key=lambda c: levenshtein(misspelled, c))
+                                              ← sort candidates by edit distance (ascending)
+                                              ← lowest distance = best correction
+Line 56:    return ranked[0] if ranked else None
+                                              ← return best candidate, or None if no candidates pass filter
+```
+
+**Why two-stage filtering?**
+1. **Jaccard** (set-based) is fast — quickly eliminates very different words
+2. **Levenshtein** (character-by-character) is slower but more accurate — finds the best match among remaining candidates
+
+Without Jaccard, we'd compute Levenshtein distance against ALL 494 terms in our vocabulary. With Jaccard, we typically reduce candidates to ~5-20 terms before the expensive Levenshtein step.
+
+---
+
+## `ranking.py` — TF-IDF & Cosine Similarity
+
+### `compute_tf(term, doc_id, index, doc_store)`
+
+```
+Line 4:  def compute_tf(term: str, doc_id: str, index: dict, doc_store: dict) → float:
+Line 5:     positions = index.get(term, {}).get(doc_id, [])
+                                              ← get position list for this term in this doc
+                                              ← e.g. index["comput"]["en/doc01.txt"] = [0, 6, 18]
+Line 6:     count = len(positions) if isinstance(positions, list) else 0
+                                              ← len([...]) = number of times term appears in doc
+                                              ← isinstance check handles edge case where JSON loaded
+                                              ←  a list vs still being an empty dict
+Line 7:     total_terms = doc_store.get(doc_id, {}).get("total_terms", 0)
+                                              ← total indexed terms in this document
+                                              ← e.g. doc_store["en/doc01.txt"]["total_terms"] = 32
+Line 8:     return count / total_terms if total_terms > 0 else 0.0
+                                              ← EDGE CASE: avoid division by zero for empty docs
+                                              ← TF = count / total_terms
+                                              ← e.g. "comput" appears 3 times in a 32-term doc → TF = 3/32 ≈ 0.094
+```
+
+### `compute_idf(term, index, total_docs)`
+
+```
+Line 11: def compute_idf(term: str, index: dict, total_docs: int) → float:
+Line 12:    df = len(index.get(term, {}))        ← document frequency: how many docs contain this term
+                                              ← e.g. "comput" appears in 4 docs → df = 4
+Line 13:    return math.log(total_docs / df) if df > 0 else 0.0
+                                              ← EDGE CASE: term not in any doc → IDF = 0
+                                              ← IDF = log(N / df)
+                                              ← e.g. log(20/4) = log(5) ≈ 1.61
+                                              ↑ Rare terms → high IDF (discriminative)
+                                              ↑ Common terms → low IDF (not useful for ranking)
+```
+
+### `compute_tfidf(term, doc_id, index, doc_store, total_docs)`
+
+```
+Line 16: def compute_tfidf(...) → float:
+Line 17:    return compute_tf(term, doc_id, index, doc_store) * compute_idf(term, index, total_docs)
+                                              ↑ TF × IDF
+                                              ↑ A term is important if it's frequent in THIS doc (TF)
+                                              ↑  but rare across ALL docs (IDF)
+```
+
+### `cosine_similarity(query_vector, doc_vector)`
+
+```
+Line 20: def cosine_similarity(query_vector: dict, doc_vector: dict) → float:
+Line 21:    dot_product = sum(
+Line 22:        query_vector.get(t, 0) * doc_vector.get(t, 0) for t in query_vector
+Line 23:    )
+                                              ← Σ(q_i × d_i) for all terms in the query
+                                              ← Only terms that appear in BOTH vectors contribute
+                                              ← query_vector.get(t, 0) returns 0 if term t not in query
+Line 25:    query_magnitude = math.sqrt(sum(v**2 for v in query_vector.values()))
+Line 26:    doc_magnitude = math.sqrt(sum(v**2 for v in doc_vector.values()))
+                                              ← |Q| and |D| — the Euclidean magnitudes
+Line 28:    if query_magnitude == 0 or doc_magnitude == 0:
+Line 29:        return 0.0                     ← EDGE CASE: avoid division by zero
+                                              ↑ A zero vector means no terms → no similarity
+Line 30:    return dot_product / (query_magnitude * doc_magnitude)
+                                              ↑ Cosine(Q, D) = (Q · D) / (|Q| × |D|)
+                                              ↑ Returns value between 0 and 1
+                                              ↑ 1 = same direction (perfectly similar)
+                                              ↑ 0 = orthogonal (no similarity)
+```
+
+### `rank_documents(query_terms, candidate_docs, index, doc_store, total_docs)`
+
+```
+Line 33: def rank_documents(...) → list[tuple[str, float]]:
+Line 34:    if not candidate_docs or not query_terms:
+Line 35:        return []                       ← EDGE CASE: no docs or no terms → empty ranking
+Line 37:    query_vector = {
+Line 38:        term: compute_idf(term, index, total_docs) for term in query_terms
+Line 39:    }
+                                              ← Each query term gets weight = IDF
+                                              ↑ We use IDF as the query term weight (TF=1 for each query term)
+                                              ↑ since each query term appears exactly once in the query
+Line 41:    scores = {}
+Line 42:    for doc_id in candidate_docs:       ← only rank docs that matched the search
+Line 43:        doc_vector = {
+Line 44:            term: compute_tfidf(term, doc_id, index, doc_store, total_docs)
+Line 45:            for term in query_terms
+Line 46:        }
+                                              ← Each doc's vector uses TF-IDF weights
+Line 47:        scores[doc_id] = cosine_similarity(query_vector, doc_vector)
+Line 50:    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
+                                              ↑ Sort docs by score DESCENDING (best match first)
+                                              ↑ Returns list of (doc_id, score) tuples
+```
+
+**Why IDF for query vector (not TF-IDF)?** In a query, each term typically appears once, so TF=1. The relevant weight is IDF — terms that are rare across the corpus are more informative. So query weight ≈ IDF.
+
+---
+
+## `evaluation.py` — Precision & Recall
+
+### Ground truth dictionary
+
+```
+Line 7:  GROUND_TRUTH = {
+Line 8:     "computer science": {
+Line 9:         "relevant": {"en/doc01.txt", "en/doc03.txt", "en/doc07.txt"},
+                                              ← manually defined: which docs SHOULD match this query
+                                              ← determined by reading the corpus and checking the index
+Line 10:   },
+...
+Line 54:    "الذكاء الاصطناعي": {
+Line 55:        "relevant": {"ar/doc01.txt", "ar/doc05.txt", "ar/doc08.txt"},
+Line 56:    },
+Line 57: }
+```
+
+**Why manual ground truth?** Since we control the corpus, we can read each document and determine which ones should match a given query. This gives us a "gold standard" to measure against.
+
+### `evaluate(query, retrieved, ground_truth)`
+
+```
+Line 60: def evaluate(query, retrieved, ground_truth):
+Line 63:    relevant_retrieved = retrieved & ground_truth  ← intersection: docs that are BOTH relevant AND retrieved
+Line 65:    precision = len(relevant_retrieved) / len(retrieved) if len(retrieved) > 0 else 0.0
+                                              ← Precision: of the docs we returned, how many are actually relevant?
+                                              ↑ High precision = few false positives
+                                              ↑ EDGE CASE: len(retrieved) == 0 → avoid division by zero
+Line 67:    recall = len(relevant_retrieved) / len(ground_truth) if len(ground_truth) > 0 else 0.0
+                                              ← Recall: of all relevant docs, how many did we find?
+                                              ↑ High recall = few false negatives
+                                              ↑ EDGE CASE: len(ground_truth) == 0 → avoid division by zero
+Line 69:    return {
+Line 70:        "query": query,
+Line 71:        "precision": round(precision, 4),
+Line 72:        "recall": round(recall, 4),
+Line 73:        "relevant_retrieved": len(relevant_retrieved),
+Line 74:        "total_retrieved": len(retrieved),
+Line 75:        "total_relevant": len(ground_truth),
+Line 76:    }
+```
+
+### `run_evaluation(index, doc_store)`
+
+```
+Line 79: def run_evaluation(index, doc_store):
+Line 80:    total_docs = len(doc_store)
+Line 81:    results = []
+Line 83:    for query, data in GROUND_TRUTH.items():
+Line 84:        qtype, doc_set, terms = search(query, index)
+                                              ← run the full search pipeline for each ground truth query
+Line 85:        ranked = rank_documents(terms, doc_set, index, doc_store, total_docs)
+Line 86:        retrieved = set(doc_id for doc_id, score in ranked)
+                                              ← extract just the doc_ids from ranked results
+Line 88:        eval_result = evaluate(query, retrieved, data["relevant"])
+Line 89:        eval_result["type"] = qtype
+Line 90:        eval_result["terms"] = terms
+Line 91:        results.append(eval_result)
+Line 93:    return results
+```
+
+### `print_evaluation_report(results)`
+
+```
+Line 96: def print_evaluation_report(results):
+Line 97:    print(header)                         ← formatted table header
+Line 99:    for r in results:                      ← print each row
+Line 100:      print(f"{query} {type} {precision} {recall} ...")
+Line 104:   avg_precision += r["precision"]       ← accumulate for average
+Line 105:   avg_recall += r["recall"]
+Line 107:   print(average row)                   ← average across all queries
+```
+
+---
+
+## `main.py` — Interactive CLI
+
+### Startup and index loading
+
+```
+Line 17: def main():
+Line 18:    script_dir = os.path.dirname(os.path.abspath(__file__))
+Line 19:    corpus_path = os.path.join(script_dir, "corpus")
+Line 20:    index_dir = os.path.join(script_dir, "index_data")
+Line 22:    print(banner)                          ← "OrigoEngine — Bilingual Search Engine"
+Line 24:    if os.path.exists(index_path):          ← check if cached index exists
+Line 26:        index, doc_store = load_index(index_dir)  ← fast: load from JSON
+Line 28:    else:
+Line 29:        index, doc_store = build_index(corpus_path)  ← slow: build from scratch
+Line 30:        save_index(index, doc_store, index_dir)     ← cache for next time
+Line 32:    total_docs = len(doc_store)
+Line 33:    kgram_index = build_kgram_index(index, k=2)  ← build k-gram index in memory
+```
+
+### Main loop and command handling
+
+```
+Line 46: while True:
+Line 47:     query = input("OrigoEngine> ").strip()     ← prompt user
+Line 53:     if query.lower() == "quit": break          ← exit
+Line 57:     if query.lower() == "help": ...             ← show commands
+Line 73:     if query.lower() == "rebuild": ...          ← rebuild index
+Line 80:     if query.lower() == "eval":                 ← run evaluation
+Line 81:         results = run_evaluation(index, doc_store)
+Line 82:         print_evaluation_report(results)
+```
+
+### Search and spelling correction flow
+
+```
+Line 84:  qtype, doc_set, terms = search(query, index)  ← parse + preprocess + search
+Line 86:  if not terms:                                  ← all terms were stopwords
+Line 87:      print("No searchable terms found.")
+Line 91:  corrected_terms = []
+Line 92:  for term in terms:                               ← check each term
+Line 93:      if term not in index:                       ← term not found in index?
+Line 94:          suggestion = suggest_correction(term, index, kgram_index)
+Line 95:          if suggestion:                           ← found a correction?
+Line 96:              print(f"Did you mean: '{suggestion}'? (y/n): ")
+Line 97:              response = input().strip().lower()
+Line 98:              if response == "y":
+Line 99:                  corrected_terms.append(suggestion) ← use correction
+Line 100:             else:
+Line 101:                 corrected_terms.append(term)   ← keep original (probably no results)
+Line 104:    else:                                       ← no suggestion available
+Line 105:        print(f"Term '{term}' not found and no suggestions.")
+Line 106:        corrected_terms.append(term)
+Line 108: else:                                           ← term IS in index
+Line 109:     corrected_terms.append(term)               ← use as-is
+```
+
+### Proximity search override
+
+```
+Line 112: if qtype == "proximity":
+Line 113:    term1, term2 = corrected_terms[0], corrected_terms[1]
+Line 114:    from query_engine import proximity_search  ← direct call to proximity function
+Line 115:    parsed = re.search(r"(\S+)\s*/(\d+)\s*(\S+)", query)
+Line 116:    k = int(parsed.group(2))                    ← extract k value from original query
+Line 117:    doc_set = proximity_search(term1, term2, k, index)  ← re-search with corrected terms
+```
+
+**Why re-search?** Spelling correction might change the terms, so we need to re-run the proximity search with the corrected terms instead of the original ones.
+
+### Boolean search with corrected terms
+
+```
+Line 120: else:  ← boolean query
+Line 121:    doc_set = set(index.get(first, {}).keys())  ← start with first term's posting list
+Line 122:    for term in corrected_terms[1:]:
+Line 123:        doc_set &= set(index.get(term, {}).keys())  ← intersect with each subsequent term
+Line 124:                                               ← AND logic: all terms must be present
+```
+
+### Display results
+
+```
+Line 126: ranked = rank_documents(corrected_terms, doc_set, index, doc_store, total_docs)
+                                              ← rank by TF-IDF cosine similarity
+Line 128: for doc_id, score in ranked:
+Line 129:    print(format_result(doc_id, score, doc_store))
+Line 130:                                               ← shows doc_id, language, score, and text preview
+```
+
+The `format_result` function extracts the raw text from doc_store and shows the first 120 characters as a preview.

@@ -314,13 +314,225 @@ For each .txt file in corpus/en/ and corpus/ar/:
 
 ---
 
-## What Remains
+### `query_engine.py` — Boolean & Proximity Search
 
-| File | Purpose |
-|------|---------|
-| `kgram_index.py` | Build 2-gram index for spelling correction |
-| `query_engine.py` | Parse and execute boolean + proximity queries |
-| `spelling.py` | Suggest corrections using Jaccard + Levenshtein |
-| `ranking.py` | TF-IDF weighting and cosine similarity ranking |
-| `evaluation.py` | Precision and recall calculation |
-| `main.py` | Interactive CLI that ties everything together |
+**Purpose:** Parse a user query, detect its type (boolean or proximity), preprocess it, and search the index.
+
+**Query types:**
+
+| Type | Example | Behavior |
+|------|---------|----------|
+| Boolean (AND) | `machine learning` | All terms must appear in the same doc |
+| Proximity | `machine /2 learning` | Both terms within k positions of each other |
+
+**How it works:**
+
+```
+User types: "machine /2 learning"
+    ↓
+parse_query() → detects "/2" → ("proximity", "machine", 2, "learning")
+    ↓
+preprocess each term → ["machin"], ["learn"]
+    ↓
+proximity_search("machin", "learn", 2, index)
+    ↓
+For each doc containing BOTH terms:
+    check |position_machin - position_learn| ≤ 2
+    ↓
+Return matching doc IDs
+```
+
+**Key functions:**
+
+| Function | Returns | Purpose |
+|----------|---------|---------|
+| `parse_query(query)` | `("proximity", t1, k, t2)` or `("boolean", [words])` | Detect query type |
+| `boolean_search(terms, index)` | `set` of doc IDs | AND intersection of posting lists |
+| `proximity_search(t1, t2, k, index)` | `set` of doc IDs | Docs where t1 and t2 are within k positions |
+| `search(query, index)` | `(type, doc_set, term_list)` | Full pipeline: parse → preprocess → search |
+
+---
+
+### `kgram_index.py` — K-gram Index for Spelling
+
+**Purpose:** Build a bi-gram (2-gram) index from all terms in the main index. Used by the spelling corrector to find candidate corrections.
+
+**How k-grams work:**
+
+```
+Term: "hello"
+Padded: "$hello$"
+2-grams: ["$h", "he", "el", "ll", "lo", "o$"]
+
+Index maps each 2-gram → set of terms containing it:
+  "$h" → {"hello", "help", "house", ...}
+  "he" → {"hello", "help", "she", ...}
+```
+
+**Key functions:**
+
+| Function | Returns | Purpose |
+|----------|---------|---------|
+| `get_kgrams(term, k=2)` | `list[str]` | Generate k-grams for a term |
+| `build_kgram_index(index, k=2)` | `dict[str, set]` | Build full k-gram index from main index |
+
+**Current stats:** 643 unique 2-grams generated from 494 terms.
+
+---
+
+### `spelling.py` — Spelling Correction
+
+**Purpose:** If a query term is not in the index, suggest the closest matching term using k-gram Jaccard similarity for filtering and Levenshtein distance for ranking.
+
+**Correction flow:**
+
+```
+User types: "machne"
+    ↓
+Is "machne" in index?  → No
+    ↓
+Get k-grams of "machne": ["$m", "ma", "ac", "ch", "hn", "ne", "e$"]
+    ↓
+Collect all terms sharing any k-gram with "machne" from k-gram index
+    ↓
+Filter by Jaccard ≥ 0.3
+    ↓
+Rank remaining candidates by Levenshtein distance (ascending)
+    ↓
+Return best match: "machin"
+```
+
+**Key functions:**
+
+| Function | Returns | Purpose |
+|----------|---------|---------|
+| `jaccard(kgrams_a, kgrams_b)` | `float` (0.0–1.0) | Similarity between two k-gram sets |
+| `levenshtein(s1, s2)` | `int` | Minimum edit distance between two strings |
+| `suggest_correction(word, index, kgram_index, k=2)` | `str` or `None` | Best suggestion, or None if word is already correct |
+
+**Levenshtein DP:** Classic dynamic programming table. `dp[i][j]` = minimum edits to transform `s1[:i]` into `s2[:j]`. Time complexity: O(m×n).
+
+---
+
+### `ranking.py` — TF-IDF & Cosine Similarity
+
+**Purpose:** Given candidate documents from search, rank them by relevance using TF-IDF weighted cosine similarity.
+
+**Formulas:**
+
+| Metric | Formula |
+|--------|---------|
+| TF(t, d) | `count(t in d) / total_terms(d)` |
+| IDF(t) | `log(N / df(t))` where N = total docs, df = docs containing t |
+| TF-IDF(t, d) | `TF × IDF` |
+| Cosine(Q, D) | `Σ(q_i × d_i) / (|Q| × |D|)` |
+
+**How ranking works:**
+
+```
+Query terms: ["machin", "learn"]
+Candidate docs: {"en/doc01.txt", "en/doc03.txt", "en/doc05.txt"}
+
+1. Build query vector: {term: IDF(term)}
+   → {"machin": 0.51, "learn": 0.69}
+
+2. For each candidate doc, build doc vector: {term: TF-IDF(term, doc)}
+   → e.g. doc01: {"machin": 0.094, "learn": 0.094}
+
+3. Compute cosine similarity between query and doc vectors
+
+4. Sort docs by score descending
+```
+
+**Key functions:**
+
+| Function | Returns | Purpose |
+|----------|---------|---------|
+| `compute_tf(term, doc_id, index, doc_store)` | `float` | Term frequency in a document |
+| `compute_idf(term, index, total_docs)` | `float` | Inverse document frequency |
+| `compute_tfidf(term, doc_id, index, doc_store, total_docs)` | `float` | TF × IDF |
+| `cosine_similarity(q_vec, d_vec)` | `float` | Cosine between two vectors |
+| `rank_documents(terms, docs, index, doc_store, total_docs)` | `list[(doc_id, score)]` | Ranked results |
+
+---
+
+### `evaluation.py` — Precision & Recall
+
+**Purpose:** Evaluate search accuracy against manually defined ground truth queries.
+
+**Ground truth:** A dictionary mapping 13 queries (English + Arabic) to their expected relevant documents. These were defined by inspecting the corpus and verifying against the index.
+
+**Formulas:**
+
+```
+Precision = |Retrieved ∩ Relevant| / |Retrieved|
+Recall    = |Retrieved ∩ Relevant| / |Relevant|
+```
+
+**Evaluation report output:**
+
+```
+Query                        Type        Precision  Recall RelRet  Ret  Rel
+--------------------------------------------------------------------------------
+machine learning             boolean        1.0000  1.0000      3    3    3
+computer science             boolean        1.0000  0.6667      2    2    3
+الذكاء الاصطناعي             boolean        1.0000  1.0000      3    3    3
+...
+AVERAGE                                     1.0000  0.9744
+```
+
+**Key functions:**
+
+| Function | Returns | Purpose |
+|----------|---------|---------|
+| `evaluate(query, retrieved, ground_truth)` | `dict` | Calculate precision, recall, and counts |
+| `run_evaluation(index, doc_store)` | `list[dict]` | Run all ground truth queries and evaluate each |
+| `print_evaluation_report(results)` | `None` | Print formatted evaluation table |
+
+---
+
+### `main.py` — Interactive CLI
+
+**Purpose:** Ties all modules together into an interactive search engine REPL.
+
+**Startup flow:**
+
+```
+1. Check if index_data/ exists → load cached index
+2. If not → build index from corpus/ → save to disk
+3. Build k-gram index from main index
+4. Print stats and available commands
+```
+
+**Commands:**
+
+| Command | Action |
+|---------|--------|
+| `<query>` | Search (boolean AND or proximity `/k`) |
+| `eval` | Run evaluation report |
+| `rebuild` | Rebuild index from corpus |
+| `help` | Show usage instructions |
+| `quit` | Exit |
+
+**Query flow:**
+
+```
+User types: "machine learning"
+    ↓ parse query → boolean, terms=["machine", "learning"]
+    ↓ preprocess → ["machin", "learn"]
+    ↓ spelling check each term → "machin" ✓, "learn" ✓
+    ↓ boolean_search → {"en/doc01.txt", "en/doc03.txt", "en/doc05.txt"}
+    ↓ rank_documents → sorted by cosine similarity
+    ↓ display results with scores and text previews
+```
+
+**Spelling correction interaction:**
+
+```
+User types: "compter scence"
+    ↓ "compter" not in index
+    ↓ suggest: "comput"? (y/n): y
+    ↓ "scence" not in index
+    ↓ suggest: "scienc"? (y/n): y
+    ↓ search for "comput scienc" → results
+```
