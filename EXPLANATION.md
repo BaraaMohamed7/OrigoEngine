@@ -2,7 +2,7 @@
 
 ---
 
-## `language_detector.py`
+## `src/language_detector.py`
 
 ```
 Line 1:  import re                          ← import regex module
@@ -20,7 +20,7 @@ Line 9:      return "english"                ← no Arabic characters found → 
 
 ---
 
-## `stemmer_en.py` — Porter Stemmer
+## `src/stemmer_en.py` — Porter Stemmer
 
 ### Helper functions
 
@@ -285,7 +285,7 @@ Line 222:    return word                          ← final stemmed result
 
 ---
 
-## `stemmer_ar.py` — ISRI Arabic Stemmer
+## `src/stemmer_ar.py` — ISRI Arabic Stemmer
 
 ### Configuration lists
 
@@ -358,7 +358,7 @@ Line 85:     return word                        ← what's left is the stem
 
 ---
 
-## `preprocessing.py` — Pipeline Orchestrator
+## `src/preprocessing.py` — Pipeline Orchestrator
 
 ### Imports and configuration
 
@@ -508,7 +508,7 @@ Line 86:     return preprocess_english(text)    ← default: English pipeline
 
 ---
 
-## `indexer.py` — Positional Inverted Index Builder
+## `src/indexer.py` — Positional Inverted Index Builder
 
 ### Imports
 
@@ -525,13 +525,13 @@ Line 4:  from preprocessing import preprocess     ← tokenize, remove stops, st
 Line 7:  def get_all_docs(corpus_path: str) → list[str]:
 Line 8:      docs = []                            ← collect all .txt file paths
 Line 9:      for lang_dir in ["en", "ar"]:        ← check both subdirectories
-Line 10:         dir_path = os.path.join(corpus_path, lang_dir)  ← e.g. "corpus/en"
+Line 10:         dir_path = os.path.join(corpus_path, lang_dir)  ← e.g. "data/corpus/en"
 Line 11:         if not os.path.isdir(dir_path):   ← skip if directory doesn't exist
 Line 12:             continue
 Line 13:         for filename in sorted(os.listdir(dir_path)):  ← alphabetical order
 Line 14:             if filename.endswith(".txt"):  ← only process .txt files
 Line 15:                 docs.append(os.path.join(dir_path, filename))
-Line 16:     return docs                           ← e.g. ["corpus/en/doc01.txt", ..., "corpus/ar/doc10.txt"]
+Line 16:     return docs                           ← e.g. ["data/corpus/en/doc01.txt", ..., "data/corpus/ar/doc10.txt"]
 ```
 
 **Why `sorted`?** Ensures deterministic order — doc01 comes before doc02. Important for reproducibility and debugging.
@@ -541,7 +541,7 @@ Line 16:     return docs                           ← e.g. ["corpus/en/doc01.tx
 ```
 Line 19: def get_doc_id(doc_path: str) → str:
 Line 20:     parts = doc_path.replace("\\", "/").split("/")  ← normalize Windows paths
-                                              ← "corpus/en/doc01.txt" → ["corpus", "en", "doc01.txt"]
+                                              ← "data/corpus/en/doc01.txt" → ["corpus", "en", "doc01.txt"]
 Line 21:     lang_dir = parts[-2]              ← second-to-last part = "en" or "ar"
 Line 22:     filename = parts[-1]             ← last part = "doc01.txt"
 Line 23:     return f"{lang_dir}/{filename}"   ← "en/doc01.txt"
@@ -602,7 +602,7 @@ Line 60:     return index, doc_store            ← return both data structures
 
 ```
 Line 63: def save_index(index, doc_store, output_dir) → None:
-Line 64:     os.makedirs(output_dir, exist_ok=True)  ← create "index_data/" if it doesn't exist
+Line 64:     os.makedirs(output_dir, exist_ok=True)  ← create "data/index_data/" if it doesn't exist
 Line 65:     with open(os.path.join(output_dir, "index.json"), "w", encoding="utf-8") as f:
 Line 66:         json.dump(index, f, ensure_ascii=False, indent=2)
                                               ← ensure_ascii=False: preserves Arabic characters
@@ -656,7 +656,7 @@ Line 101:    print(f"\nIndex saved to {output_dir}/")
 
 ---
 
-## `query_engine.py` — Boolean & Proximity Search
+## `src/query_engine.py` — Boolean & Proximity Search
 
 ### `parse_query(query)`
 
@@ -772,7 +772,7 @@ Line 87:         return ("boolean", result_docs, terms)
 
 ---
 
-## `kgram_index.py` — K-gram Index for Spelling
+## `src/kgram_index.py` — K-gram Index for Spelling
 
 ### `get_kgrams(term, k=2)`
 
@@ -805,7 +805,7 @@ Line 14:    return kgram_index
 
 ---
 
-## `spelling.py` — Spelling Correction
+## `src/spelling.py` — Spelling Correction
 
 ### `jaccard(kgrams_a, kgrams_b)`
 
@@ -906,7 +906,7 @@ Without Jaccard, we'd compute Levenshtein distance against ALL 494 terms in our 
 
 ---
 
-## `ranking.py` — TF-IDF & Cosine Similarity
+## `src/ranking.py` — TF-IDF & Cosine Similarity
 
 ### `compute_tf(term, doc_id, index, doc_store)`
 
@@ -1004,7 +1004,7 @@ Line 50:    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
 ---
 
-## `evaluation.py` — Precision & Recall
+## `src/evaluation.py` — Precision & Recall
 
 ### Ground truth dictionary
 
@@ -1080,7 +1080,7 @@ Line 107:   print(average row)                   ← average across all queries
 
 ---
 
-## `main.py` — Interactive CLI
+## `src/main.py` — Interactive CLI
 
 ### Startup and index loading
 

@@ -1,4 +1,4 @@
-from kgram_index import get_kgrams
+from .kgram_index import get_kgrams
 
 
 def jaccard(kgrams_a: set, kgrams_b: set) -> float:
@@ -62,7 +62,9 @@ if __name__ == "__main__":
     import os
     from kgram_index import build_kgram_index
 
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index_data")
+    output_dir = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", "data", "index_data"
+    )
     with open(os.path.join(output_dir, "index.json"), "r", encoding="utf-8") as f:
         index = json.load(f)
 

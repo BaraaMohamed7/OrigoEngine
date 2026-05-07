@@ -1,10 +1,11 @@
 import os
-from indexer import build_index, save_index, load_index
-from query_engine import search
-from kgram_index import build_kgram_index
-from spelling import suggest_correction
-from ranking import rank_documents
-from evaluation import run_evaluation, print_evaluation_report
+import re
+from .indexer import build_index, save_index, load_index
+from .query_engine import search, proximity_search
+from .kgram_index import build_kgram_index
+from .spelling import suggest_correction
+from .ranking import rank_documents
+from .evaluation import run_evaluation, print_evaluation_report
 
 
 def format_result(doc_id: str, score: float, doc_store: dict) -> str:
@@ -17,8 +18,9 @@ def format_result(doc_id: str, score: float, doc_store: dict) -> str:
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    corpus_path = os.path.join(script_dir, "corpus")
-    index_dir = os.path.join(script_dir, "index_data")
+    data_dir = os.path.join(script_dir, "..", "data")
+    corpus_path = os.path.join(data_dir, "corpus")
+    index_dir = os.path.join(data_dir, "index_data")
 
     print("=" * 60)
     print("  OrigoEngine — Bilingual Search Engine")
@@ -127,8 +129,6 @@ def main():
                 corrected_terms[0],
                 corrected_terms[1] if len(corrected_terms) > 1 else corrected_terms[0],
             )
-            from query_engine import proximity_search
-            import re
 
             parsed = re.search(r"(\S+)\s*/(\d+)\s*(\S+)", query)
             k = int(parsed.group(2)) if parsed else 1

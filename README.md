@@ -21,7 +21,7 @@ No `pip install` needed. All dependencies are Python built-ins.
 ### Interactive Search
 
 ```bash
-python main.py
+python run.py
 ```
 
 This starts an interactive REPL:
@@ -31,7 +31,7 @@ This starts an interactive REPL:
   OrigoEngine — Bilingual Search Engine
 ============================================================
 Loading existing index...
-Indexed 20 documents | 494 unique terms
+Indexed 20 documents | 493 unique terms
 
 Commands:
   <query>       Search for terms (AND / proximity /k)
@@ -77,12 +77,6 @@ Inside the REPL:
 OrigoEngine> eval
 ```
 
-Or directly:
-
-```bash
-python evaluation.py
-```
-
 ### Rebuild Index
 
 If you modify corpus documents:
@@ -91,33 +85,38 @@ If you modify corpus documents:
 OrigoEngine> rebuild
 ```
 
-Or delete `index_data/` and relaunch — the engine will rebuild automatically.
+Or delete `data/index_data/` and relaunch — the engine will rebuild automatically.
 
 ## Project Structure
 
 ```
 OrigoEngine/
-├── corpus/
-│   ├── en/doc01-10.txt        10 English documents (~50 words each)
-│   └── ar/doc01-10.txt        10 Arabic documents (~50 words each)
-├── stopwords/
-│   ├── english_stopwords.txt
-│   └── arabic_stopwords.txt
-├── index_data/                 Auto-generated (index.json, doc_store.json)
-├── language_detector.py        Arabic vs English detection
-├── stemmer_en.py              Porter Stemmer (implemented from scratch)
-├── stemmer_ar.py              ISRI Arabic Stemmer (implemented from scratch)
-├── preprocessing.py           English + Arabic preprocessing pipelines
-├── indexer.py                 Positional inverted index builder
-├── kgram_index.py             2-gram index for spelling correction
-├── query_engine.py            Boolean + proximity search
-├── spelling.py                Jaccard + Levenshtein spelling correction
-├── ranking.py                 TF-IDF + cosine similarity
-├── evaluation.py              Precision & recall evaluation
-├── main.py                    Interactive CLI entry point
-├── OVERVIEW.md                Architecture & module documentation
-├── EXPLANATION.md              Line-by-line code explanation
-└── BUILD_PLAN.md              Build plan (solo + team versions)
+├── run.py                       Entry point — run with: python run.py
+├── data/
+│   ├── corpus/
+│   │   ├── en/doc01-10.txt      10 English documents (~50 words each)
+│   │   └── ar/doc01-10.txt      10 Arabic documents (~50 words each)
+│   ├── stopwords/
+│   │   ├── english_stopwords.txt
+│   │   └── arabic_stopwords.txt
+│   └── index_data/              Auto-generated (index.json, doc_store.json)
+├── src/
+│   ├── __init__.py
+│   ├── language_detector.py     Detects Arabic vs English
+│   ├── stemmer_en.py            Porter Stemmer (from scratch)
+│   ├── stemmer_ar.py            ISRI Arabic Stemmer (from scratch)
+│   ├── preprocessing.py         English + Arabic preprocessing pipelines
+│   ├── indexer.py               Positional inverted index builder
+│   ├── kgram_index.py           2-gram index for spelling correction
+│   ├── query_engine.py          Boolean + proximity search
+│   ├── spelling.py              Jaccard + Levenshtein spelling correction
+│   ├── ranking.py               TF-IDF + cosine similarity
+│   ├── evaluation.py            Precision & recall evaluation
+│   └── main.py                  Interactive CLI REPL
+├── IR_Project_Plan.md           Original project specification
+├── BUILD_PLAN.md                Build plan (solo + team versions)
+├── OVERVIEW.md                  Architecture & module documentation
+└── EXPLANATION.md               Line-by-line code explanation
 ```
 
 ## What Each Module Does
@@ -134,7 +133,7 @@ OrigoEngine/
 | `spelling.py` | Suggests corrections for unknown terms | `suggest_correction(word, index, kgram_index)` |
 | `ranking.py` | Ranks results by TF-IDF cosine | `rank_documents(terms, docs, ...)` |
 | `evaluation.py` | Precision & recall metrics | `run_evaluation(index, doc_store)` |
-| `main.py` | Interactive CLI | `python main.py` |
+| `main.py` | Interactive CLI | `python run.py` |
 
 ## Algorithms Implemented From Scratch
 

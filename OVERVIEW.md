@@ -19,26 +19,33 @@ No external NLP/search libraries are used for the core logic — everything is i
 
 ```
 OrigoEngine/
-├── corpus/
-│   ├── en/              10 English documents (~50 words each)
-│   └── ar/              10 Arabic documents (~50 words each)
-├── stopwords/
-│   ├── english_stopwords.txt
-│   └── arabic_stopwords.txt
-├── language_detector.py detects Arabic vs English
-├── stemmer_en.py        Porter Stemmer (English)
-├── stemmer_ar.py        ISRI Stemmer (Arabic)
-├── preprocessing.py     Tokenize → stop-words → stem (both languages)
-├── indexer.py           Builds positional inverted index (Phase 2)
-├── kgram_index.py       K-gram index for spelling (Phase 2)
-├── query_engine.py      Boolean + proximity search (Phase 2)
-├── spelling.py          Jaccard + Levenshtein correction (Phase 2)
-├── ranking.py           TF-IDF + cosine similarity (Phase 2)
-├── evaluation.py        Precision & recall (Phase 2)
-└── main.py              CLI entry point (Phase 2)
+├── run.py                       Entry point — run with: python run.py
+├── data/
+│   ├── corpus/
+│   │   ├── en/                  10 English documents (~50 words each)
+│   │   └── ar/                  10 Arabic documents (~50 words each)
+│   ├── stopwords/
+│   │   ├── english_stopwords.txt
+│   │   └── arabic_stopwords.txt
+│   └── index_data/              Auto-generated (index.json, doc_store.json)
+├── src/
+│   ├── __init__.py
+│   ├── language_detector.py     Detects Arabic vs English
+│   ├── stemmer_en.py            Porter Stemmer (English)
+│   ├── stemmer_ar.py            ISRI Stemmer (Arabic)
+│   ├── preprocessing.py         Tokenize → stop-words → stem (both languages)
+│   ├── indexer.py               Builds positional inverted index
+│   ├── kgram_index.py           K-gram index for spelling correction
+│   ├── query_engine.py          Boolean + proximity search
+│   ├── spelling.py              Jaccard + Levenshtein correction
+│   ├── ranking.py               TF-IDF + cosine similarity
+│   ├── evaluation.py            Precision & recall
+│   └── main.py                  Interactive REPL
+├── IR_Project_Plan.md           Original project specification
+├── BUILD_PLAN.md                Build plan (solo + team)
+├── OVERVIEW.md                  Architecture & module docs (this file)
+└── EXPLANATION.md               Line-by-line code explanation
 ```
-
-*Only the bolded files above exist so far. The rest will be built in Phase 2+.*
 
 ---
 

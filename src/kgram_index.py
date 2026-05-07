@@ -17,7 +17,7 @@ if __name__ == "__main__":
     import json
     import os
 
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index_data")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "index_data")
     with open(os.path.join(output_dir, "index.json"), "r", encoding="utf-8") as f:
         index = json.load(f)
 

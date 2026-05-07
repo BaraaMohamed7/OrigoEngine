@@ -1,11 +1,13 @@
 import re
 import os
 
-from language_detector import detect_language
-from stemmer_en import porter_stem
-from stemmer_ar import isri_stem
+from .language_detector import detect_language
+from .stemmer_en import porter_stem
+from .stemmer_ar import isri_stem
 
-STOPWORDS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "stopwords")
+STOPWORDS_DIR = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "..", "data", "stopwords"
+)
 
 _ENGLISH_STOPWORDS: set | None = None
 _ARABIC_STOPWORDS: set | None = None

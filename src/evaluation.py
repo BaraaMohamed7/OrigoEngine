@@ -1,5 +1,5 @@
-from query_engine import search
-from ranking import rank_documents
+from .query_engine import search
+from .ranking import rank_documents
 
 
 GROUND_TRUTH = {
@@ -109,9 +109,11 @@ def print_evaluation_report(results: list[dict]) -> None:
 
 if __name__ == "__main__":
     import os
-    from indexer import load_index
+    from .indexer import load_index
 
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index_data")
+    output_dir = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", "data", "index_data"
+    )
     index, doc_store = load_index(output_dir)
 
     results = run_evaluation(index, doc_store)

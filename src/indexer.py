@@ -1,7 +1,7 @@
 import os
 import json
-from language_detector import detect_language
-from preprocessing import preprocess
+from .language_detector import detect_language
+from .preprocessing import preprocess
 
 
 def get_all_docs(corpus_path: str) -> list[str]:
@@ -77,8 +77,9 @@ def load_index(output_dir: str) -> tuple[dict, dict]:
 
 
 if __name__ == "__main__":
-    corpus_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus")
-    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "index_data")
+    _DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data")
+    corpus_path = os.path.join(_DATA_DIR, "corpus")
+    output_dir = os.path.join(_DATA_DIR, "index_data")
 
     print("Building index...")
     index, doc_store = build_index(corpus_path)
