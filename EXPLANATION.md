@@ -531,7 +531,7 @@ Line 12:             continue
 Line 13:         for filename in sorted(os.listdir(dir_path)):  ← alphabetical order
 Line 14:             if filename.endswith(".txt"):  ← only process .txt files
 Line 15:                 docs.append(os.path.join(dir_path, filename))
-Line 16:     return docs                           ← e.g. ["data/corpus/en/en_001.txt", ..., "data/corpus/ar/ar_010.txt"]
+Line 16:     return docs                           ← e.g. ["data/corpus/en/en_001.txt", ..., "data/corpus/ar/ar_005.txt"]
 ```
 
 **Why `sorted`?** Ensures deterministic order — `en_001` comes before `en_002`. Important for reproducibility and debugging.
@@ -635,7 +635,7 @@ Line 84:     index, doc_store = build_index(corpus_path)  ← main build call
 Line 86:     print(f"Indexed {len(doc_store)} documents")
 Line 87:     print(f"Vocabulary size: {len(index)} terms")
                                               ← len(index) = number of unique terms across all docs
-                                              ← our corpus: ~947 unique terms
+                                              ← our corpus: ~659 unique terms
 Line 89:     print("\nSample index entries (first 10 terms):")
 Line 90:     for i, (term, postings) in enumerate(index.items()):
 Line 91:         if i >= 10:
@@ -902,7 +902,7 @@ Line 56:    return ranked[0] if ranked else None
 1. **Jaccard** (set-based) is fast — quickly eliminates very different words
 2. **Levenshtein** (character-by-character) is slower but more accurate — finds the best match among remaining candidates
 
-Without Jaccard, we'd compute Levenshtein distance against ALL 947 terms in our vocabulary. With Jaccard, we typically reduce candidates to ~5-20 terms before the expensive Levenshtein step.
+Without Jaccard, we'd compute Levenshtein distance against ALL 659 terms in our vocabulary. With Jaccard, we typically reduce candidates to ~5-20 terms before the expensive Levenshtein step.
 
 ---
 

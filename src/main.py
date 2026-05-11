@@ -1,11 +1,23 @@
 import os
 import re
+from collections import Counter, defaultdict
 from .indexer import build_index, save_index, load_index
 from .query_engine import search, proximity_search
 from .kgram_index import build_kgram_index
-from .spelling import suggest_correction
+from .spelling import levenshtein, suggest_correction
 from .ranking import rank_documents
 from .evaluation import run_evaluation, print_evaluation_report
+from .language_detector import detect_language
+from .preprocessing import (
+    get_arabic_stopwords,
+    get_english_stopwords,
+    normalize_arabic,
+    preprocess,
+    tokenize_arabic,
+    tokenize_english,
+)
+from .stemmer_ar import isri_stem
+from .stemmer_en import porter_stem
 
 
 def format_result(doc_id: str, score: float, doc_store: dict) -> str:
@@ -14,6 +26,77 @@ def format_result(doc_id: str, score: float, doc_store: dict) -> str:
     raw_text = info.get("raw_text", "")
     preview = raw_text[:120] + "..." if len(raw_text) > 120 else raw_text
     return f"  {doc_id:<18} | {lang:<8} | score={score:.4f}\n  {preview}"
+
+
+def build_stem_surface_forms(doc_store: dict) -> dict[str, Counter]:
+    forms: dict[str, Counter] = defaultdict(Counter)
+    en_stopwords = get_english_stopwords()
+    ar_stopwords = get_arabic_stopwords()
+
+    for info in doc_store.values():
+        text = info.get("raw_text", "")
+        lang = info.get("language", "english")
+
+        if lang == "arabic":
+            raw_tokens = tokenize_arabic(text)
+            norm_tokens = tokenize_arabic(normalize_arabic(text))
+            for i, norm_token in enumerate(norm_tokens):
+                if norm_token in ar_stopwords:
+                    continue
+                stem = isri_stem(norm_token)
+                if not stem:
+                    continue
+                surface = raw_tokens[i] if i < len(raw_tokens) else norm_token
+                forms[stem][surface] += 1
+        else:
+            for token in tokenize_english(text.lower()):
+                if token in en_stopwords:
+                    continue
+                stem = porter_stem(token)
+                if not stem:
+                    continue
+                forms[stem][token] += 1
+
+    return forms
+
+
+def best_surface_form(
+    raw_query_term: str, stem: str, stem_surface_forms: dict[str, Counter]
+) -> str:
+    counter = stem_surface_forms.get(stem)
+    if not counter:
+        return stem
+
+    compare_term = raw_query_term.lower()
+    return min(
+        counter.items(),
+        key=lambda x: (
+            levenshtein(compare_term, x[0].lower()),
+            -x[1],
+            x[0],
+        ),
+    )[0]
+
+
+def build_query_stem_to_raw_map(query: str, qtype: str) -> dict[str, str]:
+    if qtype == "proximity":
+        parsed = re.search(r"(\S+)\s*/(\d+)\s*(\S+)", query)
+        raw_terms = [parsed.group(1), parsed.group(3)] if parsed else query.split()
+    else:
+        raw_terms = query.split()
+
+    if not raw_terms:
+        return {}
+
+    lang = detect_language(" ".join(raw_terms))
+    stem_to_raw: dict[str, str] = {}
+    for raw in raw_terms:
+        processed = preprocess(raw, lang)
+        if processed:
+            stem = processed[0][0]
+            if stem not in stem_to_raw:
+                stem_to_raw[stem] = raw
+    return stem_to_raw
 
 
 def main():
@@ -38,6 +121,7 @@ def main():
 
     total_docs = len(doc_store)
     kgram_index = build_kgram_index(index, k=2)
+    stem_surface_forms = build_stem_surface_forms(doc_store)
 
     print(f"Indexed {total_docs} documents | {len(index)} unique terms")
     print()
@@ -82,6 +166,7 @@ def main():
             index, doc_store = build_index(corpus_path)
             save_index(index, doc_store, index_dir)
             kgram_index = build_kgram_index(index, k=2)
+            stem_surface_forms = build_stem_surface_forms(doc_store)
             total_docs = len(doc_store)
             print(f"Rebuilt: {total_docs} docs, {len(index)} terms")
             continue
@@ -92,6 +177,7 @@ def main():
             continue
 
         qtype, doc_set, terms = search(query, index)
+        stem_to_raw = build_query_stem_to_raw_map(query, qtype)
 
         if not terms:
             print("  No searchable terms found (all words may be stopwords).")
@@ -100,11 +186,15 @@ def main():
 
         corrected_terms = []
         for term in terms:
+            display_term = stem_to_raw.get(term, term)
             if term not in index:
                 suggestion = suggest_correction(term, index, kgram_index)
                 if suggestion:
+                    suggestion_display = best_surface_form(
+                        display_term, suggestion, stem_surface_forms
+                    )
                     print(
-                        f"  Term '{term}' not found. Did you mean: '{suggestion}'? (y/n): ",
+                        f"  Term '{display_term}' not found. Did you mean: '{suggestion_display}'? (y/n): ",
                         end="",
                     )
                     try:

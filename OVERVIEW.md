@@ -22,8 +22,8 @@ OrigoEngine/
 ├── run.py                       Entry point — run with: python run.py
 ├── data/
 │   ├── corpus/
-│   │   ├── en/                  10 English documents (~50 words each)
-│   │   └── ar/                  10 Arabic documents (~50 words each)
+│   │   ├── en/                  5 English documents
+│   │   └── ar/                  5 Arabic documents
 │   ├── stopwords/
 │   │   ├── english_stopwords.txt
 │   │   └── arabic_stopwords.txt
@@ -317,7 +317,7 @@ For each .txt file in corpus/en/ and corpus/ar/:
 
 **Index saved to:** `index_data/index.json` and `index_data/doc_store.json`
 
-**Current stats:** 20 documents indexed, 947 unique terms (525 English, 422 Arabic).
+**Current stats:** 10 documents indexed, 659 unique terms (357 English, 302 Arabic).
 
 ---
 
@@ -383,7 +383,7 @@ Index maps each 2-gram → set of terms containing it:
 | `get_kgrams(term, k=2)` | `list[str]` | Generate k-grams for a term |
 | `build_kgram_index(index, k=2)` | `dict[str, set]` | Build full k-gram index from main index |
 
-**Current stats:** 786 unique 2-grams generated from 947 terms.
+**Current stats:** 729 unique 2-grams generated from 659 terms.
 
 ---
 

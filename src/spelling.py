@@ -48,19 +48,28 @@ def suggest_correction(
     for kgram in query_kgrams:
         candidates |= kgram_index.get(kgram, set())
 
-    filtered = [
-        c for c in candidates if jaccard(query_kgrams, set(get_kgrams(c, k))) >= 0.3
-    ]
+    filtered = []
+    for c in candidates:
+        jac = jaccard(query_kgrams, set(get_kgrams(c, k)))
+        if jac >= 0.3:
+            filtered.append((c, jac))
 
-    ranked = sorted(filtered, key=lambda c: levenshtein(misspelled, c))
+    ranked = sorted(
+        filtered,
+        key=lambda x: (
+            levenshtein(misspelled, x[0]),
+            -x[1],
+            x[0],
+        ),
+    )
 
-    return ranked[0] if ranked else None
+    return ranked[0][0] if ranked else None
 
 
 if __name__ == "__main__":
     import json
     import os
-    from kgram_index import build_kgram_index
+    from .kgram_index import build_kgram_index
 
     output_dir = os.path.join(
         os.path.dirname(os.path.abspath(__file__)), "..", "data", "index_data"

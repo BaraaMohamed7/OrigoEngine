@@ -9,38 +9,32 @@ GROUND_TRUTH = {
     "artificial intelligence": {
         "relevant": {"en/en_001.txt"},
     },
-    "computer vision": {
-        "relevant": {"en/en_001.txt"},
-    },
-    "cybersecurity encryption": {
-        "relevant": {"en/en_004.txt"},
+    "internet things": {
+        "relevant": {"en/en_002.txt"},
     },
     "data science": {
         "relevant": {"en/en_003.txt"},
     },
+    "cybersecurity encryption": {
+        "relevant": {"en/en_004.txt"},
+    },
     "software development": {
         "relevant": {"en/en_005.txt"},
     },
-    "blockchain": {
-        "relevant": {"en/en_006.txt"},
-    },
-    "renewable energy": {
-        "relevant": {"en/en_007.txt"},
-    },
-    "quantum computing": {
-        "relevant": {"en/en_008.txt"},
-    },
-    "robot": {
-        "relevant": {"en/en_009.txt"},
-    },
     "الذكاء الاصطناعي": {
-        "relevant": {"ar/ar_001.txt", "ar/ar_006.txt", "ar/ar_008.txt"},
+        "relevant": {"ar/ar_001.txt"},
     },
-    "الطاقة المتجددة": {
-        "relevant": {"ar/ar_007.txt"},
+    "إنترنت الأشياء": {
+        "relevant": {"ar/ar_002.txt"},
     },
-    "الطب الحديث": {
-        "relevant": {"ar/ar_008.txt"},
+    "علم البيانات": {
+        "relevant": {"ar/ar_003.txt"},
+    },
+    "الأمن السيبراني": {
+        "relevant": {"ar/ar_004.txt"},
+    },
+    "تطوير البرمجيات": {
+        "relevant": {"ar/ar_005.txt"},
     },
 }
 
