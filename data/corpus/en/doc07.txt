@@ -1,1 +1,0 @@
-Robotics combines computer science and engineering to design autonomous machines. Industrial robots perform manufacturing tasks with precision and speed. Medical robots assist surgeons during complex procedures with greater accuracy. Autonomous drones navigate environments using sensors and computer vision algorithms for various applications.

@@ -1,2882 +1,6095 @@
 {
-  "comput": {
-    "en/doc01.txt": [
-      0,
-      6,
-      18
-    ],
-    "en/doc03.txt": [
-      24
-    ],
-    "en/doc07.txt": [
-      2,
-      36
-    ],
-    "en/doc10.txt": [
-      6
-    ]
-  },
-  "scienc": {
-    "en/doc01.txt": [
-      1
-    ],
-    "en/doc07.txt": [
-      3
-    ]
-  },
-  "studi": {
-    "en/doc01.txt": [
-      4
-    ],
-    "en/doc04.txt": [
-      42
-    ],
-    "en/doc06.txt": [
-      14
-    ]
-  },
-  "inform": {
-    "en/doc01.txt": [
-      8
-    ],
-    "en/doc03.txt": [
-      41
-    ],
-    "en/doc10.txt": [
-      3
-    ]
-  },
-  "involv": {
-    "en/doc01.txt": [
-      10
-    ],
-    "en/doc02.txt": [
-      14
-    ]
-  },
-  "algorithm": {
-    "en/doc01.txt": [
-      11
-    ],
-    "en/doc05.txt": [
-      2
-    ],
-    "en/doc07.txt": [
-      38
-    ]
-  },
-  "data": {
-    "en/doc01.txt": [
-      12
-    ],
-    "en/doc03.txt": [
-      16
-    ],
-    "en/doc05.txt": [
-      7,
-      34
-    ],
-    "en/doc10.txt": [
-      0,
-      32
-    ]
-  },
-  "structur": {
-    "en/doc01.txt": [
-      13
-    ],
-    "en/doc10.txt": [
-      1
-    ]
-  },
-  "program": {
-    "en/doc01.txt": [
-      15
-    ]
-  },
-  "languag": {
-    "en/doc01.txt": [
-      16
-    ],
-    "en/doc03.txt": [
-      21
-    ]
-  },
-  "modern": {
-    "en/doc01.txt": [
-      17
-    ]
-  },
-  "reli": {
-    "en/doc01.txt": [
-      19
-    ]
-  },
-  "machin": {
-    "en/doc01.txt": [
-      21
-    ],
-    "en/doc03.txt": [
-      4
-    ],
-    "en/doc05.txt": [
-      0
-    ],
-    "en/doc07.txt": [
-      9
-    ]
-  },
-  "learn": {
-    "en/doc01.txt": [
-      22
-    ],
-    "en/doc03.txt": [
-      5,
-      10
-    ],
-    "en/doc05.txt": [
-      1,
-      10,
-      19
-    ]
-  },
   "artifici": {
-    "en/doc01.txt": [
-      24
-    ],
-    "en/doc03.txt": [
+    "en/en_001.txt": [
       0
     ]
   },
   "intellig": {
-    "en/doc01.txt": [
-      25
+    "en/en_001.txt": [
+      1
     ],
-    "en/doc03.txt": [
-      1,
-      32
+    "en/en_003.txt": [
+      50
     ]
   },
-  "solv": {
-    "en/doc01.txt": [
-      27
+  "transform": {
+    "en/en_001.txt": [
+      3
+    ],
+    "en/en_003.txt": [
+      110
+    ],
+    "en/en_007.txt": [
+      4
+    ]
+  },
+  "world": {
+    "en/en_001.txt": [
+      5,
+      62
+    ],
+    "en/en_009.txt": [
+      16
+    ]
+  },
+  "technologi": {
+    "en/en_001.txt": [
+      7
+    ],
+    "en/en_006.txt": [
+      1
+    ],
+    "en/en_010.txt": [
+      10,
+      25
+    ]
+  },
+  "busi": {
+    "en/en_001.txt": [
+      9
+    ],
+    "en/en_003.txt": [
+      49
+    ]
+  },
+  "machin": {
+    "en/en_001.txt": [
+      10,
+      27,
+      43
+    ],
+    "en/en_009.txt": [
+      10
+    ]
+  },
+  "learn": {
+    "en/en_001.txt": [
+      11,
+      16,
+      23,
+      28,
+      93,
+      104,
+      113,
+      121
+    ],
+    "en/en_003.txt": [
+      140
+    ]
+  },
+  "algorithm": {
+    "en/en_001.txt": [
+      12
+    ],
+    "en/en_008.txt": [
+      30,
+      33,
+      44
+    ],
+    "en/en_009.txt": [
+      45
+    ]
+  },
+  "enabl": {
+    "en/en_001.txt": [
+      13,
+      52
+    ],
+    "en/en_002.txt": [
+      23,
+      126
+    ],
+    "en/en_006.txt": [
+      22
+    ],
+    "en/en_008.txt": [
+      26
+    ]
+  },
+  "comput": {
+    "en/en_001.txt": [
+      14,
+      50
+    ],
+    "en/en_002.txt": [
+      33,
+      46,
+      147
+    ],
+    "en/en_004.txt": [
+      2
+    ],
+    "en/en_006.txt": [
+      13
+    ],
+    "en/en_008.txt": [
+      1,
+      28
+    ],
+    "en/en_010.txt": [
+      39
+    ]
+  },
+  "data": {
+    "en/en_001.txt": [
+      18,
+      119,
+      168
+    ],
+    "en/en_002.txt": [
+      22,
+      35,
+      100,
+      110,
+      129,
+      160
+    ],
+    "en/en_003.txt": [
+      0,
+      12,
+      13,
+      25,
+      27,
+      41,
+      47,
+      54,
+      71,
+      76,
+      95,
+      99,
+      113,
+      116,
+      119,
+      132,
+      142,
+      144
+    ],
+    "en/en_004.txt": [
+      14,
+      107
+    ]
+  },
+  "make": {
+    "en/en_001.txt": [
+      20,
+      156
+    ],
+    "en/en_004.txt": [
+      16
+    ]
+  },
+  "predict": {
+    "en/en_001.txt": [
+      21
+    ],
+    "en/en_002.txt": [
+      75
+    ],
+    "en/en_003.txt": [
+      63
+    ]
+  },
+  "deep": {
+    "en/en_001.txt": [
+      22
+    ]
+  },
+  "subset": {
+    "en/en_001.txt": [
+      25
+    ]
+  },
+  "us": {
+    "en/en_001.txt": [
+      29,
+      105
+    ],
+    "en/en_002.txt": [
+      83
+    ],
+    "en/en_003.txt": [
+      15
+    ],
+    "en/en_005.txt": [
+      93
+    ],
+    "en/en_006.txt": [
+      19
+    ],
+    "en/en_007.txt": [
+      19
+    ],
+    "en/en_009.txt": [
+      41,
+      65
+    ],
+    "en/en_010.txt": [
+      38,
+      71
+    ]
+  },
+  "neural": {
+    "en/en_001.txt": [
+      30,
+      79
+    ]
+  },
+  "network": {
+    "en/en_001.txt": [
+      31,
+      80
+    ],
+    "en/en_002.txt": [
+      12,
+      113,
+      125,
+      153
+    ],
+    "en/en_004.txt": [
+      5,
+      28,
+      93
+    ],
+    "en/en_006.txt": [
+      69
+    ]
+  },
+  "multipl": {
+    "en/en_001.txt": [
+      33
+    ],
+    "en/en_004.txt": [
+      56
+    ],
+    "en/en_008.txt": [
+      23
+    ],
+    "en/en_009.txt": [
+      79
+    ]
+  },
+  "layer": {
+    "en/en_001.txt": [
+      34
+    ],
+    "en/en_004.txt": [
+      51
+    ]
+  },
+  "process": {
+    "en/en_001.txt": [
+      36,
+      41,
+      87,
+      165
+    ],
+    "en/en_002.txt": [
+      34,
+      161
+    ],
+    "en/en_003.txt": [
+      38,
+      106,
+      108
+    ],
+    "en/en_005.txt": [
+      49
+    ],
+    "en/en_008.txt": [
+      11
+    ],
+    "en/en_010.txt": [
+      78
     ]
   },
   "complex": {
-    "en/doc01.txt": [
-      28
+    "en/en_001.txt": [
+      37
     ],
-    "en/doc07.txt": [
+    "en/en_003.txt": [
+      31
+    ],
+    "en/en_009.txt": [
+      84
+    ]
+  },
+  "pattern": {
+    "en/en_001.txt": [
+      38,
+      116
+    ],
+    "en/en_003.txt": [
+      57
+    ]
+  },
+  "natur": {
+    "en/en_001.txt": [
+      39
+    ]
+  },
+  "languag": {
+    "en/en_001.txt": [
+      40,
+      49
+    ]
+  },
+  "allow": {
+    "en/en_001.txt": [
+      42
+    ],
+    "en/en_010.txt": [
+      26
+    ]
+  },
+  "understand": {
+    "en/en_001.txt": [
+      45,
+      159
+    ],
+    "en/en_003.txt": [
+      78
+    ]
+  },
+  "gener": {
+    "en/en_001.txt": [
+      47,
+      131
+    ],
+    "en/en_007.txt": [
+      8,
+      31,
+      69
+    ]
+  },
+  "human": {
+    "en/en_001.txt": [
+      48,
+      83,
+      161
+    ],
+    "en/en_009.txt": [
+      33
+    ]
+  },
+  "vision": {
+    "en/en_001.txt": [
+      51
+    ]
+  },
+  "system": {
+    "en/en_001.txt": [
+      53,
+      151
+    ],
+    "en/en_002.txt": [
+      141
+    ],
+    "en/en_003.txt": [
+      115
+    ],
+    "en/en_004.txt": [
+      3,
+      41,
+      91,
+      121
+    ],
+    "en/en_005.txt": [
+      30
+    ],
+    "en/en_007.txt": [
+      59
+    ],
+    "en/en_010.txt": [
+      3
+    ]
+  },
+  "interpret": {
+    "en/en_001.txt": [
+      55
+    ]
+  },
+  "analyz": {
+    "en/en_001.txt": [
+      57
+    ],
+    "en/en_003.txt": [
+      22
+    ],
+    "en/en_004.txt": [
+      105
+    ],
+    "en/en_010.txt": [
+      42
+    ]
+  },
+  "visual": {
+    "en/en_001.txt": [
+      58
+    ],
+    "en/en_003.txt": [
+      24,
+      145
+    ],
+    "en/en_005.txt": [
+      101
+    ]
+  },
+  "inform": {
+    "en/en_001.txt": [
+      59,
+      88
+    ],
+    "en/en_002.txt": [
+      103
+    ],
+    "en/en_004.txt": [
+      75,
+      99
+    ],
+    "en/en_008.txt": [
+      12
+    ]
+  },
+  "ai": {
+    "en/en_001.txt": [
+      63,
+      132,
+      141,
+      153,
+      157,
+      163
+    ]
+  },
+  "applic": {
+    "en/en_001.txt": [
+      64
+    ],
+    "en/en_002.txt": [
+      57,
+      163
+    ],
+    "en/en_005.txt": [
+      9
+    ],
+    "en/en_006.txt": [
+      45
+    ],
+    "en/en_008.txt": [
+      65
+    ]
+  },
+  "rang": {
+    "en/en_001.txt": [
+      65
+    ]
+  },
+  "virtual": {
+    "en/en_001.txt": [
+      67
+    ],
+    "en/en_002.txt": [
+      137
+    ]
+  },
+  "assist": {
+    "en/en_001.txt": [
+      68
+    ],
+    "en/en_009.txt": [
+      52
+    ]
+  },
+  "like": {
+    "en/en_001.txt": [
+      69
+    ],
+    "en/en_003.txt": [
+      135,
+      147
+    ],
+    "en/en_005.txt": [
+      31
+    ],
+    "en/en_006.txt": [
+      15,
+      56
+    ],
+    "en/en_008.txt": [
+      6,
+      31,
+      76
+    ],
+    "en/en_010.txt": [
+      56
+    ]
+  },
+  "siri": {
+    "en/en_001.txt": [
+      70
+    ]
+  },
+  "alexa": {
+    "en/en_001.txt": [
+      72
+    ]
+  },
+  "autonom": {
+    "en/en_001.txt": [
+      74
+    ],
+    "en/en_009.txt": [
+      39
+    ]
+  },
+  "vehicl": {
+    "en/en_001.txt": [
+      75
+    ]
+  },
+  "navig": {
+    "en/en_001.txt": [
+      76
+    ],
+    "en/en_009.txt": [
+      44
+    ]
+  },
+  "citi": {
+    "en/en_001.txt": [
+      77
+    ],
+    "en/en_002.txt": [
+      31,
+      82
+    ]
+  },
+  "street": {
+    "en/en_001.txt": [
+      78
+    ]
+  },
+  "mimic": {
+    "en/en_001.txt": [
+      81
+    ]
+  },
+  "brain": {
+    "en/en_001.txt": [
+      84
+    ]
+  },
+  "structur": {
+    "en/en_001.txt": [
+      86
+    ],
+    "en/en_003.txt": [
+      44
+    ],
+    "en/en_005.txt": [
+      64
+    ],
+    "en/en_010.txt": [
+      50
+    ]
+  },
+  "interconnect": {
+    "en/en_001.txt": [
+      90
+    ],
+    "en/en_002.txt": [
+      14
+    ]
+  },
+  "node": {
+    "en/en_001.txt": [
+      91
+    ]
+  },
+  "reinforc": {
+    "en/en_001.txt": [
+      92
+    ]
+  },
+  "train": {
+    "en/en_001.txt": [
+      94
+    ]
+  },
+  "agent": {
+    "en/en_001.txt": [
+      95
+    ]
+  },
+  "trial": {
+    "en/en_001.txt": [
+      97
+    ]
+  },
+  "error": {
+    "en/en_001.txt": [
+      99
+    ],
+    "en/en_008.txt": [
+      53
+    ]
+  },
+  "reward": {
+    "en/en_001.txt": [
+      100
+    ]
+  },
+  "desir": {
+    "en/en_001.txt": [
+      101
+    ],
+    "en/en_003.txt": [
+      93
+    ]
+  },
+  "behavior": {
+    "en/en_001.txt": [
+      102
+    ]
+  },
+  "supervis": {
+    "en/en_001.txt": [
+      103
+    ]
+  },
+  "label": {
+    "en/en_001.txt": [
+      106
+    ]
+  },
+  "dataset": {
+    "en/en_001.txt": [
+      107
+    ],
+    "en/en_003.txt": [
+      32,
+      62
+    ],
+    "en/en_010.txt": [
+      45
+    ]
+  },
+  "teach": {
+    "en/en_001.txt": [
+      109
+    ]
+  },
+  "model": {
+    "en/en_001.txt": [
+      110
+    ],
+    "en/en_008.txt": [
+      74
+    ]
+  },
+  "unsupervis": {
+    "en/en_001.txt": [
+      112
+    ]
+  },
+  "find": {
+    "en/en_001.txt": [
+      114
+    ]
+  },
+  "hidden": {
+    "en/en_001.txt": [
+      115
+    ]
+  },
+  "unlabel": {
+    "en/en_001.txt": [
+      118
+    ]
+  },
+  "transfer": {
+    "en/en_001.txt": [
+      120
+    ]
+  },
+  "appli": {
+    "en/en_001.txt": [
+      122
+    ],
+    "en/en_010.txt": [
+      1
+    ]
+  },
+  "knowledg": {
+    "en/en_001.txt": [
+      123
+    ],
+    "en/en_003.txt": [
+      7
+    ],
+    "en/en_005.txt": [
+      132
+    ]
+  },
+  "on": {
+    "en/en_001.txt": [
+      125
+    ]
+  },
+  "domain": {
+    "en/en_001.txt": [
+      126,
+      130
+    ],
+    "en/en_003.txt": [
+      6
+    ]
+  },
+  "anoth": {
+    "en/en_001.txt": [
+      128
+    ]
+  },
+  "relat": {
+    "en/en_001.txt": [
+      129
+    ]
+  },
+  "creat": {
+    "en/en_001.txt": [
+      133
+    ],
+    "en/en_002.txt": [
+      9,
+      136
+    ],
+    "en/en_005.txt": [
+      60
+    ],
+    "en/en_009.txt": [
+      9
+    ]
+  },
+  "new": {
+    "en/en_001.txt": [
+      134
+    ],
+    "en/en_008.txt": [
+      15
+    ]
+  },
+  "content": {
+    "en/en_001.txt": [
+      135
+    ]
+  },
+  "includ": {
+    "en/en_001.txt": [
+      136
+    ],
+    "en/en_002.txt": [
+      107
+    ],
+    "en/en_004.txt": [
+      61
+    ],
+    "en/en_007.txt": [
+      60
+    ],
+    "en/en_008.txt": [
+      66
+    ],
+    "en/en_010.txt": [
+      46
+    ]
+  },
+  "imag": {
+    "en/en_001.txt": [
+      137
+    ]
+  },
+  "text": {
+    "en/en_001.txt": [
+      138
+    ]
+  },
+  "music": {
+    "en/en_001.txt": [
+      140
+    ]
+  },
+  "ethic": {
+    "en/en_001.txt": [
+      142
+    ]
+  },
+  "concern": {
+    "en/en_001.txt": [
+      143
+    ]
+  },
+  "bia": {
+    "en/en_001.txt": [
+      144
+    ]
+  },
+  "fair": {
+    "en/en_001.txt": [
+      145
+    ]
+  },
+  "transpar": {
+    "en/en_001.txt": [
+      146
+    ],
+    "en/en_006.txt": [
+      6
+    ]
+  },
+  "account": {
+    "en/en_001.txt": [
+      148
+    ]
+  },
+  "autom": {
+    "en/en_001.txt": [
+      150
+    ],
+    "en/en_002.txt": [
       24
     ],
-    "en/doc10.txt": [
+    "en/en_005.txt": [
+      45
+    ],
+    "en/en_009.txt": [
+      19
+    ]
+  },
+  "explain": {
+    "en/en_001.txt": [
+      152
+    ]
+  },
+  "aim": {
+    "en/en_001.txt": [
+      154
+    ]
+  },
+  "decis": {
+    "en/en_001.txt": [
+      158
+    ]
+  },
+  "edg": {
+    "en/en_001.txt": [
+      162
+    ],
+    "en/en_002.txt": [
+      32,
+      154
+    ]
+  },
+  "bring": {
+    "en/en_001.txt": [
+      164
+    ]
+  },
+  "closer": {
+    "en/en_001.txt": [
+      166
+    ],
+    "en/en_002.txt": [
+      36
+    ]
+  },
+  "sourc": {
+    "en/en_001.txt": [
+      169
+    ],
+    "en/en_002.txt": [
+      39
+    ],
+    "en/en_007.txt": [
+      2
+    ]
+  },
+  "reduc": {
+    "en/en_001.txt": [
+      170
+    ],
+    "en/en_002.txt": [
+      40
+    ],
+    "en/en_006.txt": [
+      38
+    ],
+    "en/en_009.txt": [
+      60
+    ]
+  },
+  "latenc": {
+    "en/en_001.txt": [
+      171
+    ],
+    "en/en_002.txt": [
+      41,
+      133
+    ]
+  },
+  "bandwidth": {
+    "en/en_001.txt": [
+      173
+    ],
+    "en/en_002.txt": [
       43
     ]
   },
-  "problem": {
-    "en/doc01.txt": [
+  "usag": {
+    "en/en_001.txt": [
+      174
+    ],
+    "en/en_002.txt": [
+      44
+    ]
+  },
+  "internet": {
+    "en/en_002.txt": [
+      1
+    ]
+  },
+  "thing": {
+    "en/en_002.txt": [
+      3
+    ]
+  },
+  "connect": {
+    "en/en_002.txt": [
+      4
+    ]
+  },
+  "billion": {
+    "en/en_002.txt": [
+      5
+    ]
+  },
+  "devic": {
+    "en/en_002.txt": [
+      7,
+      18,
+      62,
+      95,
+      108,
+      158
+    ]
+  },
+  "worldwid": {
+    "en/en_002.txt": [
+      8
+    ],
+    "en/en_007.txt": [
+      11
+    ]
+  },
+  "vast": {
+    "en/en_002.txt": [
+      11
+    ]
+  },
+  "smart": {
+    "en/en_002.txt": [
+      15,
+      58,
+      81
+    ],
+    "en/en_006.txt": [
+      30
+    ]
+  },
+  "object": {
+    "en/en_002.txt": [
+      16
+    ],
+    "en/en_009.txt": [
+      75
+    ]
+  },
+  "collect": {
+    "en/en_002.txt": [
+      19
+    ],
+    "en/en_004.txt": [
+      103
+    ]
+  },
+  "share": {
+    "en/en_002.txt": [
+      21
+    ],
+    "en/en_005.txt": [
+      131
+    ]
+  },
+  "effici": {
+    "en/en_002.txt": [
+      26,
+      93
+    ]
+  },
+  "home": {
+    "en/en_002.txt": [
+      28,
+      59
+    ]
+  },
+  "industri": {
+    "en/en_002.txt": [
+      29,
+      70
+    ],
+    "en/en_007.txt": [
+      84
+    ],
+    "en/en_009.txt": [
+      17
+    ],
+    "en/en_010.txt": [
+      69
+    ]
+  },
+  "cloud": {
+    "en/en_002.txt": [
+      45,
+      149
+    ]
+  },
+  "provid": {
+    "en/en_002.txt": [
+      47,
+      157
+    ],
+    "en/en_006.txt": [
+      2
+    ],
+    "en/en_008.txt": [
+      45
+    ]
+  },
+  "scalabl": {
+    "en/en_002.txt": [
+      48
+    ]
+  },
+  "resourc": {
+    "en/en_002.txt": [
+      49
+    ]
+  },
+  "demand": {
+    "en/en_002.txt": [
+      51
+    ]
+  },
+  "support": {
+    "en/en_002.txt": [
+      52
+    ]
+  },
+  "infrastructur": {
+    "en/en_002.txt": [
+      54
+    ]
+  },
+  "modern": {
+    "en/en_002.txt": [
+      56
+    ]
+  },
+  "integr": {
+    "en/en_002.txt": [
+      60
+    ],
+    "en/en_005.txt": [
+      41
+    ]
+  },
+  "iot": {
+    "en/en_002.txt": [
+      61,
+      71,
+      84,
+      104,
+      122,
+      128,
+      155
+    ]
+  },
+  "light": {
+    "en/en_002.txt": [
+      64
+    ]
+  },
+  "heat": {
+    "en/en_002.txt": [
+      65
+    ],
+    "en/en_007.txt": [
+      46
+    ]
+  },
+  "secur": {
+    "en/en_002.txt": [
+      66,
+      105
+    ],
+    "en/en_003.txt": [
+      121
+    ],
+    "en/en_004.txt": [
+      32,
+      53,
+      87,
+      98,
+      106,
+      118,
+      122,
+      140
+    ],
+    "en/en_006.txt": [
+      67
+    ]
+  },
+  "entertain": {
+    "en/en_002.txt": [
+      68
+    ]
+  },
+  "control": {
+    "en/en_002.txt": [
+      69
+    ],
+    "en/en_004.txt": [
+      27
+    ],
+    "en/en_005.txt": [
       29
     ]
   },
-  "softwar": {
-    "en/doc01.txt": [
+  "optim": {
+    "en/en_002.txt": [
+      72
+    ],
+    "en/en_005.txt": [
+      104
+    ]
+  },
+  "manufactur": {
+    "en/en_002.txt": [
+      73
+    ],
+    "en/en_010.txt": [
+      77
+    ]
+  },
+  "mainten": {
+    "en/en_002.txt": [
+      76
+    ],
+    "en/en_005.txt": [
+      77
+    ]
+  },
+  "real": {
+    "en/en_002.txt": [
+      78
+    ]
+  },
+  "time": {
+    "en/en_002.txt": [
+      79
+    ],
+    "en/en_005.txt": [
+      39
+    ],
+    "en/en_009.txt": [
+      62
+    ]
+  },
+  "monitor": {
+    "en/en_002.txt": [
+      80
+    ],
+    "en/en_004.txt": [
+      25,
+      92
+    ]
+  },
+  "sensor": {
+    "en/en_002.txt": [
+      85
+    ],
+    "en/en_009.txt": [
+      42
+    ]
+  },
+  "traffic": {
+    "en/en_002.txt": [
+      87
+    ],
+    "en/en_004.txt": [
+      29,
+      94
+    ]
+  },
+  "manag": {
+    "en/en_002.txt": [
+      88,
+      90,
+      159
+    ],
+    "en/en_004.txt": [
+      102
+    ],
+    "en/en_005.txt": [
+      34
+    ]
+  },
+  "wast": {
+    "en/en_002.txt": [
+      89
+    ]
+  },
+  "energi": {
+    "en/en_002.txt": [
+      92
+    ],
+    "en/en_007.txt": [
+      1,
+      26,
+      38,
+      43,
+      57
+    ]
+  },
+  "wearabl": {
+    "en/en_002.txt": [
+      94
+    ]
+  },
+  "track": {
+    "en/en_002.txt": [
+      96
+    ]
+  },
+  "health": {
+    "en/en_002.txt": [
+      97
+    ]
+  },
+  "metric": {
+    "en/en_002.txt": [
+      98
+    ]
+  },
+  "fit": {
+    "en/en_002.txt": [
+      99
+    ]
+  },
+  "locat": {
+    "en/en_002.txt": [
+      102
+    ]
+  },
+  "challeng": {
+    "en/en_002.txt": [
+      106
+    ]
+  },
+  "authent": {
+    "en/en_002.txt": [
+      109
+    ],
+    "en/en_004.txt": [
+      34,
+      47
+    ]
+  },
+  "encrypt": {
+    "en/en_002.txt": [
+      111
+    ],
+    "en/en_004.txt": [
+      12
+    ]
+  },
+  "protect": {
+    "en/en_002.txt": [
+      114
+    ],
+    "en/en_004.txt": [
+      1
+    ],
+    "en/en_008.txt": [
+      56
+    ]
+  },
+  "mqtt": {
+    "en/en_002.txt": [
+      115
+    ]
+  },
+  "coap": {
+    "en/en_002.txt": [
+      117
+    ]
+  },
+  "lightweight": {
+    "en/en_002.txt": [
+      119
+    ]
+  },
+  "protocol": {
+    "en/en_002.txt": [
+      120
+    ]
+  },
+  "commun": {
+    "en/en_002.txt": [
+      123
+    ]
+  },
+  "g": {
+    "en/en_002.txt": [
+      124
+    ]
+  },
+  "faster": {
+    "en/en_002.txt": [
+      127
+    ],
+    "en/en_008.txt": [
+      38
+    ]
+  },
+  "transmiss": {
+    "en/en_002.txt": [
+      130
+    ]
+  },
+  "lower": {
+    "en/en_002.txt": [
+      132
+    ]
+  },
+  "digit": {
+    "en/en_002.txt": [
+      134
+    ],
+    "en/en_004.txt": [
+      7
+    ],
+    "en/en_006.txt": [
+      26
+    ]
+  },
+  "twin": {
+    "en/en_002.txt": [
+      135
+    ]
+  },
+  "replica": {
+    "en/en_002.txt": [
+      138
+    ]
+  },
+  "physic": {
+    "en/en_002.txt": [
+      140
+    ],
+    "en/en_009.txt": [
+      15
+    ]
+  },
+  "simul": {
+    "en/en_002.txt": [
+      143
+    ],
+    "en/en_004.txt": [
+      110
+    ]
+  },
+  "analysi": {
+    "en/en_002.txt": [
+      145
+    ],
+    "en/en_003.txt": [
+      40,
+      143
+    ]
+  },
+  "fog": {
+    "en/en_002.txt": [
+      146
+    ]
+  },
+  "extend": {
+    "en/en_002.txt": [
+      148
+    ]
+  },
+  "capabl": {
+    "en/en_002.txt": [
+      150
+    ]
+  },
+  "platform": {
+    "en/en_002.txt": [
+      156
+    ]
+  },
+  "develop": {
+    "en/en_002.txt": [
+      164
+    ],
+    "en/en_005.txt": [
+      1,
+      14,
+      20,
+      113,
+      122
+    ],
+    "en/en_010.txt": [
+      7,
+      53
+    ]
+  },
+  "tool": {
+    "en/en_002.txt": [
+      165
+    ],
+    "en/en_003.txt": [
+      17,
+      36,
+      130,
+      146
+    ],
+    "en/en_010.txt": [
+      40
+    ]
+  },
+  "scienc": {
+    "en/en_003.txt": [
+      1
+    ],
+    "en/en_008.txt": [
+      70
+    ]
+  },
+  "combin": {
+    "en/en_003.txt": [
+      2
+    ],
+    "en/en_005.txt": [
+      19
+    ],
+    "en/en_009.txt": [
+      2
+    ]
+  },
+  "statist": {
+    "en/en_003.txt": [
+      3
+    ]
+  },
+  "program": {
+    "en/en_003.txt": [
+      4
+    ],
+    "en/en_005.txt": [
+      70,
+      107,
+      119
+    ]
+  },
+  "extract": {
+    "en/en_003.txt": [
+      9,
+      109
+    ]
+  },
+  "insight": {
+    "en/en_003.txt": [
+      10,
+      153
+    ]
+  },
+  "scientist": {
+    "en/en_003.txt": [
+      14,
+      133
+    ]
+  },
+  "variou": {
+    "en/en_003.txt": [
+      16
+    ]
+  },
+  "techniqu": {
+    "en/en_003.txt": [
+      19
+    ],
+    "en/en_008.txt": [
+      55
+    ]
+  },
+  "clean": {
+    "en/en_003.txt": [
+      21
+    ],
+    "en/en_007.txt": [
+      79
+    ]
+  },
+  "big": {
+    "en/en_003.txt": [
+      26
+    ]
+  },
+  "refer": {
+    "en/en_003.txt": [
+      28
+    ]
+  },
+  "larg": {
+    "en/en_003.txt": [
+      30,
+      61
+    ],
+    "en/en_008.txt": [
+      35
+    ],
+    "en/en_010.txt": [
+      43
+    ]
+  },
+  "requir": {
+    "en/en_003.txt": [
+      34
+    ],
+    "en/en_004.txt": [
+      55
+    ],
+    "en/en_005.txt": [
+      51,
+      76
+    ]
+  },
+  "advanc": {
+    "en/en_003.txt": [
+      35
+    ]
+  },
+  "wareh": {
+    "en/en_003.txt": [
+      42
+    ]
+  },
+  "store": {
+    "en/en_003.txt": [
+      43,
+      97
+    ]
+  },
+  "unstructur": {
+    "en/en_003.txt": [
+      46
+    ],
+    "en/en_008.txt": [
+      49
+    ]
+  },
+  "report": {
+    "en/en_003.txt": [
+      52
+    ]
+  },
+  "purpos": {
+    "en/en_003.txt": [
+      53
+    ]
+  },
+  "mine": {
+    "en/en_003.txt": [
+      55
+    ]
+  },
+  "discov": {
+    "en/en_003.txt": [
+      56
+    ]
+  },
+  "relationship": {
+    "en/en_003.txt": [
+      59
+    ]
+  },
+  "analyt": {
+    "en/en_003.txt": [
+      64,
+      73,
+      82,
+      88
+    ]
+  },
+  "forecast": {
+    "en/en_003.txt": [
+      65
+    ]
+  },
+  "futur": {
+    "en/en_003.txt": [
+      66
+    ]
+  },
+  "trend": {
+    "en/en_003.txt": [
+      67
+    ]
+  },
+  "base": {
+    "en/en_003.txt": [
+      68
+    ],
+    "en/en_004.txt": [
       30
+    ]
+  },
+  "histor": {
+    "en/en_003.txt": [
+      70
+    ]
+  },
+  "descript": {
+    "en/en_003.txt": [
+      72
+    ]
+  },
+  "summar": {
+    "en/en_003.txt": [
+      74
+    ]
+  },
+  "past": {
+    "en/en_003.txt": [
+      75
+    ]
+  },
+  "happen": {
+    "en/en_003.txt": [
+      80,
+      86
+    ]
+  },
+  "diagnost": {
+    "en/en_003.txt": [
+      81
+    ]
+  },
+  "investig": {
+    "en/en_003.txt": [
+      83
+    ]
+  },
+  "someth": {
+    "en/en_003.txt": [
+      85
+    ]
+  },
+  "prescript": {
+    "en/en_003.txt": [
+      87
+    ]
+  },
+  "recommend": {
+    "en/en_003.txt": [
+      89
+    ]
+  },
+  "action": {
+    "en/en_003.txt": [
+      90
+    ]
+  },
+  "achiev": {
+    "en/en_003.txt": [
+      92
+    ]
+  },
+  "outcom": {
+    "en/en_003.txt": [
+      94
+    ]
+  },
+  "lake": {
+    "en/en_003.txt": [
+      96
+    ]
+  },
+  "raw": {
+    "en/en_003.txt": [
+      98
+    ]
+  },
+  "nativ": {
+    "en/en_003.txt": [
+      102
+    ]
+  },
+  "format": {
+    "en/en_003.txt": [
+      103
+    ]
+  },
+  "later": {
+    "en/en_003.txt": [
+      105
+    ]
+  },
+  "etl": {
+    "en/en_003.txt": [
+      107
+    ]
+  },
+  "load": {
+    "en/en_003.txt": [
+      112
+    ]
+  },
+  "govern": {
+    "en/en_003.txt": [
+      117
+    ]
+  },
+  "ensur": {
+    "en/en_003.txt": [
+      118
+    ],
+    "en/en_007.txt": [
+      65
+    ]
+  },
+  "qualiti": {
+    "en/en_003.txt": [
+      120
+    ],
+    "en/en_005.txt": [
+      129
+    ]
+  },
+  "complianc": {
+    "en/en_003.txt": [
+      123
+    ]
+  },
+  "python": {
+    "en/en_003.txt": [
+      124
+    ]
+  },
+  "r": {
+    "en/en_003.txt": [
+      125
+    ]
+  },
+  "sql": {
+    "en/en_003.txt": [
+      127
+    ]
+  },
+  "essenti": {
+    "en/en_003.txt": [
+      129
+    ]
+  },
+  "librari": {
+    "en/en_003.txt": [
+      134
+    ]
+  },
+  "panda": {
+    "en/en_003.txt": [
+      136
+    ]
+  },
+  "numpi": {
+    "en/en_003.txt": [
+      137
+    ]
+  },
+  "scikit": {
+    "en/en_003.txt": [
+      139
+    ]
+  },
+  "facilit": {
+    "en/en_003.txt": [
+      141
+    ]
+  },
+  "tableau": {
+    "en/en_003.txt": [
+      148
+    ]
+  },
+  "power": {
+    "en/en_003.txt": [
+      150
+    ],
+    "en/en_007.txt": [
+      32
+    ],
+    "en/en_008.txt": [
+      83
+    ]
+  },
+  "bi": {
+    "en/en_003.txt": [
+      151
+    ]
+  },
+  "present": {
+    "en/en_003.txt": [
+      152
+    ]
+  },
+  "clearli": {
+    "en/en_003.txt": [
+      154
+    ]
+  },
+  "cybersecur": {
+    "en/en_004.txt": [
+      0
+    ]
+  },
+  "attack": {
+    "en/en_004.txt": [
+      8,
+      69,
+      111
+    ]
+  },
+  "unauthor": {
+    "en/en_004.txt": [
+      10
+    ]
+  },
+  "access": {
+    "en/en_004.txt": [
+      11,
+      44
+    ]
+  },
+  "scrambl": {
+    "en/en_004.txt": [
+      13
+    ]
+  },
+  "unread": {
+    "en/en_004.txt": [
+      18
+    ]
+  },
+  "without": {
+    "en/en_004.txt": [
+      19
+    ],
+    "en/en_006.txt": [
+      28,
+      51
+    ]
+  },
+  "correct": {
+    "en/en_004.txt": [
+      21
+    ],
+    "en/en_008.txt": [
+      54
+    ]
+  },
+  "decrypt": {
+    "en/en_004.txt": [
+      22
+    ]
+  },
+  "kei": {
+    "en/en_004.txt": [
+      23
+    ]
+  },
+  "firewal": {
+    "en/en_004.txt": [
+      24
+    ]
+  },
+  "rule": {
+    "en/en_004.txt": [
+      33
+    ]
+  },
+  "verifi": {
+    "en/en_004.txt": [
+      35
+    ],
+    "en/en_005.txt": [
+      72
+    ]
+  },
+  "ident": {
+    "en/en_004.txt": [
+      37
+    ]
+  },
+  "user": {
+    "en/en_004.txt": [
+      39,
+      71
+    ]
+  },
+  "grant": {
+    "en/en_004.txt": [
+      43
+    ]
+  },
+  "multi": {
+    "en/en_004.txt": [
+      45
+    ]
+  },
+  "factor": {
+    "en/en_004.txt": [
+      46
+    ],
+    "en/en_008.txt": [
+      34
+    ]
+  },
+  "add": {
+    "en/en_004.txt": [
+      48
+    ]
+  },
+  "extra": {
+    "en/en_004.txt": [
+      50
+    ]
+  },
+  "form": {
+    "en/en_004.txt": [
+      57
+    ]
+  },
+  "verif": {
+    "en/en_004.txt": [
+      59
+    ]
+  },
+  "malwar": {
+    "en/en_004.txt": [
+      60
+    ]
+  },
+  "virus": {
+    "en/en_004.txt": [
+      62
+    ]
+  },
+  "worm": {
+    "en/en_004.txt": [
+      63
+    ]
+  },
+  "trojan": {
+    "en/en_004.txt": [
+      64
+    ]
+  },
+  "ransomwar": {
+    "en/en_004.txt": [
+      65
+    ]
+  },
+  "spywar": {
+    "en/en_004.txt": [
+      67
+    ]
+  },
+  "phish": {
+    "en/en_004.txt": [
+      68
+    ]
+  },
+  "trick": {
+    "en/en_004.txt": [
+      70
+    ]
+  },
+  "into": {
+    "en/en_004.txt": [
+      72,
+      85
+    ],
+    "en/en_005.txt": [
+      68
+    ],
+    "en/en_007.txt": [
+      17,
+      45
+    ]
+  },
+  "reveal": {
+    "en/en_004.txt": [
+      73
+    ]
+  },
+  "sensit": {
+    "en/en_004.txt": [
+      74
+    ]
+  },
+  "decept": {
+    "en/en_004.txt": [
+      77
+    ]
+  },
+  "email": {
+    "en/en_004.txt": [
+      78
+    ]
+  },
+  "websit": {
+    "en/en_004.txt": [
+      80
+    ]
+  },
+  "social": {
+    "en/en_004.txt": [
+      81
     ]
   },
   "engin": {
-    "en/doc01.txt": [
-      31
+    "en/en_004.txt": [
+      82
     ],
-    "en/doc05.txt": [
-      30
+    "en/en_009.txt": [
+      1
     ],
-    "en/doc07.txt": [
-      5
-    ],
-    "en/doc09.txt": [
-      20
+    "en/en_010.txt": [
+      12,
+      68
     ]
   },
-  "practic": {
-    "en/doc01.txt": [
+  "manipul": {
+    "en/en_004.txt": [
+      83
+    ]
+  },
+  "peopl": {
+    "en/en_004.txt": [
+      84
+    ]
+  },
+  "break": {
+    "en/en_004.txt": [
+      86
+    ]
+  },
+  "procedur": {
+    "en/en_004.txt": [
+      88,
+      137
+    ],
+    "en/en_009.txt": [
+      56
+    ]
+  },
+  "intrus": {
+    "en/en_004.txt": [
+      89
+    ]
+  },
+  "detect": {
+    "en/en_004.txt": [
+      90
+    ]
+  },
+  "suspici": {
+    "en/en_004.txt": [
+      96
+    ]
+  },
+  "activ": {
+    "en/en_004.txt": [
+      97
+    ]
+  },
+  "event": {
+    "en/en_004.txt": [
+      101
+    ]
+  },
+  "penetr": {
+    "en/en_004.txt": [
+      108
+    ]
+  },
+  "test": {
+    "en/en_004.txt": [
+      109
+    ],
+    "en/en_005.txt": [
+      5,
+      71,
+      111,
+      115
+    ]
+  },
+  "identifi": {
+    "en/en_004.txt": [
+      113,
+      117
+    ]
+  },
+  "vulner": {
+    "en/en_004.txt": [
+      114,
+      115,
+      126,
+      132
+    ]
+  },
+  "scan": {
+    "en/en_004.txt": [
+      116
+    ]
+  },
+  "weak": {
+    "en/en_004.txt": [
+      119
+    ]
+  },
+  "patch": {
+    "en/en_004.txt": [
+      123
+    ]
+  },
+  "fix": {
+    "en/en_004.txt": [
+      124
+    ]
+  },
+  "known": {
+    "en/en_004.txt": [
+      125
+    ]
+  },
+  "zero": {
+    "en/en_004.txt": [
+      127
+    ]
+  },
+  "dai": {
+    "en/en_004.txt": [
+      128
+    ]
+  },
+  "exploit": {
+    "en/en_004.txt": [
+      129
+    ]
+  },
+  "target": {
+    "en/en_004.txt": [
+      130
+    ]
+  },
+  "unknown": {
+    "en/en_004.txt": [
+      131
+    ]
+  },
+  "incid": {
+    "en/en_004.txt": [
+      133
+    ]
+  },
+  "respons": {
+    "en/en_004.txt": [
+      134
+    ]
+  },
+  "plan": {
+    "en/en_004.txt": [
+      135
+    ]
+  },
+  "outlin": {
+    "en/en_004.txt": [
+      136
+    ]
+  },
+  "handl": {
+    "en/en_004.txt": [
+      139
+    ],
+    "en/en_009.txt": [
+      73
+    ]
+  },
+  "breach": {
+    "en/en_004.txt": [
+      141
+    ]
+  },
+  "softwar": {
+    "en/en_005.txt": [
+      0,
+      8,
+      47,
+      50,
+      55,
+      58,
+      74,
+      82,
+      98
+    ],
+    "en/en_009.txt": [
+      7
+    ]
+  },
+  "involv": {
+    "en/en_005.txt": [
+      2
+    ]
+  },
+  "design": {
+    "en/en_005.txt": [
+      3,
+      59,
+      67
+    ],
+    "en/en_009.txt": [
+      4
+    ]
+  },
+  "code": {
+    "en/en_005.txt": [
+      4,
+      37,
+      65,
+      117,
+      125,
+      128
+    ]
+  },
+  "maintain": {
+    "en/en_005.txt": [
+      7
+    ]
+  },
+  "agil": {
+    "en/en_005.txt": [
+      10
+    ]
+  },
+  "methodologi": {
+    "en/en_005.txt": [
+      11
+    ]
+  },
+  "emphas": {
+    "en/en_005.txt": [
+      12,
+      108
+    ]
+  },
+  "iter": {
+    "en/en_005.txt": [
+      13
+    ]
+  },
+  "custom": {
+    "en/en_005.txt": [
+      16
+    ]
+  },
+  "feedback": {
+    "en/en_005.txt": [
+      17
+    ]
+  },
+  "devop": {
+    "en/en_005.txt": [
+      18
+    ]
+  },
+  "oper": {
+    "en/en_005.txt": [
+      22
+    ]
+  },
+  "improv": {
+    "en/en_005.txt": [
+      24,
+      80,
+      127
+    ],
+    "en/en_009.txt": [
+      57
+    ],
+    "en/en_010.txt": [
+      19
+    ]
+  },
+  "collabor": {
+    "en/en_005.txt": [
+      25
+    ],
+    "en/en_009.txt": [
+      29
+    ]
+  },
+  "deploy": {
+    "en/en_005.txt": [
+      27,
+      44,
+      84
+    ]
+  },
+  "version": {
+    "en/en_005.txt": [
+      28
+    ]
+  },
+  "git": {
+    "en/en_005.txt": [
       32
     ]
   },
   "help": {
-    "en/doc01.txt": [
+    "en/en_005.txt": [
       33
-    ]
-  },
-  "develop": {
-    "en/doc01.txt": [
-      34
-    ],
-    "en/doc04.txt": [
-      7
-    ]
-  },
-  "build": {
-    "en/doc01.txt": [
-      35
-    ]
-  },
-  "reliabl": {
-    "en/doc01.txt": [
-      36
-    ]
-  },
-  "effici": {
-    "en/doc01.txt": [
-      38
-    ],
-    "en/doc09.txt": [
-      22
-    ],
-    "en/doc10.txt": [
-      4
-    ]
-  },
-  "system": {
-    "en/doc01.txt": [
-      39
-    ],
-    "en/doc03.txt": [
-      33
-    ],
-    "en/doc04.txt": [
-      9
-    ],
-    "en/doc08.txt": [
-      9
-    ],
-    "en/doc10.txt": [
-      44
-    ]
-  },
-  "user": {
-    "en/doc01.txt": [
-      41
-    ]
-  },
-  "worldwid": {
-    "en/doc01.txt": [
-      42
-    ]
-  },
-  "basketbal": {
-    "en/doc02.txt": [
-      0
-    ]
-  },
-  "popular": {
-    "en/doc02.txt": [
-      3
-    ]
-  },
-  "sport": {
-    "en/doc02.txt": [
-      4,
-      47
-    ]
-  },
-  "plai": {
-    "en/doc02.txt": [
-      5
-    ]
-  },
-  "two": {
-    "en/doc02.txt": [
-      7
-    ]
-  },
-  "team": {
-    "en/doc02.txt": [
-      8
-    ]
-  },
-  "five": {
-    "en/doc02.txt": [
-      10
-    ]
-  },
-  "player": {
-    "en/doc02.txt": [
-      11
-    ]
-  },
-  "game": {
-    "en/doc02.txt": [
-      13
-    ]
-  },
-  "shoot": {
-    "en/doc02.txt": [
-      15
-    ]
-  },
-  "ball": {
-    "en/doc02.txt": [
-      17
-    ]
-  },
-  "hoop": {
-    "en/doc02.txt": [
-      20
-    ]
-  },
-  "score": {
-    "en/doc02.txt": [
-      22
-    ]
-  },
-  "point": {
-    "en/doc02.txt": [
-      23
-    ]
-  },
-  "championship": {
-    "en/doc02.txt": [
-      24
-    ]
-  },
-  "tournament": {
-    "en/doc02.txt": [
-      25
-    ]
-  },
-  "attract": {
-    "en/doc02.txt": [
-      26
-    ]
-  },
-  "million": {
-    "en/doc02.txt": [
-      27
-    ]
-  },
-  "viewer": {
-    "en/doc02.txt": [
-      29
-    ]
-  },
-  "global": {
-    "en/doc02.txt": [
-      30
-    ],
-    "en/doc09.txt": [
-      18
-    ]
-  },
-  "profession": {
-    "en/doc02.txt": [
-      31
-    ]
-  },
-  "athlet": {
-    "en/doc02.txt": [
-      32
-    ]
-  },
-  "train": {
-    "en/doc02.txt": [
-      33
-    ],
-    "en/doc05.txt": [
-      15
-    ]
-  },
-  "rigor": {
-    "en/doc02.txt": [
-      34
-    ]
-  },
-  "improv": {
-    "en/doc02.txt": [
-      36
-    ],
-    "en/doc05.txt": [
-      3
-    ]
-  },
-  "perform": {
-    "en/doc02.txt": [
-      38
-    ],
-    "en/doc07.txt": [
-      12
-    ]
-  },
-  "compet": {
-    "en/doc02.txt": [
-      40
-    ]
-  },
-  "highest": {
-    "en/doc02.txt": [
-      43
-    ]
-  },
-  "level": {
-    "en/doc02.txt": [
-      44
-    ],
-    "en/doc06.txt": [
-      28
-    ]
-  },
-  "transform": {
-    "en/doc03.txt": [
-      2
-    ]
-  },
-  "make": {
-    "en/doc03.txt": [
-      7
-    ]
-  },
-  "decis": {
-    "en/doc03.txt": [
-      8
-    ]
-  },
-  "deep": {
-    "en/doc03.txt": [
-      9
-    ],
-    "en/doc06.txt": [
-      9
-    ]
-  },
-  "network": {
-    "en/doc03.txt": [
-      11
-    ],
-    "en/doc05.txt": [
-      27
-    ],
-    "en/doc10.txt": [
-      36
-    ]
-  },
-  "process": {
-    "en/doc03.txt": [
-      12,
-      22
-    ],
-    "en/doc10.txt": [
-      7
-    ]
-  },
-  "vast": {
-    "en/doc03.txt": [
-      13
-    ]
-  },
-  "amount": {
-    "en/doc03.txt": [
-      14
-    ]
-  },
-  "recogn": {
-    "en/doc03.txt": [
-      18
-    ]
-  },
-  "pattern": {
-    "en/doc03.txt": [
-      19
-    ],
-    "en/doc05.txt": [
-      22
-    ],
-    "en/doc06.txt": [
-      20
-    ]
-  },
-  "natur": {
-    "en/doc03.txt": [
-      20
-    ]
-  },
-  "enabl": {
-    "en/doc03.txt": [
-      23
-    ]
-  },
-  "understand": {
-    "en/doc03.txt": [
-      26
-    ],
-    "en/doc04.txt": [
-      30
-    ]
-  },
-  "human": {
-    "en/doc03.txt": [
-      27
-    ],
-    "en/doc04.txt": [
-      32
-    ]
-  },
-  "speech": {
-    "en/doc03.txt": [
-      28
-    ]
-  },
-  "research": {
-    "en/doc03.txt": [
-      29
-    ]
-  },
-  "continu": {
-    "en/doc03.txt": [
-      30
-    ],
-    "en/doc04.txt": [
-      26
-    ]
-  },
-  "advanc": {
-    "en/doc03.txt": [
-      31
-    ]
-  },
-  "reason": {
-    "en/doc03.txt": [
-      36
-    ]
-  },
-  "adapt": {
-    "en/doc03.txt": [
-      38
-    ]
-  },
-  "new": {
-    "en/doc03.txt": [
-      40
-    ]
-  },
-  "autonom": {
-    "en/doc03.txt": [
-      42
-    ],
-    "en/doc05.txt": [
-      32
-    ],
-    "en/doc07.txt": [
-      8,
-      29
-    ]
-  },
-  "ancient": {
-    "en/doc04.txt": [
-      1
-    ]
-  },
-  "civil": {
-    "en/doc04.txt": [
-      2
-    ]
-  },
-  "egypt": {
-    "en/doc04.txt": [
-      4
-    ]
-  },
-  "mesopotamia": {
-    "en/doc04.txt": [
-      6
-    ]
-  },
-  "write": {
-    "en/doc04.txt": [
-      8
-    ]
-  },
-  "thousand": {
-    "en/doc04.txt": [
-      10
-    ]
-  },
-  "year": {
-    "en/doc04.txt": [
-      12
-    ]
-  },
-  "ago": {
-    "en/doc04.txt": [
-      13
-    ]
-  },
-  "histor": {
-    "en/doc04.txt": [
-      14
-    ]
-  },
-  "record": {
-    "en/doc04.txt": [
-      15
-    ]
-  },
-  "reveal": {
-    "en/doc04.txt": [
-      16
-    ]
-  },
-  "fascin": {
-    "en/doc04.txt": [
-      17
-    ]
-  },
-  "detail": {
-    "en/doc04.txt": [
-      18
-    ]
-  },
-  "govern": {
-    "en/doc04.txt": [
-      20
-    ],
-    "en/doc09.txt": [
-      28
-    ]
-  },
-  "trade": {
-    "en/doc04.txt": [
-      21
-    ]
-  },
-  "cultur": {
-    "en/doc04.txt": [
-      23
-    ]
-  },
-  "archaeolog": {
-    "en/doc04.txt": [
-      24
-    ]
-  },
-  "discoveri": {
-    "en/doc04.txt": [
-      25
-    ]
-  },
-  "reshap": {
-    "en/doc04.txt": [
-      28
-    ]
-  },
-  "histori": {
-    "en/doc04.txt": [
-      33
-    ]
-  },
-  "museum": {
-    "en/doc04.txt": [
-      34
-    ]
-  },
-  "preserv": {
-    "en/doc04.txt": [
-      35
-    ],
-    "en/doc06.txt": [
-      37
-    ]
-  },
-  "artifact": {
-    "en/doc04.txt": [
-      37
-    ]
-  },
-  "futur": {
-    "en/doc04.txt": [
-      39
-    ],
-    "en/doc06.txt": [
-      41
-    ]
-  },
-  "gener": {
-    "en/doc04.txt": [
-      40
-    ]
-  },
-  "appreci": {
-    "en/doc04.txt": [
-      44
-    ]
-  },
-  "experi": {
-    "en/doc05.txt": [
-      5
-    ],
-    "en/doc08.txt": [
-      41
-    ]
-  },
-  "analysi": {
-    "en/doc05.txt": [
-      8
-    ]
-  },
-  "supervis": {
-    "en/doc05.txt": [
-      9
-    ]
-  },
-  "us": {
-    "en/doc05.txt": [
-      11,
-      38
-    ],
-    "en/doc07.txt": [
-      33
-    ],
-    "en/doc08.txt": [
-      23
-    ]
-  },
-  "label": {
-    "en/doc05.txt": [
-      12
-    ]
-  },
-  "exampl": {
-    "en/doc05.txt": [
-      13
-    ]
-  },
-  "predict": {
-    "en/doc05.txt": [
-      16
-    ]
-  },
-  "model": {
-    "en/doc05.txt": [
-      17,
-      37
-    ],
-    "en/doc10.txt": [
-      35
-    ]
-  },
-  "unsupervis": {
-    "en/doc05.txt": [
-      18
-    ]
-  },
-  "discov": {
-    "en/doc05.txt": [
-      20
-    ]
-  },
-  "hidden": {
-    "en/doc05.txt": [
-      21
-    ]
-  },
-  "unlabel": {
-    "en/doc05.txt": [
-      24
-    ]
-  },
-  "dataset": {
-    "en/doc05.txt": [
-      25
-    ]
-  },
-  "neural": {
-    "en/doc05.txt": [
-      26
-    ]
-  },
-  "power": {
-    "en/doc05.txt": [
-      28
-    ],
-    "en/doc09.txt": [
-      27
-    ]
-  },
-  "recommend": {
-    "en/doc05.txt": [
-      29
-    ]
-  },
-  "vehicl": {
-    "en/doc05.txt": [
-      33
-    ]
-  },
-  "scientist": {
-    "en/doc05.txt": [
-      35
-    ]
-  },
-  "evalu": {
-    "en/doc05.txt": [
-      36
-    ]
-  },
-  "accuraci": {
-    "en/doc05.txt": [
-      39
-    ],
-    "en/doc07.txt": [
-      28
-    ]
-  },
-  "metric": {
-    "en/doc05.txt": [
-      40
-    ]
-  },
-  "valid": {
-    "en/doc05.txt": [
-      42
-    ]
-  },
-  "techniqu": {
-    "en/doc05.txt": [
-      43
-    ]
-  },
-  "ocean": {
-    "en/doc06.txt": [
-      0,
-      24
-    ]
-  },
-  "ecosystem": {
-    "en/doc06.txt": [
-      1
-    ]
-  },
-  "contain": {
-    "en/doc06.txt": [
-      2
-    ]
-  },
-  "remark": {
-    "en/doc06.txt": [
-      3
-    ]
-  },
-  "biodivers": {
-    "en/doc06.txt": [
-      4
-    ]
-  },
-  "coral": {
-    "en/doc06.txt": [
-      6
-    ]
-  },
-  "reef": {
-    "en/doc06.txt": [
-      7
-    ]
-  },
-  "sea": {
-    "en/doc06.txt": [
-      10
-    ]
-  },
-  "trench": {
-    "en/doc06.txt": [
-      11
-    ]
-  },
-  "marin": {
-    "en/doc06.txt": [
-      12,
-      38
-    ]
-  },
-  "biologist": {
-    "en/doc06.txt": [
-      13
-    ]
-  },
-  "fish": {
-    "en/doc06.txt": [
-      15
-    ]
-  },
-  "popul": {
-    "en/doc06.txt": [
-      16
-    ]
-  },
-  "migrat": {
-    "en/doc06.txt": [
-      19
-    ]
-  },
-  "climat": {
-    "en/doc06.txt": [
-      21
     ]
   },
   "chang": {
-    "en/doc06.txt": [
-      22
-    ]
-  },
-  "threaten": {
-    "en/doc06.txt": [
-      23
-    ]
-  },
-  "temperatur": {
-    "en/doc06.txt": [
-      25
-    ]
-  },
-  "acidif": {
-    "en/doc06.txt": [
-      27
-    ]
-  },
-  "conserv": {
-    "en/doc06.txt": [
-      29
-    ]
-  },
-  "effort": {
-    "en/doc06.txt": [
-      30
-    ]
-  },
-  "aim": {
-    "en/doc06.txt": [
-      31
-    ]
-  },
-  "protect": {
-    "en/doc06.txt": [
-      33
-    ],
-    "en/doc09.txt": [
-      41
-    ]
-  },
-  "endang": {
-    "en/doc06.txt": [
-      34
-    ]
-  },
-  "speci": {
-    "en/doc06.txt": [
+    "en/en_005.txt": [
       35
-    ]
-  },
-  "habitat": {
-    "en/doc06.txt": [
-      39
-    ]
-  },
-  "sustain": {
-    "en/doc06.txt": [
-      42
     ],
-    "en/doc09.txt": [
-      26
-    ]
-  },
-  "robot": {
-    "en/doc07.txt": [
-      0,
-      11,
-      20
-    ]
-  },
-  "combin": {
-    "en/doc07.txt": [
-      1
-    ]
-  },
-  "design": {
-    "en/doc07.txt": [
-      7
-    ],
-    "en/doc09.txt": [
-      21
-    ]
-  },
-  "industri": {
-    "en/doc07.txt": [
-      10
-    ]
-  },
-  "manufactur": {
-    "en/doc07.txt": [
-      13
-    ]
-  },
-  "task": {
-    "en/doc07.txt": [
-      14
-    ]
-  },
-  "precis": {
-    "en/doc07.txt": [
-      16
-    ]
-  },
-  "speed": {
-    "en/doc07.txt": [
-      18
-    ]
-  },
-  "medic": {
-    "en/doc07.txt": [
-      19
-    ]
-  },
-  "assist": {
-    "en/doc07.txt": [
-      21
-    ]
-  },
-  "surgeon": {
-    "en/doc07.txt": [
-      22
-    ]
-  },
-  "procedur": {
-    "en/doc07.txt": [
-      25
-    ]
-  },
-  "greater": {
-    "en/doc07.txt": [
-      27
-    ]
-  },
-  "drone": {
-    "en/doc07.txt": [
-      30
-    ]
-  },
-  "navig": {
-    "en/doc07.txt": [
-      31
-    ]
-  },
-  "environ": {
-    "en/doc07.txt": [
-      32
-    ],
-    "en/doc09.txt": [
-      43
-    ]
-  },
-  "sensor": {
-    "en/doc07.txt": [
-      34
-    ]
-  },
-  "vision": {
-    "en/doc07.txt": [
+    "en/en_009.txt": [
       37
     ]
   },
-  "variou": {
-    "en/doc07.txt": [
-      40
-    ],
-    "en/doc10.txt": [
-      40
-    ]
-  },
-  "applic": {
-    "en/doc07.txt": [
-      41
-    ]
-  },
-  "space": {
-    "en/doc08.txt": [
-      0,
-      33
-    ]
-  },
-  "explor": {
-    "en/doc08.txt": [
-      1
-    ]
-  },
-  "expand": {
-    "en/doc08.txt": [
-      3
-    ]
-  },
-  "knowledg": {
-    "en/doc08.txt": [
-      5
-    ]
-  },
-  "solar": {
-    "en/doc08.txt": [
-      8
-    ],
-    "en/doc09.txt": [
-      4
-    ]
-  },
-  "beyond": {
-    "en/doc08.txt": [
-      11
-    ]
-  },
-  "rocket": {
-    "en/doc08.txt": [
-      12
-    ]
-  },
-  "carri": {
-    "en/doc08.txt": [
-      13
-    ]
-  },
-  "satellit": {
-    "en/doc08.txt": [
-      14
-    ]
-  },
-  "probe": {
-    "en/doc08.txt": [
-      16
-    ]
-  },
-  "into": {
-    "en/doc08.txt": [
-      17
-    ]
-  },
-  "orbit": {
-    "en/doc08.txt": [
-      18
-    ]
-  },
-  "around": {
-    "en/doc08.txt": [
-      19
-    ]
-  },
-  "distant": {
-    "en/doc08.txt": [
-      20
-    ]
-  },
-  "planet": {
-    "en/doc08.txt": [
-      21
-    ]
-  },
-  "astronom": {
-    "en/doc08.txt": [
-      22
-    ]
-  },
-  "telescop": {
-    "en/doc08.txt": [
-      24
-    ]
-  },
-  "observ": {
-    "en/doc08.txt": [
-      26
-    ]
-  },
-  "galaxi": {
-    "en/doc08.txt": [
-      27
-    ]
-  },
-  "black": {
-    "en/doc08.txt": [
-      29
-    ]
-  },
-  "hole": {
-    "en/doc08.txt": [
-      30
-    ]
-  },
-  "intern": {
-    "en/doc08.txt": [
-      32
-    ]
-  },
-  "station": {
-    "en/doc08.txt": [
-      34
-    ]
-  },
-  "serv": {
-    "en/doc08.txt": [
-      35
-    ]
-  },
-  "laboratori": {
-    "en/doc08.txt": [
-      38
-    ]
-  },
-  "scientif": {
-    "en/doc08.txt": [
-      40
-    ]
-  },
-  "micrograv": {
-    "en/doc08.txt": [
+  "continu": {
+    "en/en_005.txt": [
+      40,
       43
     ]
   },
-  "condit": {
-    "en/doc08.txt": [
-      44
+  "deliveri": {
+    "en/en_005.txt": [
+      48
+    ],
+    "en/en_009.txt": [
+      47
     ]
   },
-  "renew": {
-    "en/doc09.txt": [
-      0
+  "defin": {
+    "en/en_005.txt": [
+      52
     ]
   },
-  "energi": {
-    "en/doc09.txt": [
-      1,
+  "architectur": {
+    "en/en_005.txt": [
+      62
+    ]
+  },
+  "translat": {
+    "en/en_005.txt": [
+      66
+    ]
+  },
+  "execut": {
+    "en/en_005.txt": [
+      69
+    ],
+    "en/en_006.txt": [
       32
     ]
   },
-  "sourc": {
-    "en/doc09.txt": [
-      2
+  "meet": {
+    "en/en_005.txt": [
+      75
     ]
   },
-  "includ": {
-    "en/doc09.txt": [
-      3
+  "updat": {
+    "en/en_005.txt": [
+      78
     ]
   },
-  "panel": {
-    "en/doc09.txt": [
-      5
+  "waterfal": {
+    "en/en_005.txt": [
+      85
     ]
   },
-  "wind": {
-    "en/doc09.txt": [
-      6
+  "follow": {
+    "en/en_005.txt": [
+      86
     ]
   },
-  "turbin": {
-    "en/doc09.txt": [
-      7
+  "sequenti": {
+    "en/en_005.txt": [
+      87
     ]
   },
-  "hydroelectr": {
-    "en/doc09.txt": [
-      9
+  "phase": {
+    "en/en_005.txt": [
+      88
     ]
   },
-  "dam": {
-    "en/doc09.txt": [
-      10
+  "minim": {
+    "en/en_005.txt": [
+      90
     ]
   },
-  "green": {
-    "en/doc09.txt": [
-      11
+  "overlap": {
+    "en/en_005.txt": [
+      91
     ]
   },
-  "technologi": {
-    "en/doc09.txt": [
-      12
+  "scrum": {
+    "en/en_005.txt": [
+      92
     ]
   },
-  "reduc": {
-    "en/doc09.txt": [
-      13
+  "sprint": {
+    "en/en_005.txt": [
+      94
     ]
   },
-  "carbon": {
-    "en/doc09.txt": [
-      14
+  "deliv": {
+    "en/en_005.txt": [
+      96
     ]
   },
-  "emiss": {
-    "en/doc09.txt": [
-      15
-    ]
-  },
-  "combat": {
-    "en/doc09.txt": [
-      17
-    ]
-  },
-  "warm": {
-    "en/doc09.txt": [
-      19
-    ]
-  },
-  "batteri": {
-    "en/doc09.txt": [
-      23
-    ]
-  },
-  "store": {
-    "en/doc09.txt": [
-      25
+  "work": {
+    "en/en_005.txt": [
+      97,
+      102,
+      123
     ],
-    "en/doc10.txt": [
-      9
-    ]
-  },
-  "invest": {
-    "en/doc09.txt": [
-      29
-    ]
-  },
-  "clean": {
-    "en/doc09.txt": [
+    "en/en_006.txt": [
+      59
+    ],
+    "en/en_009.txt": [
       31
     ]
   },
-  "infrastructur": {
-    "en/doc09.txt": [
+  "increment": {
+    "en/en_005.txt": [
+      99
+    ]
+  },
+  "kanban": {
+    "en/en_005.txt": [
+      100
+    ]
+  },
+  "flow": {
+    "en/en_005.txt": [
+      105
+    ],
+    "en/en_007.txt": [
+      40
+    ]
+  },
+  "extrem": {
+    "en/en_005.txt": [
+      106
+    ]
+  },
+  "technic": {
+    "en/en_005.txt": [
+      109
+    ]
+  },
+  "excel": {
+    "en/en_005.txt": [
+      110
+    ]
+  },
+  "driven": {
+    "en/en_005.txt": [
+      112
+    ]
+  },
+  "write": {
+    "en/en_005.txt": [
+      114
+    ]
+  },
+  "pair": {
+    "en/en_005.txt": [
+      118
+    ]
+  },
+  "two": {
+    "en/en_005.txt": [
+      121
+    ]
+  },
+  "togeth": {
+    "en/en_005.txt": [
+      124
+    ],
+    "en/en_009.txt": [
+      86
+    ]
+  },
+  "review": {
+    "en/en_005.txt": [
+      126
+    ]
+  },
+  "blockchain": {
+    "en/en_006.txt": [
+      0,
+      20
+    ]
+  },
+  "decentr": {
+    "en/en_006.txt": [
+      4,
+      43
+    ]
+  },
+  "wai": {
+    "en/en_006.txt": [
+      7
+    ],
+    "en/en_008.txt": [
+      16
+    ]
+  },
+  "record": {
+    "en/en_006.txt": [
+      9
+    ]
+  },
+  "transact": {
+    "en/en_006.txt": [
+      10,
+      65
+    ]
+  },
+  "across": {
+    "en/en_006.txt": [
+      11
+    ]
+  },
+  "mani": {
+    "en/en_006.txt": [
+      12
+    ]
+  },
+  "cryptocurr": {
+    "en/en_006.txt": [
+      14
+    ]
+  },
+  "bitcoin": {
+    "en/en_006.txt": [
+      16
+    ]
+  },
+  "ethereum": {
+    "en/en_006.txt": [
+      18
+    ]
+  },
+  "peer": {
+    "en/en_006.txt": [
+      23,
+      25
+    ]
+  },
+  "payment": {
+    "en/en_006.txt": [
+      27
+    ]
+  },
+  "intermediari": {
+    "en/en_006.txt": [
+      29
+    ]
+  },
+  "contract": {
+    "en/en_006.txt": [
+      31
+    ]
+  },
+  "automat": {
+    "en/en_006.txt": [
       33
     ]
   },
-  "decreas": {
-    "en/doc09.txt": [
+  "condit": {
+    "en/en_006.txt": [
       35
     ]
   },
-  "depend": {
-    "en/doc09.txt": [
-      36
+  "met": {
+    "en/en_006.txt": [
+      37
     ]
   },
-  "fossil": {
-    "en/doc09.txt": [
-      38
-    ]
-  },
-  "fuel": {
-    "en/doc09.txt": [
+  "fraud": {
+    "en/en_006.txt": [
       39
     ]
   },
-  "organ": {
-    "en/doc10.txt": [
-      2
-    ]
-  },
-  "arrai": {
-    "en/doc10.txt": [
-      8
-    ]
-  },
-  "element": {
-    "en/doc10.txt": [
-      10
-    ]
-  },
-  "contigu": {
-    "en/doc10.txt": [
-      12
-    ]
-  },
-  "memori": {
-    "en/doc10.txt": [
-      13
-    ]
-  },
-  "locat": {
-    "en/doc10.txt": [
-      14
-    ]
-  },
-  "fast": {
-    "en/doc10.txt": [
-      16
-    ]
-  },
-  "access": {
-    "en/doc10.txt": [
-      17
-    ]
-  },
-  "link": {
-    "en/doc10.txt": [
-      18
-    ]
-  },
-  "list": {
-    "en/doc10.txt": [
-      19
-    ]
-  },
-  "allow": {
-    "en/doc10.txt": [
-      20
-    ]
-  },
-  "dynam": {
-    "en/doc10.txt": [
-      21
-    ]
-  },
-  "insert": {
-    "en/doc10.txt": [
-      22
-    ]
-  },
-  "delet": {
-    "en/doc10.txt": [
-      24
-    ]
-  },
-  "node": {
-    "en/doc10.txt": [
-      26
-    ]
-  },
-  "tree": {
-    "en/doc10.txt": [
-      27
-    ]
-  },
-  "repres": {
-    "en/doc10.txt": [
-      28
-    ]
-  },
-  "hierarch": {
-    "en/doc10.txt": [
-      29
-    ]
-  },
-  "relationship": {
-    "en/doc10.txt": [
-      30
-    ]
-  },
-  "item": {
-    "en/doc10.txt": [
-      33
-    ]
-  },
-  "graph": {
-    "en/doc10.txt": [
-      34
-    ]
-  },
-  "connect": {
-    "en/doc10.txt": [
-      38
-    ]
-  },
-  "entiti": {
-    "en/doc10.txt": [
+  "increas": {
+    "en/en_006.txt": [
       41
     ]
   },
-  "ذكاء": {
-    "ar/doc01.txt": [
-      0
-    ],
-    "ar/doc05.txt": [
-      22
-    ],
-    "ar/doc08.txt": [
-      20
+  "trust": {
+    "en/en_006.txt": [
+      42
     ]
   },
-  "اصطناعي": {
-    "ar/doc01.txt": [
-      1
-    ],
-    "ar/doc05.txt": [
-      23
-    ],
-    "ar/doc08.txt": [
-      21
+  "financ": {
+    "en/en_006.txt": [
+      44
     ]
   },
-  "رع": {
-    "ar/doc01.txt": [
+  "offer": {
+    "en/en_006.txt": [
+      46
+    ],
+    "en/en_007.txt": [
+      77
+    ]
+  },
+  "lend": {
+    "en/en_006.txt": [
+      47
+    ]
+  },
+  "borrow": {
+    "en/en_006.txt": [
+      48
+    ]
+  },
+  "trade": {
+    "en/en_006.txt": [
+      50
+    ]
+  },
+  "tradit": {
+    "en/en_006.txt": [
+      52
+    ]
+  },
+  "bank": {
+    "en/en_006.txt": [
+      53
+    ]
+  },
+  "consensu": {
+    "en/en_006.txt": [
+      54
+    ]
+  },
+  "mechan": {
+    "en/en_006.txt": [
+      55
+    ],
+    "en/en_008.txt": [
+      4
+    ],
+    "en/en_009.txt": [
       3
     ]
   },
-  "علوم": {
-    "ar/doc01.txt": [
-      5
-    ],
-    "ar/doc04.txt": [
-      6
+  "proof": {
+    "en/en_006.txt": [
+      57,
+      61
     ]
   },
-  "حاسوب": {
-    "ar/doc01.txt": [
+  "stake": {
+    "en/en_006.txt": [
+      63
+    ]
+  },
+  "valid": {
+    "en/en_006.txt": [
+      64
+    ]
+  },
+  "renew": {
+    "en/en_007.txt": [
+      0,
+      75
+    ]
+  },
+  "electr": {
+    "en/en_007.txt": [
       6,
-      26
-    ],
-    "ar/doc10.txt": [
-      13
+      18,
+      76
     ]
   },
-  "يه": {
-    "ar/doc01.txt": [
-      7
-    ]
-  },
-  "تصميم": {
-    "ar/doc01.txt": [
-      8
-    ],
-    "ar/doc10.txt": [
-      3
-    ]
-  },
-  "انظمه": {
-    "ar/doc01.txt": [
-      9
-    ],
-    "ar/doc07.txt": [
-      32
-    ]
-  },
-  "قادره": {
-    "ar/doc01.txt": [
+  "distribut": {
+    "en/en_007.txt": [
       10
-    ],
-    "ar/doc02.txt": [
-      33
     ]
   },
-  "تعلم": {
-    "ar/doc01.txt": [
+  "solar": {
+    "en/en_007.txt": [
       12
     ]
   },
-  "تفكير": {
-    "ar/doc01.txt": [
+  "panel": {
+    "en/en_007.txt": [
       13
     ]
   },
-  "تستخدم": {
-    "ar/doc01.txt": [
+  "convert": {
+    "en/en_007.txt": [
       14
-    ],
-    "ar/doc09.txt": [
-      9
     ]
   },
-  "شبك": {
-    "ar/doc01.txt": [
+  "sunlight": {
+    "en/en_007.txt": [
       15
     ]
   },
-  "عصب": {
-    "ar/doc01.txt": [
+  "directli": {
+    "en/en_007.txt": [
       16
     ]
   },
-  "معالجه": {
-    "ar/doc01.txt": [
-      17,
-      23
-    ]
-  },
-  "يان": {
-    "ar/doc01.txt": [
-      18
-    ],
-    "ar/doc03.txt": [
-      6,
-      10
-    ],
-    "ar/doc08.txt": [
-      23
-    ],
-    "ar/doc10.txt": [
-      10
-    ]
-  },
-  "ضخمه": {
-    "ar/doc01.txt": [
-      19
-    ],
-    "ar/doc03.txt": [
-      13
-    ]
-  },
-  "اكتشاف": {
-    "ar/doc01.txt": [
+  "photovolta": {
+    "en/en_007.txt": [
       20
-    ],
-    "ar/doc04.txt": [
-      15
     ]
   },
-  "انماط": {
-    "ar/doc01.txt": [
+  "cell": {
+    "en/en_007.txt": [
       21
-    ]
-  },
-  "تتيح": {
-    "ar/doc01.txt": [
-      22
     ],
-    "ar/doc03.txt": [
-      14
+    "en/en_010.txt": [
+      61
     ]
   },
-  "لغ": {
-    "ar/doc01.txt": [
+  "wind": {
+    "en/en_007.txt": [
+      22
+    ]
+  },
+  "turbin": {
+    "en/en_007.txt": [
+      23,
+      56
+    ]
+  },
+  "captur": {
+    "en/en_007.txt": [
       24
     ]
   },
-  "طبيع": {
-    "ar/doc01.txt": [
+  "kinet": {
+    "en/en_007.txt": [
       25
-    ],
-    "ar/doc06.txt": [
-      36
     ]
   },
-  "هم": {
-    "ar/doc01.txt": [
-      27
-    ],
-    "ar/doc09.txt": [
+  "move": {
+    "en/en_007.txt": [
       28
     ]
   },
-  "لام": {
-    "ar/doc01.txt": [
-      28
-    ]
-  },
-  "شري": {
-    "ar/doc01.txt": [
+  "air": {
+    "en/en_007.txt": [
       29
     ]
   },
-  "تحل": {
-    "ar/doc01.txt": [
-      30
-    ],
-    "ar/doc08.txt": [
-      22
-    ]
-  },
-  "نصوص": {
-    "ar/doc01.txt": [
-      31
-    ]
-  },
-  "عرب": {
-    "ar/doc01.txt": [
-      32
-    ],
-    "ar/doc04.txt": [
-      10,
-      23
-    ]
-  },
-  "عال": {
-    "ar/doc01.txt": [
+  "hydroelectr": {
+    "en/en_007.txt": [
       33
-    ],
-    "ar/doc07.txt": [
-      17
     ]
   },
-  "ره": {
-    "ar/doc02.txt": [
-      0
+  "dam": {
+    "en/en_007.txt": [
+      34
     ]
   },
-  "قدم": {
-    "ar/doc02.txt": [
-      1
-    ]
-  },
-  "رياضه": {
-    "ar/doc02.txt": [
-      3
-    ]
-  },
-  "اكثر": {
-    "ar/doc02.txt": [
-      4
-    ]
-  },
-  "شعب": {
-    "ar/doc02.txt": [
-      5
-    ]
-  },
-  "عالم": {
-    "ar/doc02.txt": [
-      7
-    ]
-  },
-  "عربي": {
-    "ar/doc02.txt": [
-      8
-    ]
-  },
-  "يتنافس": {
-    "ar/doc02.txt": [
-      9
-    ]
-  },
-  "اعب": {
-    "ar/doc02.txt": [
-      10,
-      28
-    ]
-  },
-  "طول": {
-    "ar/doc02.txt": [
-      12,
-      36
-    ]
-  },
-  "ري": {
-    "ar/doc02.txt": [
-      13
-    ]
-  },
-  "تجذب": {
-    "ar/doc02.txt": [
-      14
-    ]
-  },
-  "ملاي": {
-    "ar/doc02.txt": [
-      15
-    ]
-  },
-  "مشاهد": {
-    "ar/doc02.txt": [
-      16
-    ]
-  },
-  "تدريب": {
-    "ar/doc02.txt": [
-      17
-    ]
-  },
-  "مستمر": {
-    "ar/doc02.txt": [
-      18
-    ]
-  },
-  "ياقه": {
-    "ar/doc02.txt": [
-      19
-    ]
-  },
-  "دن": {
-    "ar/doc02.txt": [
-      20
-    ]
-  },
-  "ضروري": {
-    "ar/doc02.txt": [
-      21
-    ]
-  },
-  "اداء": {
-    "ar/doc02.txt": [
-      22
-    ]
-  },
-  "متميز": {
-    "ar/doc02.txt": [
-      23
-    ]
-  },
-  "اند": {
-    "ar/doc02.txt": [
-      24
-    ]
-  },
-  "بري": {
-    "ar/doc02.txt": [
-      25
-    ],
-    "ar/doc04.txt": [
-      25
-    ]
-  },
-  "تستثمر": {
-    "ar/doc02.txt": [
-      26
-    ],
-    "ar/doc06.txt": [
-      26
-    ]
-  },
-  "شباب": {
-    "ar/doc02.txt": [
-      29
-    ]
-  },
-  "ناء": {
-    "ar/doc02.txt": [
-      30
-    ]
-  },
-  "رق": {
-    "ar/doc02.txt": [
-      31
-    ]
-  },
-  "قو": {
-    "ar/doc02.txt": [
-      32
-    ]
-  },
-  "وز": {
-    "ar/doc02.txt": [
+  "har": {
+    "en/en_007.txt": [
       35
     ]
   },
-  "تقن": {
-    "ar/doc03.txt": [
-      0
+  "potenti": {
+    "en/en_007.txt": [
+      37
+    ],
+    "en/en_008.txt": [
+      64
+    ]
+  },
+  "water": {
+    "en/en_007.txt": [
+      41
+    ]
+  },
+  "geotherm": {
+    "en/en_007.txt": [
+      42
+    ]
+  },
+  "tap": {
+    "en/en_007.txt": [
+      44
+    ]
+  },
+  "earth": {
+    "en/en_007.txt": [
+      49
+    ]
+  },
+  "interior": {
+    "en/en_007.txt": [
+      50
+    ]
+  },
+  "produc": {
+    "en/en_007.txt": [
+      52,
+      73
+    ],
+    "en/en_010.txt": [
+      16
+    ]
+  },
+  "steam": {
+    "en/en_007.txt": [
+      53
+    ]
+  },
+  "drive": {
+    "en/en_007.txt": [
+      55
+    ]
+  },
+  "storag": {
+    "en/en_007.txt": [
+      58
+    ]
+  },
+  "batteri": {
+    "en/en_007.txt": [
+      61
+    ]
+  },
+  "pump": {
+    "en/en_007.txt": [
+      63
+    ]
+  },
+  "hydro": {
+    "en/en_007.txt": [
+      64
+    ]
+  },
+  "reliabl": {
+    "en/en_007.txt": [
+      66
+    ]
+  },
+  "suppli": {
+    "en/en_007.txt": [
+      67
+    ]
+  },
+  "fluctuat": {
+    "en/en_007.txt": [
+      70
+    ]
+  },
+  "green": {
+    "en/en_007.txt": [
+      71
+    ]
+  },
+  "hydrogen": {
+    "en/en_007.txt": [
+      72
+    ]
+  },
+  "fuel": {
+    "en/en_007.txt": [
+      80
+    ]
+  },
+  "transport": {
+    "en/en_007.txt": [
+      82
+    ]
+  },
+  "quantum": {
+    "en/en_008.txt": [
+      0,
+      3,
+      17,
+      29,
+      52,
+      58,
+      84
+    ]
+  },
+  "leverag": {
+    "en/en_008.txt": [
+      2
+    ]
+  },
+  "phenomena": {
+    "en/en_008.txt": [
+      5
+    ]
+  },
+  "superposit": {
+    "en/en_008.txt": [
+      7
+    ]
+  },
+  "entangl": {
+    "en/en_008.txt": [
+      9
+    ]
+  },
+  "fundament": {
+    "en/en_008.txt": [
+      14
+    ]
+  },
+  "bit": {
+    "en/en_008.txt": [
+      18
+    ]
+  },
+  "call": {
+    "en/en_008.txt": [
+      19
+    ]
+  },
+  "qubit": {
+    "en/en_008.txt": [
+      20
+    ]
+  },
+  "repres": {
+    "en/en_008.txt": [
+      22
+    ]
+  },
+  "state": {
+    "en/en_008.txt": [
+      24,
+      59
+    ]
+  },
+  "simultan": {
+    "en/en_008.txt": [
+      25
+    ]
+  },
+  "parallel": {
+    "en/en_008.txt": [
+      27
+    ]
+  },
+  "shor": {
+    "en/en_008.txt": [
+      32
+    ]
+  },
+  "number": {
+    "en/en_008.txt": [
+      36
+    ]
+  },
+  "exponenti": {
+    "en/en_008.txt": [
+      37
+    ]
+  },
+  "classic": {
+    "en/en_008.txt": [
+      40
+    ]
+  },
+  "method": {
+    "en/en_008.txt": [
+      41
+    ]
+  },
+  "grover": {
+    "en/en_008.txt": [
+      42
+    ]
+  },
+  "search": {
+    "en/en_008.txt": [
+      43,
+      50
+    ]
+  },
+  "quadrat": {
+    "en/en_008.txt": [
+      46
+    ]
+  },
+  "speedup": {
+    "en/en_008.txt": [
+      47
+    ]
+  },
+  "problem": {
+    "en/en_008.txt": [
+      51
+    ]
+  },
+  "fragil": {
+    "en/en_008.txt": [
+      57
+    ],
+    "en/en_009.txt": [
+      74
+    ]
+  },
+  "decoher": {
+    "en/en_008.txt": [
+      61
+    ]
+  },
+  "nois": {
+    "en/en_008.txt": [
+      63
+    ]
+  },
+  "drug": {
+    "en/en_008.txt": [
+      67
+    ],
+    "en/en_010.txt": [
+      55
+    ]
+  },
+  "discoveri": {
+    "en/en_008.txt": [
+      68
+    ]
+  },
+  "materi": {
+    "en/en_008.txt": [
+      69
+    ],
+    "en/en_009.txt": [
+      67
+    ]
+  },
+  "cryptographi": {
+    "en/en_008.txt": [
+      71
+    ]
+  },
+  "financi": {
+    "en/en_008.txt": [
+      73
+    ]
+  },
+  "compani": {
+    "en/en_008.txt": [
+      75
+    ]
+  },
+  "ibm": {
+    "en/en_008.txt": [
+      77
+    ]
+  },
+  "googl": {
+    "en/en_008.txt": [
+      79
+    ]
+  },
+  "build": {
+    "en/en_008.txt": [
+      81
+    ]
+  },
+  "increasingli": {
+    "en/en_008.txt": [
+      82
+    ]
+  },
+  "processor": {
+    "en/en_008.txt": [
+      85
+    ]
+  },
+  "robot": {
+    "en/en_009.txt": [
+      0,
+      18,
+      30,
+      51,
+      64,
+      77,
+      81
+    ]
+  },
+  "electron": {
+    "en/en_009.txt": [
+      5
+    ]
+  },
+  "interact": {
+    "en/en_009.txt": [
+      12
+    ]
+  },
+  "repetit": {
+    "en/en_009.txt": [
+      20
+    ]
+  },
+  "task": {
+    "en/en_009.txt": [
+      21,
+      85
+    ]
+  },
+  "factori": {
+    "en/en_009.txt": [
+      23
+    ]
+  },
+  "high": {
+    "en/en_009.txt": [
+      25
+    ]
+  },
+  "precis": {
+    "en/en_009.txt": [
+      26
+    ],
+    "en/en_010.txt": [
+      27
+    ]
+  },
+  "speed": {
+    "en/en_009.txt": [
+      28
+    ]
+  },
+  "alongsid": {
+    "en/en_009.txt": [
+      32
+    ]
+  },
+  "safe": {
+    "en/en_009.txt": [
+      34
+    ]
+  },
+  "adapt": {
+    "en/en_009.txt": [
+      35
+    ]
+  },
+  "environ": {
+    "en/en_009.txt": [
+      38
+    ]
+  },
+  "drone": {
+    "en/en_009.txt": [
+      40
+    ]
+  },
+  "surveil": {
+    "en/en_009.txt": [
+      49
+    ]
+  },
+  "medic": {
+    "en/en_009.txt": [
+      50
+    ]
+  },
+  "surgeon": {
+    "en/en_009.txt": [
+      53
+    ]
+  },
+  "delic": {
+    "en/en_009.txt": [
+      55
+    ]
+  },
+  "accuraci": {
+    "en/en_009.txt": [
+      58
+    ]
+  },
+  "recoveri": {
+    "en/en_009.txt": [
+      61
+    ]
+  },
+  "soft": {
+    "en/en_009.txt": [
+      63
+    ]
+  },
+  "flexibl": {
+    "en/en_009.txt": [
+      66
+    ]
+  },
+  "inspir": {
+    "en/en_009.txt": [
+      68
+    ]
+  },
+  "biolog": {
+    "en/en_009.txt": [
+      70
+    ],
+    "en/en_010.txt": [
+      2,
+      44,
+      54
+    ]
+  },
+  "organ": {
+    "en/en_009.txt": [
+      71
+    ],
+    "en/en_010.txt": [
+      5
+    ]
+  },
+  "swarm": {
+    "en/en_009.txt": [
+      76
+    ]
+  },
+  "coordin": {
+    "en/en_009.txt": [
+      78
+    ]
+  },
+  "simpl": {
+    "en/en_009.txt": [
+      80
+    ]
+  },
+  "accomplish": {
+    "en/en_009.txt": [
+      83
+    ]
+  },
+  "biotechnologi": {
+    "en/en_010.txt": [
+      0,
+      52,
+      70
+    ]
+  },
+  "product": {
+    "en/en_010.txt": [
+      8
+    ]
+  },
+  "genet": {
+    "en/en_010.txt": [
+      11,
+      35
+    ]
+  },
+  "modifi": {
+    "en/en_010.txt": [
+      13
+    ]
+  },
+  "dna": {
+    "en/en_010.txt": [
+      14
+    ]
+  },
+  "crop": {
+    "en/en_010.txt": [
+      17
+    ]
+  },
+  "yield": {
+    "en/en_010.txt": [
+      20
+    ]
+  },
+  "diseas": {
+    "en/en_010.txt": [
+      22
+    ]
+  },
+  "resist": {
+    "en/en_010.txt": [
+      23
+    ]
+  },
+  "crispr": {
+    "en/en_010.txt": [
+      24
+    ]
+  },
+  "edit": {
+    "en/en_010.txt": [
+      28
+    ]
+  },
+  "gene": {
+    "en/en_010.txt": [
+      30
+    ]
+  },
+  "open": {
+    "en/en_010.txt": [
+      31
+    ]
+  },
+  "possibl": {
+    "en/en_010.txt": [
+      32
+    ]
+  },
+  "treat": {
+    "en/en_010.txt": [
+      34
+    ]
+  },
+  "disord": {
+    "en/en_010.txt": [
+      36
+    ]
+  },
+  "bioinformat": {
+    "en/en_010.txt": [
+      37
+    ]
+  },
+  "genom": {
+    "en/en_010.txt": [
+      47
+    ]
+  },
+  "protein": {
+    "en/en_010.txt": [
+      49
+    ]
+  },
+  "pharmaceut": {
+    "en/en_010.txt": [
+      51
+    ]
+  },
+  "antibodi": {
+    "en/en_010.txt": [
+      57
+    ]
+  },
+  "vaccin": {
+    "en/en_010.txt": [
+      59
+    ]
+  },
+  "stem": {
+    "en/en_010.txt": [
+      60
+    ]
+  },
+  "research": {
+    "en/en_010.txt": [
+      62
+    ]
+  },
+  "explor": {
+    "en/en_010.txt": [
+      63
+    ]
+  },
+  "regen": {
+    "en/en_010.txt": [
+      64
+    ]
+  },
+  "medicin": {
+    "en/en_010.txt": [
+      65
+    ]
+  },
+  "tissu": {
+    "en/en_010.txt": [
+      67
+    ]
+  },
+  "enzym": {
+    "en/en_010.txt": [
+      72
+    ]
+  },
+  "microorgan": {
+    "en/en_010.txt": [
+      74
+    ]
+  },
+  "sustain": {
+    "en/en_010.txt": [
+      76
+    ]
+  },
+  "ذكاء": {
+    "ar/ar_001.txt": [
+      0,
+      44,
+      100
+    ],
+    "ar/ar_003.txt": [
+      43
+    ],
+    "ar/ar_006.txt": [
+      22
+    ],
+    "ar/ar_008.txt": [
+      41
+    ]
+  },
+  "اصطناعي": {
+    "ar/ar_001.txt": [
+      1,
+      45,
+      101
+    ],
+    "ar/ar_006.txt": [
+      23
+    ],
+    "ar/ar_008.txt": [
+      42
+    ]
+  },
+  "يغير": {
+    "ar/ar_001.txt": [
+      2
+    ]
+  },
+  "عالم": {
+    "ar/ar_001.txt": [
+      3
+    ]
+  },
+  "مجال": {
+    "ar/ar_001.txt": [
+      5,
+      93,
+      96
+    ],
+    "ar/ar_003.txt": [
+      7
+    ],
+    "ar/ar_006.txt": [
+      41
+    ],
+    "ar/ar_008.txt": [
+      21
+    ]
+  },
+  "تكنولوج": {
+    "ar/ar_001.txt": [
+      6
+    ]
+  },
+  "اعمال": {
+    "ar/ar_001.txt": [
+      7
+    ],
+    "ar/ar_003.txt": [
+      44
+    ],
+    "ar/ar_006.txt": [
+      46
+    ]
+  },
+  "تعلم": {
+    "ar/ar_001.txt": [
+      8,
+      13,
+      18,
+      60,
+      68,
+      77,
+      89
+    ]
+  },
+  "اله": {
+    "ar/ar_001.txt": [
+      9
+    ]
+  },
+  "يمكن": {
+    "ar/ar_001.txt": [
+      10
+    ]
+  },
+  "حواسيب": {
+    "ar/ar_001.txt": [
+      11
+    ],
+    "ar/ar_010.txt": [
+      22
+    ]
+  },
+  "يان": {
+    "ar/ar_001.txt": [
+      15,
+      73,
+      85
+    ],
+    "ar/ar_002.txt": [
+      18,
+      31,
+      92,
+      104
+    ],
+    "ar/ar_003.txt": [
+      1,
+      11,
+      14,
+      21,
+      22,
+      27,
+      36,
+      38,
+      46,
+      52,
+      61,
+      66,
+      86,
+      88,
+      98
+    ],
+    "ar/ar_004.txt": [
+      15,
+      102
+    ],
+    "ar/ar_009.txt": [
+      42
+    ],
+    "ar/ar_010.txt": [
+      10
+    ]
+  },
+  "اتخاذ": {
+    "ar/ar_001.txt": [
+      16
+    ]
+  },
+  "قرار": {
+    "ar/ar_001.txt": [
+      17
+    ]
+  },
+  "عميق": {
+    "ar/ar_001.txt": [
+      19
+    ]
+  },
+  "يستخدم": {
+    "ar/ar_001.txt": [
+      20,
+      71
+    ],
+    "ar/ar_003.txt": [
+      12
+    ],
+    "ar/ar_008.txt": [
+      2
+    ],
+    "ar/ar_010.txt": [
+      15
+    ]
+  },
+  "شبك": {
+    "ar/ar_001.txt": [
+      21,
+      51
+    ],
+    "ar/ar_004.txt": [
+      5
+    ]
+  },
+  "عصب": {
+    "ar/ar_001.txt": [
+      22,
+      52
+    ]
+  },
+  "معالجه": {
+    "ar/ar_001.txt": [
+      23,
+      26,
+      58
+    ],
+    "ar/ar_003.txt": [
+      34,
+      92
+    ]
+  },
+  "انماط": {
+    "ar/ar_001.txt": [
+      24,
+      82
+    ],
+    "ar/ar_003.txt": [
+      48
+    ]
+  },
+  "معقده": {
+    "ar/ar_001.txt": [
+      25
+    ],
+    "ar/ar_003.txt": [
+      29
+    ]
+  },
+  "لغ": {
+    "ar/ar_001.txt": [
+      27
+    ]
+  },
+  "طبيع": {
+    "ar/ar_001.txt": [
+      28
+    ],
+    "ar/ar_007.txt": [
+      36
+    ]
+  },
+  "تتيح": {
+    "ar/ar_001.txt": [
+      29
+    ]
+  },
+  "ال": {
+    "ar/ar_001.txt": [
+      30
+    ]
+  },
+  "هم": {
+    "ar/ar_001.txt": [
+      31
+    ],
+    "ar/ar_003.txt": [
+      68
+    ],
+    "ar/ar_009.txt": [
+      28
+    ]
+  },
+  "غه": {
+    "ar/ar_001.txt": [
+      32
+    ]
+  },
+  "شر": {
+    "ar/ar_001.txt": [
+      33
+    ]
+  },
+  "توليد": {
+    "ar/ar_001.txt": [
+      34
+    ]
+  },
+  "رؤ": {
+    "ar/ar_001.txt": [
+      35
+    ]
+  },
+  "حاسوب": {
+    "ar/ar_001.txt": [
+      36
+    ],
+    "ar/ar_010.txt": [
+      13
+    ]
+  },
+  "تمكن": {
+    "ar/ar_001.txt": [
+      37
+    ]
+  },
+  "انظمه": {
+    "ar/ar_001.txt": [
+      38
+    ],
+    "ar/ar_003.txt": [
+      100
+    ],
+    "ar/ar_004.txt": [
+      3,
+      39,
+      86
+    ],
+    "ar/ar_005.txt": [
+      25
+    ],
+    "ar/ar_008.txt": [
+      32
+    ]
+  },
+  "تحل": {
+    "ar/ar_001.txt": [
+      40
+    ],
+    "ar/ar_003.txt": [
+      19,
+      54,
+      63,
+      71,
+      78
+    ],
+    "ar/ar_008.txt": [
+      44
     ]
   },
   "معلوم": {
-    "ar/doc03.txt": [
-      1,
-      18
-    ]
-  },
-  "تساعد": {
-    "ar/doc03.txt": [
-      2
+    "ar/ar_001.txt": [
+      41,
+      59
     ],
-    "ar/doc05.txt": [
-      24
-    ],
-    "ar/doc07.txt": [
-      10
-    ],
-    "ar/doc09.txt": [
-      26
+    "ar/ar_004.txt": [
+      68,
+      97
     ]
   },
-  "مؤسس": {
-    "ar/doc03.txt": [
-      3
-    ]
-  },
-  "اداره": {
-    "ar/doc03.txt": [
-      5
-    ],
-    "ar/doc07.txt": [
-      34
-    ]
-  },
-  "تحس": {
-    "ar/doc03.txt": [
-      7
-    ]
-  },
-  "عملي": {
-    "ar/doc03.txt": [
-      8
-    ],
-    "ar/doc07.txt": [
-      14
-    ]
-  },
-  "قواعد": {
-    "ar/doc03.txt": [
-      9
-    ]
-  },
-  "تخزن": {
-    "ar/doc03.txt": [
-      11
-    ]
-  },
-  "ملف": {
-    "ar/doc03.txt": [
-      12
-    ]
-  },
-  "حث": {
-    "ar/doc03.txt": [
-      15
-    ],
-    "ar/doc04.txt": [
-      29
-    ],
-    "ar/doc07.txt": [
-      18
-    ],
-    "ar/doc08.txt": [
-      34
-    ]
-  },
-  "سريع": {
-    "ar/doc03.txt": [
-      16
-    ]
-  },
-  "مهندسو": {
-    "ar/doc03.txt": [
-      19
-    ]
-  },
-  "رمجي": {
-    "ar/doc03.txt": [
-      20
-    ],
-    "ar/doc10.txt": [
-      1,
-      5,
-      24
-    ]
-  },
-  "يطور": {
-    "ar/doc03.txt": [
-      21
+  "صر": {
+    "ar/ar_001.txt": [
+      42
     ]
   },
   "تطبيق": {
-    "ar/doc03.txt": [
-      22
+    "ar/ar_001.txt": [
+      43
     ],
-    "ar/doc05.txt": [
+    "ar/ar_005.txt": [
+      7
+    ],
+    "ar/ar_006.txt": [
       21
     ]
   },
-  "ذك": {
-    "ar/doc03.txt": [
-      23
+  "تشمل": {
+    "ar/ar_001.txt": [
+      46
     ],
-    "ar/doc08.txt": [
-      13
-    ]
-  },
-  "تلبي": {
-    "ar/doc03.txt": [
-      24
-    ]
-  },
-  "احتياج": {
-    "ar/doc03.txt": [
-      25
-    ]
-  },
-  "مستخدم": {
-    "ar/doc03.txt": [
-      26
+    "ar/ar_002.txt": [
+      100
     ],
-    "ar/doc10.txt": [
-      31
-    ]
-  },
-  "مختلف": {
-    "ar/doc03.txt": [
-      28
-    ]
-  },
-  "قطاع": {
-    "ar/doc03.txt": [
-      29
-    ]
-  },
-  "اقتصاد": {
-    "ar/doc03.txt": [
-      30
+    "ar/ar_004.txt": [
+      52
     ],
-    "ar/doc08.txt": [
-      0
+    "ar/ar_007.txt": [
+      2
+    ]
+  },
+  "مساعد": {
+    "ar/ar_001.txt": [
+      47
+    ]
+  },
+  "افتراض": {
+    "ar/ar_001.txt": [
+      48
+    ]
+  },
+  "مركب": {
+    "ar/ar_001.txt": [
+      49
+    ]
+  },
+  "مستقله": {
+    "ar/ar_001.txt": [
+      50
+    ]
+  },
+  "تحاكي": {
+    "ar/ar_001.txt": [
+      53
+    ]
+  },
+  "نيه": {
+    "ar/ar_001.txt": [
+      54
+    ]
+  },
+  "دماغ": {
+    "ar/ar_001.txt": [
+      55
+    ]
+  },
+  "شري": {
+    "ar/ar_001.txt": [
+      56
+    ]
+  },
+  "تعزيز": {
+    "ar/ar_001.txt": [
+      61
+    ]
+  },
+  "يدرب": {
+    "ar/ar_001.txt": [
+      62
+    ]
+  },
+  "لاء": {
+    "ar/ar_001.txt": [
+      63
+    ]
+  },
+  "خلال": {
+    "ar/ar_001.txt": [
+      65
+    ],
+    "ar/ar_002.txt": [
+      68
+    ],
+    "ar/ar_004.txt": [
+      71
+    ]
+  },
+  "تجربه": {
+    "ar/ar_001.txt": [
+      66
+    ]
+  },
+  "خطا": {
+    "ar/ar_001.txt": [
+      67
+    ]
+  },
+  "خاضع": {
+    "ar/ar_001.txt": [
+      69,
+      79
+    ]
+  },
+  "اشراف": {
+    "ar/ar_001.txt": [
+      70,
+      80
+    ]
+  },
+  "مجموع": {
+    "ar/ar_001.txt": [
+      72
+    ],
+    "ar/ar_003.txt": [
+      26,
+      51
+    ]
+  },
+  "مسماه": {
+    "ar/ar_001.txt": [
+      74,
+      87
     ]
   },
   "تعليم": {
-    "ar/doc03.txt": [
-      31
+    "ar/ar_001.txt": [
+      75
     ],
-    "ar/doc05.txt": [
+    "ar/ar_006.txt": [
       0,
       18
     ],
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       19
     ]
   },
-  "حضاره": {
-    "ar/doc04.txt": [
-      0
+  "نماذج": {
+    "ar/ar_001.txt": [
+      76
     ]
   },
-  "اسلام": {
-    "ar/doc04.txt": [
-      1
-    ]
-  },
-  "قدمت": {
-    "ar/doc04.txt": [
-      2
-    ]
-  },
-  "اسهام": {
-    "ar/doc04.txt": [
-      3
-    ]
-  },
-  "عظيمه": {
-    "ar/doc04.txt": [
-      4
-    ]
-  },
-  "رياضي": {
-    "ar/doc04.txt": [
-      7,
-      22
-    ]
-  },
-  "طب": {
-    "ar/doc04.txt": [
-      8
+  "يكتشف": {
+    "ar/ar_001.txt": [
+      81
     ],
-    "ar/doc07.txt": [
-      0,
-      9
+    "ar/ar_003.txt": [
+      47
     ]
   },
-  "علماء": {
-    "ar/doc04.txt": [
-      9
+  "مخف": {
+    "ar/ar_001.txt": [
+      83
     ]
   },
-  "ترجموا": {
-    "ar/doc04.txt": [
-      11
+  "نقل": {
+    "ar/ar_001.txt": [
+      88
     ]
   },
-  "تب": {
-    "ar/doc04.txt": [
-      12
-    ]
-  },
-  "يون": {
-    "ar/doc04.txt": [
-      13
-    ]
-  },
-  "اضافوا": {
-    "ar/doc04.txt": [
-      14
-    ]
-  },
-  "جديده": {
-    "ar/doc04.txt": [
-      16
-    ],
-    "ar/doc07.txt": [
-      27
-    ],
-    "ar/doc08.txt": [
-      28
-    ]
-  },
-  "خوارزمي": {
-    "ar/doc04.txt": [
-      17
-    ],
-    "ar/doc10.txt": [
-      8
-    ]
-  },
-  "جبر": {
-    "ar/doc04.txt": [
-      18
-    ]
-  },
-  "اهم": {
-    "ar/doc04.txt": [
-      20
-    ]
-  },
-  "انجاز": {
-    "ar/doc04.txt": [
-      21
-    ]
-  },
-  "مكتب": {
-    "ar/doc04.txt": [
-      24
-    ]
-  },
-  "انت": {
-    "ar/doc04.txt": [
-      26
-    ]
-  },
-  "مراكز": {
-    "ar/doc04.txt": [
-      27
+  "يطبق": {
+    "ar/ar_001.txt": [
+      90
     ]
   },
   "معرفه": {
-    "ar/doc04.txt": [
-      28
+    "ar/ar_001.txt": [
+      91
     ],
-    "ar/doc08.txt": [
-      1
-    ]
-  },
-  "علمي": {
-    "ar/doc04.txt": [
-      30
-    ],
-    "ar/doc07.txt": [
-      19
-    ]
-  },
-  "عصور": {
-    "ar/doc04.txt": [
-      32
-    ]
-  },
-  "قديمه": {
-    "ar/doc04.txt": [
-      33
-    ]
-  },
-  "كتروني": {
-    "ar/doc05.txt": [
-      1
-    ]
-  },
-  "اصبح": {
-    "ar/doc05.txt": [
-      2
-    ]
-  },
-  "اساس": {
-    "ar/doc05.txt": [
-      3
-    ]
-  },
-  "عصر": {
-    "ar/doc05.txt": [
-      5
-    ]
-  },
-  "حديث": {
-    "ar/doc05.txt": [
+    "ar/ar_003.txt": [
       6
+    ]
+  },
+  "احد": {
+    "ar/ar_001.txt": [
+      94
+    ]
+  },
+  "اخر": {
+    "ar/ar_001.txt": [
+      97
+    ]
+  },
+  "ذي": {
+    "ar/ar_001.txt": [
+      98
+    ]
+  },
+  "صله": {
+    "ar/ar_001.txt": [
+      99
+    ]
+  },
+  "توليدي": {
+    "ar/ar_001.txt": [
+      102
+    ]
+  },
+  "ينشئ": {
+    "ar/ar_001.txt": [
+      103
     ],
-    "ar/doc07.txt": [
-      1
-    ]
-  },
-  "جامع": {
-    "ar/doc05.txt": [
-      7
-    ]
-  },
-  "تقدم": {
-    "ar/doc05.txt": [
-      8
-    ],
-    "ar/doc08.txt": [
-      11
-    ]
-  },
-  "محاضر": {
-    "ar/doc05.txt": [
-      9
-    ]
-  },
-  "رقم": {
-    "ar/doc05.txt": [
-      10
-    ],
-    "ar/doc08.txt": [
-      25
-    ]
-  },
-  "عبر": {
-    "ar/doc05.txt": [
-      11
-    ],
-    "ar/doc08.txt": [
-      32
-    ],
-    "ar/doc09.txt": [
-      34
-    ]
-  },
-  "منص": {
-    "ar/doc05.txt": [
-      12
-    ]
-  },
-  "انترنت": {
-    "ar/doc05.txt": [
-      13
-    ]
-  },
-  "طلاب": {
-    "ar/doc05.txt": [
-      14
-    ]
-  },
-  "يستفيد": {
-    "ar/doc05.txt": [
-      15
-    ]
-  },
-  "موارد": {
-    "ar/doc05.txt": [
-      17
-    ]
-  },
-  "متاحه": {
-    "ar/doc05.txt": [
-      19
-    ]
-  },
-  "تر": {
-    "ar/doc05.txt": [
-      20
-    ]
-  },
-  "تخصيص": {
-    "ar/doc05.txt": [
-      26
+    "ar/ar_005.txt": [
+      57
     ]
   },
   "محتوي": {
-    "ar/doc05.txt": [
+    "ar/ar_001.txt": [
+      104
+    ],
+    "ar/ar_006.txt": [
       27
     ]
   },
-  "تعليمي": {
-    "ar/doc05.txt": [
-      28
+  "جديدا": {
+    "ar/ar_001.txt": [
+      105
     ]
   },
-  "حسب": {
-    "ar/doc05.txt": [
+  "صور": {
+    "ar/ar_001.txt": [
+      109
+    ],
+    "ar/ar_008.txt": [
+      45
+    ]
+  },
+  "نصوص": {
+    "ar/ar_001.txt": [
+      110
+    ]
+  },
+  "موسيقي": {
+    "ar/ar_001.txt": [
+      111
+    ]
+  },
+  "انترنت": {
+    "ar/ar_002.txt": [
+      0,
+      54,
+      62,
+      79,
+      98
+    ],
+    "ar/ar_006.txt": [
+      13
+    ]
+  },
+  "اشياء": {
+    "ar/ar_002.txt": [
+      1,
+      12,
+      55,
+      63,
+      80,
+      99
+    ]
+  },
+  "يربط": {
+    "ar/ar_002.txt": [
+      2
+    ]
+  },
+  "مليار": {
+    "ar/ar_002.txt": [
+      3
+    ]
+  },
+  "اجهزه": {
+    "ar/ar_002.txt": [
+      4,
+      17,
+      53,
+      86,
+      102
+    ],
+    "ar/ar_008.txt": [
+      8
+    ]
+  },
+  "حول": {
+    "ar/ar_002.txt": [
+      5
+    ],
+    "ar/ar_009.txt": [
+      39
+    ]
+  },
+  "عالم،": {
+    "ar/ar_002.txt": [
+      6
+    ]
+  },
+  "يخلق": {
+    "ar/ar_002.txt": [
+      8
+    ]
+  },
+  "شبكه": {
+    "ar/ar_002.txt": [
+      9,
+      106
+    ],
+    "ar/ar_004.txt": [
+      29,
+      91
+    ]
+  },
+  "هائله": {
+    "ar/ar_002.txt": [
+      10
+    ]
+  },
+  "ذك": {
+    "ar/ar_002.txt": [
+      13,
+      51,
+      76
+    ]
+  },
+  "متصله": {
+    "ar/ar_002.txt": [
+      14
+    ]
+  },
+  "تجمع": {
+    "ar/ar_002.txt": [
+      15
+    ],
+    "ar/ar_004.txt": [
+      100
+    ]
+  },
+  "تشاركها،": {
+    "ar/ar_002.txt": [
+      19
+    ]
+  },
+  "يتيح": {
+    "ar/ar_002.txt": [
+      21
+    ]
+  },
+  "اتمته": {
+    "ar/ar_002.txt": [
+      22
+    ]
+  },
+  "فاءه": {
+    "ar/ar_002.txt": [
+      23
+    ]
+  },
+  "منازل": {
+    "ar/ar_002.txt": [
+      25,
+      50
+    ]
+  },
+  "صناع": {
+    "ar/ar_002.txt": [
+      26
+    ],
+    "ar/ar_009.txt": [
+      37
+    ]
+  },
+  "مدن": {
+    "ar/ar_002.txt": [
+      27,
+      75
+    ]
+  },
+  "حوسبه": {
+    "ar/ar_002.txt": [
+      28,
+      42
+    ]
+  },
+  "حافه": {
+    "ar/ar_002.txt": [
       29
     ]
   },
-  "مستوي": {
-    "ar/doc05.txt": [
+  "تعالج": {
+    "ar/ar_002.txt": [
       30
     ]
   },
-  "طالب": {
-    "ar/doc05.txt": [
+  "اقرب": {
+    "ar/ar_002.txt": [
       32
     ]
   },
-  "قدراته": {
-    "ar/doc05.txt": [
+  "الي": {
+    "ar/ar_002.txt": [
       33
+    ],
+    "ar/ar_003.txt": [
+      25
+    ],
+    "ar/ar_005.txt": [
+      63
+    ],
+    "ar/ar_006.txt": [
+      44
+    ],
+    "ar/ar_007.txt": [
+      14
+    ],
+    "ar/ar_009.txt": [
+      20
     ]
   },
-  "رد": {
-    "ar/doc05.txt": [
+  "مصدر،": {
+    "ar/ar_002.txt": [
       34
     ]
   },
+  "يقلل": {
+    "ar/ar_002.txt": [
+      36
+    ]
+  },
+  "تاخير": {
+    "ar/ar_002.txt": [
+      38
+    ]
+  },
+  "استخدام": {
+    "ar/ar_002.txt": [
+      39
+    ]
+  },
+  "نطاق": {
+    "ar/ar_002.txt": [
+      40
+    ]
+  },
+  "ترددي": {
+    "ar/ar_002.txt": [
+      41
+    ]
+  },
+  "سحاب": {
+    "ar/ar_002.txt": [
+      43
+    ]
+  },
+  "توفر": {
+    "ar/ar_002.txt": [
+      44
+    ],
+    "ar/ar_006.txt": [
+      36
+    ],
+    "ar/ar_009.txt": [
+      41
+    ]
+  },
+  "موارد": {
+    "ar/ar_002.txt": [
+      45
+    ],
+    "ar/ar_006.txt": [
+      17
+    ]
+  },
+  "قابله": {
+    "ar/ar_002.txt": [
+      46,
+      87
+    ],
+    "ar/ar_005.txt": [
+      65
+    ]
+  },
+  "توسع": {
+    "ar/ar_002.txt": [
+      47
+    ]
+  },
+  "طلب": {
+    "ar/ar_002.txt": [
+      49
+    ]
+  },
+  "تدمج": {
+    "ar/ar_002.txt": [
+      52
+    ]
+  },
+  "تح": {
+    "ar/ar_002.txt": [
+      56
+    ],
+    "ar/ar_005.txt": [
+      26
+    ]
+  },
+  "اضاءه": {
+    "ar/ar_002.txt": [
+      58
+    ]
+  },
+  "تدفئه": {
+    "ar/ar_002.txt": [
+      59
+    ]
+  },
+  "ام": {
+    "ar/ar_002.txt": [
+      60,
+      97
+    ],
+    "ar/ar_004.txt": [
+      33,
+      48,
+      85,
+      98,
+      103
+    ]
+  },
+  "ترف": {
+    "ar/ar_002.txt": [
+      61
+    ]
+  },
+  "صناعي": {
+    "ar/ar_002.txt": [
+      64
+    ]
+  },
+  "يحسن": {
+    "ar/ar_002.txt": [
+      65
+    ]
+  },
+  "تصنيع": {
+    "ar/ar_002.txt": [
+      66
+    ]
+  },
+  "صيانه": {
+    "ar/ar_002.txt": [
+      69
+    ],
+    "ar/ar_005.txt": [
+      6,
+      74
+    ]
+  },
+  "تنبؤ": {
+    "ar/ar_002.txt": [
+      70
+    ],
+    "ar/ar_003.txt": [
+      55
+    ],
+    "ar/ar_009.txt": [
+      43
+    ]
+  },
+  "مراقبه": {
+    "ar/ar_002.txt": [
+      71
+    ]
+  },
+  "قت": {
+    "ar/ar_002.txt": [
+      73
+    ],
+    "ar/ar_005.txt": [
+      38
+    ]
+  },
+  "علي": {
+    "ar/ar_002.txt": [
+      74
+    ]
+  },
+  "تستخدم": {
+    "ar/ar_002.txt": [
+      77
+    ],
+    "ar/ar_005.txt": [
+      88
+    ],
+    "ar/ar_009.txt": [
+      9
+    ]
+  },
+  "مستشعر": {
+    "ar/ar_002.txt": [
+      78
+    ]
+  },
+  "اداره": {
+    "ar/ar_002.txt": [
+      81
+    ],
+    "ar/ar_004.txt": [
+      96
+    ],
+    "ar/ar_005.txt": [
+      33
+    ],
+    "ar/ar_006.txt": [
+      45
+    ],
+    "ar/ar_008.txt": [
+      34
+    ]
+  },
+  "مرور": {
+    "ar/ar_002.txt": [
+      82
+    ],
+    "ar/ar_005.txt": [
+      37
+    ]
+  },
+  "نفاي": {
+    "ar/ar_002.txt": [
+      83
+    ]
+  },
+  "اءه": {
+    "ar/ar_002.txt": [
+      84
+    ]
+  },
   "طاقه": {
-    "ar/doc06.txt": [
+    "ar/ar_002.txt": [
+      85
+    ],
+    "ar/ar_007.txt": [
       0,
       3,
       5,
       7,
+      20,
+      38
+    ]
+  },
+  "ارتداء": {
+    "ar/ar_002.txt": [
+      88
+    ]
+  },
+  "تتبع": {
+    "ar/ar_002.txt": [
+      89
+    ],
+    "ar/ar_005.txt": [
+      82
+    ]
+  },
+  "مقاييس": {
+    "ar/ar_002.txt": [
+      90
+    ]
+  },
+  "صحه": {
+    "ar/ar_002.txt": [
+      91
+    ]
+  },
+  "ياقه": {
+    "ar/ar_002.txt": [
+      93
+    ]
+  },
+  "دن": {
+    "ar/ar_002.txt": [
+      94
+    ]
+  },
+  "موقع": {
+    "ar/ar_002.txt": [
+      95
+    ]
+  },
+  "تحدي": {
+    "ar/ar_002.txt": [
+      96
+    ]
+  },
+  "مصادقه": {
+    "ar/ar_002.txt": [
+      101
+    ],
+    "ar/ar_004.txt": [
+      34,
+      43
+    ]
+  },
+  "تشفير": {
+    "ar/ar_002.txt": [
+      103
+    ],
+    "ar/ar_004.txt": [
+      13,
+      21
+    ]
+  },
+  "حما": {
+    "ar/ar_002.txt": [
+      105
+    ],
+    "ar/ar_007.txt": [
+      34
+    ]
+  },
+  "علم": {
+    "ar/ar_003.txt": [
+      0
+    ],
+    "ar/ar_009.txt": [
+      0
+    ]
+  },
+  "يجمع": {
+    "ar/ar_003.txt": [
+      2
+    ],
+    "ar/ar_005.txt": [
+      18
+    ]
+  },
+  "احصاء": {
+    "ar/ar_003.txt": [
+      4
+    ]
+  },
+  "رمجه": {
+    "ar/ar_003.txt": [
+      5
+    ],
+    "ar/ar_005.txt": [
+      4,
+      60
+    ],
+    "ar/ar_006.txt": [
+      43
+    ],
+    "ar/ar_010.txt": [
+      12,
+      17
+    ]
+  },
+  "استخراج": {
+    "ar/ar_003.txt": [
+      8
+    ]
+  },
+  "رؤي": {
+    "ar/ar_003.txt": [
+      9
+    ]
+  },
+  "علماء": {
+    "ar/ar_003.txt": [
+      13
+    ]
+  },
+  "ادو": {
+    "ar/ar_003.txt": [
+      15,
+      32
+    ],
+    "ar/ar_008.txt": [
+      26
+    ]
+  },
+  "تقني": {
+    "ar/ar_003.txt": [
+      16
+    ],
+    "ar/ar_008.txt": [
+      3
+    ]
+  },
+  "متنوعه": {
+    "ar/ar_003.txt": [
+      17
+    ]
+  },
+  "تنظيف": {
+    "ar/ar_003.txt": [
+      18
+    ]
+  },
+  "تصور": {
+    "ar/ar_003.txt": [
       20
     ]
   },
-  "متجدده": {
-    "ar/doc06.txt": [
+  "ضخمه": {
+    "ar/ar_003.txt": [
+      23
+    ]
+  },
+  "تشير": {
+    "ar/ar_003.txt": [
+      24
+    ]
+  },
+  "بيره": {
+    "ar/ar_003.txt": [
+      28,
+      53
+    ]
+  },
+  "تي": {
+    "ar/ar_003.txt": [
+      30
+    ],
+    "ar/ar_010.txt": [
+      20
+    ]
+  },
+  "تتطلب": {
+    "ar/ar_003.txt": [
+      31
+    ]
+  },
+  "متقدمه": {
+    "ar/ar_003.txt": [
+      33
+    ],
+    "ar/ar_008.txt": [
+      4
+    ],
+    "ar/ar_009.txt": [
+      11
+    ]
+  },
+  "مستودع": {
+    "ar/ar_003.txt": [
+      35
+    ]
+  },
+  "تخزن": {
+    "ar/ar_003.txt": [
+      37,
+      87
+    ]
+  },
+  "منظمه": {
+    "ar/ar_003.txt": [
+      39,
+      41
+    ]
+  },
+  "غير": {
+    "ar/ar_003.txt": [
+      40
+    ]
+  },
+  "اغراض": {
+    "ar/ar_003.txt": [
+      42
+    ]
+  },
+  "تنقيب": {
+    "ar/ar_003.txt": [
+      45
+    ]
+  },
+  "علاق": {
+    "ar/ar_003.txt": [
+      49
+    ]
+  },
+  "تتوقع": {
+    "ar/ar_003.txt": [
+      56
+    ]
+  },
+  "اتجاه": {
+    "ar/ar_003.txt": [
+      57
+    ]
+  },
+  "مستقبل": {
+    "ar/ar_003.txt": [
+      58
+    ]
+  },
+  "ناء": {
+    "ar/ar_003.txt": [
+      59
+    ],
+    "ar/ar_004.txt": [
+      30
+    ]
+  },
+  "تاريخ": {
+    "ar/ar_003.txt": [
+      62
+    ]
+  },
+  "صف": {
+    "ar/ar_003.txt": [
+      64,
+      79
+    ]
+  },
+  "تلخص": {
+    "ar/ar_003.txt": [
+      65
+    ]
+  },
+  "ماض": {
+    "ar/ar_003.txt": [
+      67
+    ]
+  },
+  "حدث": {
+    "ar/ar_003.txt": [
+      70,
+      75
+    ]
+  },
+  "تشخيص": {
+    "ar/ar_003.txt": [
+      72
+    ],
+    "ar/ar_008.txt": [
+      5
+    ]
+  },
+  "تحقق": {
+    "ar/ar_003.txt": [
+      73
+    ]
+  },
+  "ماذا": {
+    "ar/ar_003.txt": [
+      74
+    ]
+  },
+  "توصي": {
+    "ar/ar_003.txt": [
+      80
+    ]
+  },
+  "اجراء": {
+    "ar/ar_003.txt": [
+      81
+    ],
+    "ar/ar_004.txt": [
+      84
+    ],
+    "ar/ar_008.txt": [
+      13
+    ]
+  },
+  "تحقيق": {
+    "ar/ar_003.txt": [
+      82
+    ]
+  },
+  "نتائج": {
+    "ar/ar_003.txt": [
+      83
+    ]
+  },
+  "مرجوه": {
+    "ar/ar_003.txt": [
+      84
+    ]
+  },
+  "حير": {
+    "ar/ar_003.txt": [
+      85
+    ]
+  },
+  "خام": {
+    "ar/ar_003.txt": [
+      89
+    ]
+  },
+  "تنسيق": {
+    "ar/ar_003.txt": [
+      90
+    ]
+  },
+  "اصلي": {
+    "ar/ar_003.txt": [
+      91
+    ]
+  },
+  "احقه": {
+    "ar/ar_003.txt": [
+      93
+    ]
+  },
+  "عملي": {
+    "ar/ar_003.txt": [
+      94
+    ],
+    "ar/ar_005.txt": [
+      21
+    ],
+    "ar/ar_008.txt": [
+      14
+    ]
+  },
+  "تستخرج": {
+    "ar/ar_003.txt": [
+      95
+    ]
+  },
+  "تحول": {
+    "ar/ar_003.txt": [
+      96
+    ],
+    "ar/ar_007.txt": [
+      11
+    ]
+  },
+  "تحمل": {
+    "ar/ar_003.txt": [
+      97
+    ]
+  },
+  "امن": {
+    "ar/ar_004.txt": [
+      0
+    ]
+  },
+  "سيبراني": {
+    "ar/ar_004.txt": [
       1
     ]
   },
-  "تشمل": {
-    "ar/doc06.txt": [
+  "يحمي": {
+    "ar/ar_004.txt": [
       2
     ]
   },
+  "مبيوتر": {
+    "ar/ar_004.txt": [
+      4
+    ]
+  },
+  "هجم": {
+    "ar/ar_004.txt": [
+      7,
+      61
+    ]
+  },
+  "رقم": {
+    "ar/ar_004.txt": [
+      8
+    ],
+    "ar/ar_006.txt": [
+      10
+    ]
+  },
+  "صول": {
+    "ar/ar_004.txt": [
+      9,
+      42
+    ]
+  },
+  "مصرح": {
+    "ar/ar_004.txt": [
+      11
+    ]
+  },
+  "يجعل": {
+    "ar/ar_004.txt": [
+      14
+    ]
+  },
+  "مقروءه": {
+    "ar/ar_004.txt": [
+      17
+    ]
+  },
+  "دون": {
+    "ar/ar_004.txt": [
+      18
+    ]
+  },
+  "مفتاح": {
+    "ar/ar_004.txt": [
+      19
+    ]
+  },
+  "فك": {
+    "ar/ar_004.txt": [
+      20
+    ]
+  },
+  "صحيح": {
+    "ar/ar_004.txt": [
+      22
+    ]
+  },
+  "جدر": {
+    "ar/ar_004.txt": [
+      23
+    ]
+  },
+  "نار": {
+    "ar/ar_004.txt": [
+      24
+    ]
+  },
+  "تراقب": {
+    "ar/ar_004.txt": [
+      25,
+      89
+    ]
+  },
+  "تتح": {
+    "ar/ar_004.txt": [
+      26
+    ]
+  },
+  "حركه": {
+    "ar/ar_004.txt": [
+      28,
+      90
+    ]
+  },
+  "قواعد": {
+    "ar/ar_004.txt": [
+      32
+    ]
+  },
+  "تتحقق": {
+    "ar/ar_004.txt": [
+      35
+    ]
+  },
+  "هو": {
+    "ar/ar_004.txt": [
+      37
+    ]
+  },
+  "مستخدم": {
+    "ar/ar_004.txt": [
+      38,
+      65
+    ],
+    "ar/ar_010.txt": [
+      31
+    ]
+  },
+  "منح": {
+    "ar/ar_004.txt": [
+      41
+    ]
+  },
+  "متعدده": {
+    "ar/ar_004.txt": [
+      44
+    ]
+  },
+  "عوامل": {
+    "ar/ar_004.txt": [
+      45
+    ]
+  },
+  "تضيف": {
+    "ar/ar_004.txt": [
+      46
+    ]
+  },
+  "طبقه": {
+    "ar/ar_004.txt": [
+      47
+    ]
+  },
+  "اضاف": {
+    "ar/ar_004.txt": [
+      49
+    ]
+  },
+  "رمجي": {
+    "ar/ar_004.txt": [
+      50,
+      57
+    ],
+    "ar/ar_005.txt": [
+      1,
+      8,
+      46,
+      48,
+      54,
+      56,
+      71,
+      77,
+      91
+    ],
+    "ar/ar_010.txt": [
+      1,
+      5,
+      24,
+      40
+    ]
+  },
+  "خبيثه": {
+    "ar/ar_004.txt": [
+      51
+    ]
+  },
+  "يروس": {
+    "ar/ar_004.txt": [
+      53
+    ]
+  },
+  "ديد": {
+    "ar/ar_004.txt": [
+      54
+    ]
+  },
+  "احصنه": {
+    "ar/ar_004.txt": [
+      55
+    ]
+  },
+  "طرواده": {
+    "ar/ar_004.txt": [
+      56
+    ]
+  },
+  "فد": {
+    "ar/ar_004.txt": [
+      58
+    ]
+  },
+  "رامج": {
+    "ar/ar_004.txt": [
+      59
+    ],
+    "ar/ar_005.txt": [
+      64
+    ]
+  },
+  "تجسس": {
+    "ar/ar_004.txt": [
+      60
+    ]
+  },
+  "تصيد": {
+    "ar/ar_004.txt": [
+      62
+    ]
+  },
+  "احتيالي": {
+    "ar/ar_004.txt": [
+      63
+    ]
+  },
+  "تخدع": {
+    "ar/ar_004.txt": [
+      64
+    ]
+  },
+  "شف": {
+    "ar/ar_004.txt": [
+      66,
+      87
+    ]
+  },
+  "حساسه": {
+    "ar/ar_004.txt": [
+      69
+    ]
+  },
+  "رسائل": {
+    "ar/ar_004.txt": [
+      72
+    ]
+  },
+  "ريد": {
+    "ar/ar_004.txt": [
+      73
+    ]
+  },
+  "تروني": {
+    "ar/ar_004.txt": [
+      74
+    ]
+  },
+  "مواقع": {
+    "ar/ar_004.txt": [
+      76
+    ]
+  },
+  "يب": {
+    "ar/ar_004.txt": [
+      77
+    ]
+  },
+  "خادعه": {
+    "ar/ar_004.txt": [
+      78
+    ]
+  },
+  "هندسه": {
+    "ar/ar_004.txt": [
+      79
+    ],
+    "ar/ar_010.txt": [
+      0
+    ]
+  },
+  "اجتماع": {
+    "ar/ar_004.txt": [
+      80
+    ]
+  },
+  "تلاعب": {
+    "ar/ar_004.txt": [
+      81
+    ]
+  },
+  "اشخاص": {
+    "ar/ar_004.txt": [
+      82
+    ]
+  },
+  "سر": {
+    "ar/ar_004.txt": [
+      83
+    ]
+  },
+  "تسلل": {
+    "ar/ar_004.txt": [
+      88
+    ]
+  },
+  "حثا": {
+    "ar/ar_004.txt": [
+      92
+    ]
+  },
+  "نشاط": {
+    "ar/ar_004.txt": [
+      94
+    ]
+  },
+  "مشبوه": {
+    "ar/ar_004.txt": [
+      95
+    ]
+  },
+  "احداث": {
+    "ar/ar_004.txt": [
+      99
+    ]
+  },
+  "تحلل": {
+    "ar/ar_004.txt": [
+      101
+    ]
+  },
+  "تطوير": {
+    "ar/ar_005.txt": [
+      0,
+      13,
+      20
+    ],
+    "ar/ar_008.txt": [
+      25
+    ],
+    "ar/ar_010.txt": [
+      4,
+      34
+    ]
+  },
+  "يتضمن": {
+    "ar/ar_005.txt": [
+      2
+    ]
+  },
+  "تصميم": {
+    "ar/ar_005.txt": [
+      3,
+      55,
+      62
+    ],
+    "ar/ar_010.txt": [
+      3
+    ]
+  },
+  "اختبار": {
+    "ar/ar_005.txt": [
+      5,
+      67
+    ],
+    "ar/ar_010.txt": [
+      23
+    ]
+  },
+  "تركز": {
+    "ar/ar_005.txt": [
+      9
+    ]
+  },
+  "منهجي": {
+    "ar/ar_005.txt": [
+      10
+    ],
+    "ar/ar_010.txt": [
+      7,
+      33
+    ]
+  },
+  "رشيكه": {
+    "ar/ar_005.txt": [
+      11
+    ]
+  },
+  "تكراري": {
+    "ar/ar_005.txt": [
+      14
+    ]
+  },
+  "ملاحظ": {
+    "ar/ar_005.txt": [
+      15
+    ]
+  },
+  "عملاء": {
+    "ar/ar_005.txt": [
+      16
+    ]
+  },
+  "ديفوبس": {
+    "ar/ar_005.txt": [
+      17
+    ]
+  },
+  "تحس": {
+    "ar/ar_005.txt": [
+      22
+    ],
+    "ar/ar_008.txt": [
+      37
+    ]
+  },
+  "تعا": {
+    "ar/ar_005.txt": [
+      23
+    ]
+  },
+  "نشر": {
+    "ar/ar_005.txt": [
+      24,
+      41,
+      79
+    ]
+  },
+  "اصدار": {
+    "ar/ar_005.txt": [
+      28
+    ]
+  },
+  "مثل": {
+    "ar/ar_005.txt": [
+      29
+    ]
+  },
+  "جيت": {
+    "ar/ar_005.txt": [
+      30
+    ]
+  },
+  "تساعد": {
+    "ar/ar_005.txt": [
+      31
+    ],
+    "ar/ar_006.txt": [
+      24
+    ],
+    "ar/ar_008.txt": [
+      10
+    ],
+    "ar/ar_009.txt": [
+      26
+    ],
+    "ar/ar_010.txt": [
+      36
+    ]
+  },
+  "تغيير": {
+    "ar/ar_005.txt": [
+      34
+    ]
+  },
+  "ود": {
+    "ar/ar_005.txt": [
+      36
+    ]
+  },
+  "تكامل": {
+    "ar/ar_005.txt": [
+      39
+    ]
+  },
+  "مستمر": {
+    "ar/ar_005.txt": [
+      40,
+      42
+    ]
+  },
+  "ي": {
+    "ar/ar_005.txt": [
+      43
+    ]
+  },
+  "عمل": {
+    "ar/ar_005.txt": [
+      44
+    ]
+  },
+  "تسليم": {
+    "ar/ar_005.txt": [
+      45,
+      90
+    ],
+    "ar/ar_010.txt": [
+      39
+    ]
+  },
+  "متطلب": {
+    "ar/ar_005.txt": [
+      47,
+      73
+    ]
+  },
+  "تحدد": {
+    "ar/ar_005.txt": [
+      49
+    ]
+  },
+  "يجب": {
+    "ar/ar_005.txt": [
+      51
+    ]
+  },
+  "تفعله": {
+    "ar/ar_005.txt": [
+      53
+    ]
+  },
+  "بن": {
+    "ar/ar_005.txt": [
+      58
+    ],
+    "ar/ar_007.txt": [
+      28
+    ]
+  },
+  "هيكل": {
+    "ar/ar_005.txt": [
+      59
+    ],
+    "ar/ar_010.txt": [
+      9
+    ]
+  },
+  "تترجم": {
+    "ar/ar_005.txt": [
+      61
+    ]
+  },
+  "تنفيذ": {
+    "ar/ar_005.txt": [
+      66
+    ]
+  },
+  "يتحقق": {
+    "ar/ar_005.txt": [
+      68
+    ]
+  },
+  "تلبي": {
+    "ar/ar_005.txt": [
+      72
+    ]
+  },
+  "تحدث": {
+    "ar/ar_005.txt": [
+      75
+    ]
+  },
+  "تحسن": {
+    "ar/ar_005.txt": [
+      76
+    ]
+  },
+  "منهج": {
+    "ar/ar_005.txt": [
+      80
+    ]
+  },
+  "شلال": {
+    "ar/ar_005.txt": [
+      81
+    ]
+  },
+  "مراحل": {
+    "ar/ar_005.txt": [
+      83
+    ],
+    "ar/ar_008.txt": [
+      50
+    ]
+  },
+  "متسلسله": {
+    "ar/ar_005.txt": [
+      84
+    ]
+  },
+  "مع": {
+    "ar/ar_005.txt": [
+      85
+    ]
+  },
+  "تداخل": {
+    "ar/ar_005.txt": [
+      86
+    ]
+  },
+  "سيط": {
+    "ar/ar_005.txt": [
+      87
+    ]
+  },
+  "سبرينت": {
+    "ar/ar_005.txt": [
+      89
+    ]
+  },
+  "عامله": {
+    "ar/ar_005.txt": [
+      92
+    ]
+  },
+  "شكل": {
+    "ar/ar_005.txt": [
+      93
+    ],
+    "ar/ar_010.txt": [
+      6,
+      41
+    ]
+  },
+  "تدريجي": {
+    "ar/ar_005.txt": [
+      94
+    ]
+  },
+  "كتروني": {
+    "ar/ar_006.txt": [
+      1
+    ]
+  },
+  "اصبح": {
+    "ar/ar_006.txt": [
+      2
+    ]
+  },
+  "اساس": {
+    "ar/ar_006.txt": [
+      3
+    ]
+  },
+  "عصر": {
+    "ar/ar_006.txt": [
+      5
+    ]
+  },
+  "حديث": {
+    "ar/ar_006.txt": [
+      6
+    ],
+    "ar/ar_008.txt": [
+      1
+    ]
+  },
+  "جامع": {
+    "ar/ar_006.txt": [
+      7
+    ]
+  },
+  "تقدم": {
+    "ar/ar_006.txt": [
+      8
+    ]
+  },
+  "محاضر": {
+    "ar/ar_006.txt": [
+      9
+    ]
+  },
+  "عبر": {
+    "ar/ar_006.txt": [
+      11
+    ],
+    "ar/ar_009.txt": [
+      34
+    ]
+  },
+  "منص": {
+    "ar/ar_006.txt": [
+      12,
+      35
+    ]
+  },
+  "طلاب": {
+    "ar/ar_006.txt": [
+      14
+    ]
+  },
+  "يستفيد": {
+    "ar/ar_006.txt": [
+      15
+    ]
+  },
+  "متاحه": {
+    "ar/ar_006.txt": [
+      19
+    ],
+    "ar/ar_007.txt": [
+      50
+    ]
+  },
+  "تر": {
+    "ar/ar_006.txt": [
+      20
+    ]
+  },
+  "تخصيص": {
+    "ar/ar_006.txt": [
+      26
+    ]
+  },
+  "تعليمي": {
+    "ar/ar_006.txt": [
+      28
+    ]
+  },
+  "حسب": {
+    "ar/ar_006.txt": [
+      29
+    ]
+  },
+  "مستوي": {
+    "ar/ar_006.txt": [
+      30
+    ]
+  },
+  "طالب": {
+    "ar/ar_006.txt": [
+      32
+    ]
+  },
+  "قدراته": {
+    "ar/ar_006.txt": [
+      33
+    ]
+  },
+  "رد": {
+    "ar/ar_006.txt": [
+      34
+    ]
+  },
+  "دور": {
+    "ar/ar_006.txt": [
+      37
+    ]
+  },
+  "تفاعل": {
+    "ar/ar_006.txt": [
+      38
+    ]
+  },
+  "مختلف": {
+    "ar/ar_006.txt": [
+      40
+    ]
+  },
+  "متجدده": {
+    "ar/ar_007.txt": [
+      1,
+      48
+    ]
+  },
   "شمس": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       4,
       10,
       13
     ],
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       33
     ]
   },
   "رياح": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       6,
       18
     ]
   },
   "مائ": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       8
     ]
   },
   "واح": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       9
     ]
   },
-  "تحول": {
-    "ar/doc06.txt": [
-      11
-    ]
-  },
   "ضوء": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       12
     ]
   },
-  "الي": {
-    "ar/doc06.txt": [
-      14
-    ],
-    "ar/doc09.txt": [
-      20
-    ]
-  },
   "هرباء": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       15
     ]
   },
   "نظيفه": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       16
     ]
   },
   "تورب": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       17
     ]
   },
   "تنتج": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       19
     ]
   },
   "مستدامه": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       21
     ]
   },
   "انبعاث": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       23
     ]
   },
   "ضاره": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       24
     ]
   },
   "حكوم": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       25
     ]
   },
-  "بن": {
-    "ar/doc06.txt": [
-      28
+  "تستثمر": {
+    "ar/ar_007.txt": [
+      26
     ]
   },
   "تحت": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       29
     ]
   },
   "خضراء": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       30
     ]
   },
   "حد": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       31
     ]
   },
   "تلوث": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       33
     ]
   },
-  "حما": {
-    "ar/doc06.txt": [
-      34
-    ]
-  },
   "يئه": {
-    "ar/doc06.txt": [
+    "ar/ar_007.txt": [
       35
     ]
   },
-  "يستخدم": {
-    "ar/doc07.txt": [
-      2
+  "تخز": {
+    "ar/ar_007.txt": [
+      37
+    ]
+  },
+  "طاري": {
+    "ar/ar_007.txt": [
+      40
+    ]
+  },
+  "يضمن": {
+    "ar/ar_007.txt": [
+      41
     ],
-    "ar/doc10.txt": [
-      15
+    "ar/ar_010.txt": [
+      25
     ]
   },
-  "تقني": {
-    "ar/doc07.txt": [
-      3
+  "استمرار": {
+    "ar/ar_007.txt": [
+      42
     ]
   },
-  "متقدمه": {
-    "ar/doc07.txt": [
-      4
-    ],
-    "ar/doc09.txt": [
-      11
+  "امداد": {
+    "ar/ar_007.txt": [
+      43
     ]
   },
-  "تشخيص": {
-    "ar/doc07.txt": [
-      5
+  "مصادر": {
+    "ar/ar_007.txt": [
+      47
+    ]
+  },
+  "طب": {
+    "ar/ar_008.txt": [
+      0,
+      9,
+      46
     ]
   },
   "امراض": {
-    "ar/doc07.txt": [
-      6
+    "ar/ar_008.txt": [
+      6,
+      48
     ]
   },
   "علاج": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       7
     ]
   },
-  "اجهزه": {
-    "ar/doc07.txt": [
-      8
-    ]
-  },
   "اطباء": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       11
     ]
   },
-  "اجراء": {
-    "ar/doc07.txt": [
-      13
-    ]
-  },
   "جراح": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       15
     ]
   },
   "دقه": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       16
     ]
   },
-  "مجال": {
-    "ar/doc07.txt": [
-      21
-    ],
-    "ar/doc08.txt": [
-      7
+  "عال": {
+    "ar/ar_008.txt": [
+      17
+    ]
+  },
+  "حث": {
+    "ar/ar_008.txt": [
+      18
+    ]
+  },
+  "علمي": {
+    "ar/ar_008.txt": [
+      19
     ]
   },
   "صحي": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       22
     ]
   },
   "يسا": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       23
     ]
   },
-  "تطوير": {
-    "ar/doc07.txt": [
-      25
-    ],
-    "ar/doc10.txt": [
-      4
-    ]
-  },
-  "ادو": {
-    "ar/doc07.txt": [
-      26
+  "جديده": {
+    "ar/ar_008.txt": [
+      27
     ]
   },
   "عاله": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       28
     ]
   },
   "مستشفي": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       29
     ]
   },
   "تعتمد": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       30
     ]
   },
   "كتر": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       33
-    ],
-    "ar/doc08.txt": [
-      30
     ]
   },
   "سجل": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       35
     ]
   },
   "مرضي": {
-    "ar/doc07.txt": [
+    "ar/ar_008.txt": [
       36
     ]
   },
-  "يعتمد": {
-    "ar/doc08.txt": [
-      2
-    ]
-  },
-  "ابتكار": {
-    "ar/doc08.txt": [
-      4
-    ]
-  },
-  "ابداع": {
-    "ar/doc08.txt": [
-      5
-    ]
-  },
-  "تكنولوج": {
-    "ar/doc08.txt": [
-      8
-    ]
-  },
-  "شرك": {
-    "ar/doc08.txt": [
-      9
-    ]
-  },
-  "ناشئه": {
-    "ar/doc08.txt": [
-      10
-    ]
-  },
-  "حلولا": {
-    "ar/doc08.txt": [
-      12
-    ]
-  },
-  "مشاكل": {
-    "ar/doc08.txt": [
-      14
-    ]
-  },
-  "معقده": {
-    "ar/doc08.txt": [
-      15
-    ]
-  },
-  "رواد": {
-    "ar/doc08.txt": [
-      16
+  "جوده": {
+    "ar/ar_008.txt": [
+      38
     ],
-    "ar/doc09.txt": [
-      15
-    ]
-  },
-  "اعمال": {
-    "ar/doc08.txt": [
-      17
-    ]
-  },
-  "يستثمر": {
-    "ar/doc08.txt": [
-      18
-    ]
-  },
-  "اسواق": {
-    "ar/doc08.txt": [
-      24
-    ]
-  },
-  "توفر": {
-    "ar/doc08.txt": [
+    "ar/ar_010.txt": [
       26
     ]
   },
-  "رص": {
-    "ar/doc08.txt": [
-      27
+  "رعا": {
+    "ar/ar_008.txt": [
+      39
     ]
   },
-  "تجاره": {
-    "ar/doc08.txt": [
-      29
+  "صح": {
+    "ar/ar_008.txt": [
+      40
     ]
   },
-  "تسويق": {
-    "ar/doc08.txt": [
-      31
+  "يمكنه": {
+    "ar/ar_008.txt": [
+      43
     ]
   },
-  "محرك": {
-    "ar/doc08.txt": [
-      33
+  "اكتشاف": {
+    "ar/ar_008.txt": [
+      47
     ]
   },
-  "علم": {
-    "ar/doc09.txt": [
-      0
+  "مبكره": {
+    "ar/ar_008.txt": [
+      51
     ]
   },
   "لك": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       1,
       8
     ]
   },
   "يكشف": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       2
     ]
   },
   "اسرار": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       3
     ]
   },
   "ون": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       4,
       30
     ]
   },
   "نجوم": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       5
     ]
   },
   "مجر": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       6
     ]
   },
   "مراصد": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       7
     ]
   },
   "تلسكوب": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       10
     ]
   },
   "رصد": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       12
     ]
   },
   "واكب": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       13
     ]
   },
   "عيده": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       14
     ]
   },
+  "رواد": {
+    "ar/ar_009.txt": [
+      15
+    ]
+  },
   "ضاء": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       16
     ]
   },
   "يستهل": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       17
     ]
   },
   "رحل": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       18
     ]
   },
   "استكشاف": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       19
     ]
   },
   "محطه": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       21
     ]
   },
   "ضائ": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       22,
       25
     ]
   },
   "دول": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       23
     ]
   },
   "ابحاث": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       24
     ]
   },
   "اصل": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       29
     ]
   },
   "تطور": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       31
     ]
   },
   "مجموعه": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       32
     ]
   },
   "زمن": {
-    "ar/doc09.txt": [
+    "ar/ar_009.txt": [
       35
     ]
   },
-  "هندسه": {
-    "ar/doc10.txt": [
-      0
+  "اقمار": {
+    "ar/ar_009.txt": [
+      36
+    ]
+  },
+  "تدور": {
+    "ar/ar_009.txt": [
+      38
+    ]
+  },
+  "ارض": {
+    "ar/ar_009.txt": [
+      40
+    ]
+  },
+  "طقس": {
+    "ar/ar_009.txt": [
+      44
+    ]
+  },
+  "اتصال": {
+    "ar/ar_009.txt": [
+      45
     ]
   },
   "ته": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       2
     ]
   },
-  "شكل": {
-    "ar/doc10.txt": [
-      6
-    ]
-  },
-  "منهجي": {
-    "ar/doc10.txt": [
-      7
-    ]
-  },
-  "هيكل": {
-    "ar/doc10.txt": [
-      9
+  "خوارزمي": {
+    "ar/ar_010.txt": [
+      8
     ]
   },
   "اساسي": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       11
     ]
   },
-  "رمجه": {
-    "ar/doc10.txt": [
-      12,
-      17
-    ]
-  },
   "مبرمج": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       14
     ]
   },
   "غات": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       16
     ]
   },
   "تابه": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       18
     ]
   },
-  "تي": {
-    "ar/doc10.txt": [
-      20
-    ]
-  },
   "تنفذ": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       21
     ]
   },
-  "حواسيب": {
-    "ar/doc10.txt": [
-      22
-    ]
-  },
-  "اختبار": {
-    "ar/doc10.txt": [
-      23
-    ]
-  },
-  "يضمن": {
-    "ar/doc10.txt": [
-      25
-    ]
-  },
-  "جوده": {
-    "ar/doc10.txt": [
-      26
-    ]
-  },
   "منتج": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       27
     ]
   },
   "موثوقيته": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       28
     ]
   },
   "نشره": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       30
     ]
   },
   "نهائي": {
-    "ar/doc10.txt": [
+    "ar/ar_010.txt": [
       32
+    ]
+  },
+  "رشيق": {
+    "ar/ar_010.txt": [
+      35
+    ]
+  },
+  "رق": {
+    "ar/ar_010.txt": [
+      37
+    ]
+  },
+  "متكرر": {
+    "ar/ar_010.txt": [
+      42
+    ]
+  },
+  "تقديم": {
+    "ar/ar_010.txt": [
+      43
+    ]
+  },
+  "قيمه": {
+    "ar/ar_010.txt": [
+      44
+    ]
+  },
+  "مستمره": {
+    "ar/ar_010.txt": [
+      45
     ]
   }
 }

@@ -1,102 +1,102 @@
 {
-  "en/doc01.txt": {
-    "total_terms": 32,
-    "raw_text": "Computer science is the study of computation and information. It involves algorithms, data structures, and programming languages. Modern computing relies on machine learning and artificial intelligence to solve complex problems. Software engineering practices help developers build reliable and efficient systems for users worldwide.",
+  "en/en_001.txt": {
+    "total_terms": 138,
+    "raw_text": "Artificial intelligence is transforming the world of technology and business. Machine learning algorithms enable computers to learn from data and make predictions. Deep learning, a subset of machine learning, uses neural networks with multiple layers to process complex patterns. Natural language processing allows machines to understand and generate human language. Computer vision enables systems to interpret and analyze visual information from the world.\n\nAI applications range from virtual assistants like Siri and Alexa to autonomous vehicles navigating city streets. Neural networks mimic the human brain's structure, processing information through interconnected nodes. Reinforcement learning trains agents through trial and error, rewarding desired behaviors. Supervised learning uses labeled datasets to teach models, while unsupervised learning finds hidden patterns in unlabeled data. Transfer learning applies knowledge from one domain to another related domain. Generative AI creates new content, including images, text, and music. AI ethics concerns bias, fairness, transparency, and accountability in automated systems. Explainable AI aims to make AI decisions understandable to humans. Edge AI brings processing closer to data sources, reducing latency and bandwidth usage.\n",
     "language": "english"
   },
-  "en/doc02.txt": {
-    "total_terms": 31,
-    "raw_text": "Basketball is a popular sport played by two teams of five players. The game involves shooting a ball through a hoop to score points. Championship tournaments attract millions of viewers globally. Professional athletes train rigorously to improve their performance and compete at the highest level of the sport.",
+  "en/en_002.txt": {
+    "total_terms": 132,
+    "raw_text": "The internet of things connects billions of devices worldwide, creating a vast network of interconnected smart objects. These devices collect and share data, enabling automation and efficiency in homes, industries, and cities. Edge computing processes data closer to the source, reducing latency and bandwidth usage. Cloud computing provides scalable resources on demand, supporting the infrastructure for modern applications.\n\nSmart homes integrate IoT devices for lighting, heating, security, and entertainment control. Industrial IoT optimizes manufacturing through predictive maintenance and real-time monitoring. Smart cities use IoT sensors for traffic management, waste management, and energy efficiency. Wearable devices track health metrics, fitness data, and location information. IoT security challenges include device authentication, data encryption, and network protection. MQTT and CoAP are lightweight protocols for IoT communication. 5G networks enable faster IoT data transmission with lower latency. Digital twins create virtual replicas of physical systems for simulation and analysis. Fog computing extends cloud capabilities to the network edge. IoT platforms provide device management, data processing, and application development tools.\n",
     "language": "english"
   },
-  "en/doc03.txt": {
-    "total_terms": 34,
-    "raw_text": "Artificial intelligence transforms how machines learn and make decisions. Deep learning networks process vast amounts of data to recognize patterns. Natural language processing enables computers to understand human speech. Researchers continue advancing intelligent systems that can reason and adapt to new information autonomously.",
+  "en/en_003.txt": {
+    "total_terms": 124,
+    "raw_text": "Data science combines statistics, programming, and domain knowledge to extract insights from data. Data scientists use various tools and techniques to clean, analyze, and visualize data. Big data refers to large, complex datasets that require advanced tools for processing and analysis. Data warehousing stores structured and unstructured data for business intelligence and reporting purposes.\n\nData mining discovers patterns and relationships in large datasets. Predictive analytics forecasts future trends based on historical data. Descriptive analytics summarizes past data to understand what happened. Diagnostic analytics investigates why something happened. Prescriptive analytics recommends actions to achieve desired outcomes. Data lakes store raw data in its native format for later processing. ETL processes extract, transform, and load data between systems. Data governance ensures data quality, security, and compliance. Python, R, and SQL are essential tools for data scientists. Libraries like pandas, numpy, and scikit-learn facilitate data analysis. Data visualization tools like Tableau and Power BI present insights clearly.\n",
     "language": "english"
   },
-  "en/doc04.txt": {
-    "total_terms": 32,
-    "raw_text": "The ancient civilizations of Egypt and Mesopotamia developed writing systems thousands of years ago. Historical records reveal fascinating details about governance, trade, and culture. Archaeological discoveries continue to reshape our understanding of human history. Museums preserve these artifacts for future generations to study and appreciate.",
+  "en/en_004.txt": {
+    "total_terms": 117,
+    "raw_text": "Cybersecurity protects computer systems and networks from digital attacks and unauthorized access. Encryption scrambles data to make it unreadable without the correct decryption key. Firewalls monitor and control network traffic based on security rules. Authentication verifies the identity of users and systems before granting access. Multi-factor authentication adds an extra layer of security by requiring multiple forms of verification.\n\nMalware includes viruses, worms, trojans, ransomware, and spyware. Phishing attacks trick users into revealing sensitive information through deceptive emails or websites. Social engineering manipulates people into breaking security procedures. Intrusion detection systems monitor network traffic for suspicious activity. Security information and event management collects and analyzes security data. Penetration testing simulates attacks to identify vulnerabilities. Vulnerability scanning identifies security weaknesses in systems. Security patches fix known vulnerabilities. Zero-day exploits target unknown vulnerabilities. Incident response plans outline procedures for handling security breaches.\n",
     "language": "english"
   },
-  "en/doc05.txt": {
-    "total_terms": 38,
-    "raw_text": "Machine learning algorithms improve through experience and data analysis. Supervised learning uses labeled examples to train predictive models. Unsupervised learning discovers hidden patterns in unlabeled datasets. Neural networks power recommendation engines and autonomous vehicles. Data scientists evaluate models using accuracy metrics and validation techniques.",
+  "en/en_005.txt": {
+    "total_terms": 108,
+    "raw_text": "Software development involves designing, coding, testing, and maintaining software applications. Agile methodologies emphasize iterative development and customer feedback. DevOps combines development and operations to improve collaboration and deployment. Version control systems like Git help manage changes to code over time. Continuous integration and continuous deployment automate the software delivery process.\n\nSoftware requirements define what the software should do. Software design creates the architecture and structure. Coding translates design into executable programs. Testing verifies the software meets requirements. Maintenance updates and improves the software after deployment. Waterfall follows sequential phases with minimal overlap. Scrum uses sprints to deliver working software incrementally. Kanban visualizes work to optimize flow. Extreme programming emphasizes technical excellence. Test-driven development writes tests before code. Pair programming has two developers work together. Code reviews improve code quality and share knowledge.\n",
     "language": "english"
   },
-  "en/doc06.txt": {
-    "total_terms": 35,
-    "raw_text": "Ocean ecosystems contain remarkable biodiversity from coral reefs to deep sea trenches. Marine biologists study fish populations and their migration patterns. Climate change threatens ocean temperatures and acidification levels. Conservation efforts aim to protect endangered species and preserve marine habitats for future sustainability.",
+  "en/en_006.txt": {
+    "total_terms": 55,
+    "raw_text": "Blockchain technology provides a decentralized and transparent way to record transactions across many computers. Cryptocurrencies like Bitcoin and Ethereum use blockchain to enable peer-to-peer digital payments without intermediaries. Smart contracts execute automatically when conditions are met, reducing fraud and increasing trust. Decentralized finance applications offer lending, borrowing, and trading without traditional banks. Consensus mechanisms like proof of work and proof of stake validate transactions and secure the network.",
     "language": "english"
   },
-  "en/doc07.txt": {
-    "total_terms": 34,
-    "raw_text": "Robotics combines computer science and engineering to design autonomous machines. Industrial robots perform manufacturing tasks with precision and speed. Medical robots assist surgeons during complex procedures with greater accuracy. Autonomous drones navigate environments using sensors and computer vision algorithms for various applications.",
+  "en/en_007.txt": {
+    "total_terms": 67,
+    "raw_text": "Renewable energy sources are transforming how electricity is generated and distributed worldwide. Solar panels convert sunlight directly into electricity using photovoltaic cells. Wind turbines capture kinetic energy from moving air to generate power. Hydroelectric dams harness the potential energy of flowing water. Geothermal energy taps into heat from the earth interior to produce steam and drive turbines. Energy storage systems including batteries and pumped hydro ensure reliable supply when generation fluctuates. Green hydrogen produced from renewable electricity offers a clean fuel for transportation and industry.",
     "language": "english"
   },
-  "en/doc08.txt": {
-    "total_terms": 32,
-    "raw_text": "Space exploration has expanded our knowledge of the solar system and beyond. Rockets carry satellites and probes into orbit around distant planets. Astronomers use telescopes to observe galaxies and black holes. The international space station serves as a laboratory for scientific experiments in microgravity conditions.",
+  "en/en_008.txt": {
+    "total_terms": 75,
+    "raw_text": "Quantum computing leverages quantum mechanical phenomena like superposition and entanglement to process information in fundamentally new ways. Quantum bits called qubits can represent multiple states simultaneously, enabling parallel computation. Quantum algorithms like Shor algorithm factor large numbers exponentially faster than classical methods. Grover search algorithm provides quadratic speedup for unstructured search problems. Quantum error correction techniques protect fragile quantum states from decoherence and noise. Potential applications include drug discovery, materials science, cryptography, and financial modeling. Companies like IBM and Google are building increasingly powerful quantum processors.",
     "language": "english"
   },
-  "en/doc09.txt": {
-    "total_terms": 36,
-    "raw_text": "Renewable energy sources include solar panels, wind turbines, and hydroelectric dams. Green technology reduces carbon emissions and combats global warming. Engineers design efficient batteries to store sustainable power. Governments invest in clean energy infrastructure to decrease dependence on fossil fuels and protect the environment.",
+  "en/en_009.txt": {
+    "total_terms": 70,
+    "raw_text": "Robotics engineering combines mechanical design, electronics, and software to create machines that interact with the physical world. Industrial robots automate repetitive tasks in factories with high precision and speed. Collaborative robots work alongside humans safely, adapting to changing environments. Autonomous drones use sensors and navigation algorithms for delivery and surveillance. Medical robots assist surgeons with delicate procedures, improving accuracy and reducing recovery time. Soft robotics uses flexible materials inspired by biological organisms to handle fragile objects. Swarm robotics coordinates multiple simple robots to accomplish complex tasks together.",
     "language": "english"
   },
-  "en/doc10.txt": {
-    "total_terms": 36,
-    "raw_text": "Data structures organize information efficiently for computer processing. Arrays store elements in contiguous memory locations for fast access. Linked lists allow dynamic insertion and deletion of nodes. Trees represent hierarchical relationships between data items. Graphs model networks and connections between various entities in complex systems.",
+  "en/en_010.txt": {
+    "total_terms": 65,
+    "raw_text": "Biotechnology applies biological systems and organisms to develop products and technologies. Genetic engineering modifies DNA to produce crops with improved yield and disease resistance. CRISPR technology allows precise editing of genes, opening possibilities for treating genetic disorders. Bioinformatics uses computational tools to analyze large biological datasets including genomes and protein structures. Pharmaceutical biotechnology develops biologic drugs like antibodies and vaccines. Stem cell research explores regenerative medicine and tissue engineering. Industrial biotechnology uses enzymes and microorganisms for sustainable manufacturing processes.",
     "language": "english"
   },
-  "ar/doc01.txt": {
-    "total_terms": 31,
-    "raw_text": "الذكاء الاصطناعي هو فرع من علوم الحاسوب يهتم بتصميم أنظمة قادرة على التعلم والتفكير. تستخدم الشبكات العصبية معالجة البيانات الضخمة لاكتشاف الأنماط. تتيح معالجة اللغات الطبيعية للحاسوب فهم الكلام البشري وتحليل النصوص العربية بفعالية.",
+  "ar/ar_001.txt": {
+    "total_terms": 98,
+    "raw_text": "الذكاء الاصطناعي يغير العالم في مجالات التكنولوجيا والأعمال. تعلم الآلة يمكن الحواسيب من التعلم من البيانات واتخاذ القرارات. التعلم العميق يستخدم الشبكات العصبية لمعالجة الأنماط المعقدة. معالجة اللغات الطبيعية تتيح للآلات فهم اللغة البشرية وتوليدها. الرؤية الحاسوبية تمكن الأنظمة من تحليل المعلومات البصرية.\n\nتطبيقات الذكاء الاصطناعي تشمل المساعدات الافتراضية والمركبات المستقلة. الشبكات العصبية تحاكي بنية الدماغ البشري في معالجة المعلومات. التعلم بالتعزيز يدرب الوكلاء من خلال التجربة والخطأ. التعلم الخاضع للإشراف يستخدم مجموعات البيانات المسماة لتعليم النماذج. التعلم غير الخاضع للإشراف يكتشف الأنماط المخفية في البيانات غير المسماة. نقل التعلم يطبق المعرفة من مجال واحد على مجال آخر ذي صلة. الذكاء الاصطناعي التوليدي ينشئ محتوى جديداً بما في ذلك الصور والنصوص والموسيقى.\n",
     "language": "arabic"
   },
-  "ar/doc02.txt": {
-    "total_terms": 32,
-    "raw_text": "كرة القدم هي الرياضة الأكثر شعبية في العالم العربي. يتنافس اللاعبون في بطولات كبرى تجذب ملايين المشاهدين. التدريب المستمر واللياقة البدنية ضروريان للأداء المتميز. الأندية الكبرى تستثمر في اللاعبين الشباب لبناء فرق قوية قادرة على الفوز بالبطولات.",
+  "ar/ar_002.txt": {
+    "total_terms": 96,
+    "raw_text": "إنترنت الأشياء يربط مليارات الأجهزة حول العالم، مما يخلق شبكة هائلة من الأشياء الذكية المتصلة. تجمع هذه الأجهزة البيانات وتشاركها، مما يتيح الأتمتة والكفاءة في المنازل والصناعات والمدن. الحوسبة الحافة تعالج البيانات أقرب إلى المصدر، مما يقلل من التأخير واستخدام النطاق الترددي. الحوسبة السحابية توفر موارد قابلة للتوسع عند الطلب.\n\nالمنازل الذكية تدمج أجهزة إنترنت الأشياء للتحكم في الإضاءة والتدفئة والأمان والترفيه. إنترنت الأشياء الصناعي يحسن التصنيع من خلال الصيانة التنبؤية والمراقبة في الوقت الفعلي. المدن الذكية تستخدم مستشعرات إنترنت الأشياء لإدارة المرور والنفايات وكفاءة الطاقة. الأجهزة القابلة للارتداء تتبع مقاييس الصحة وبيانات اللياقة البدنية والموقع. تحديات أمان إنترنت الأشياء تشمل مصادقة الأجهزة وتشفير البيانات وحماية الشبكة.\n",
     "language": "arabic"
   },
-  "ar/doc03.txt": {
-    "total_terms": 29,
-    "raw_text": "تقنية المعلومات تساعد المؤسسات على إدارة البيانات وتحسين العمليات. قواعد البيانات تخزن الملفات الضخمة وتتيح البحث السريع عن المعلومات. مهندسو البرمجيات يطوّرون تطبيقات ذكية تلبي احتياجات المستخدمين في مختلف القطاعات الاقتصادية والتعليمية.",
+  "ar/ar_003.txt": {
+    "total_terms": 93,
+    "raw_text": "علم البيانات يجمع بين الإحصاء والبرمجة والمعرفة بالمجال لاستخراج الرؤى من البيانات. يستخدم علماء البيانات أدوات وتقنيات متنوعة لتنظيف وتحليل وتصور البيانات. البيانات الضخمة تشير إلى مجموعات البيانات الكبيرة والمعقدة التي تتطلب أدوات متقدمة للمعالجة. مستودعات البيانات تخزن البيانات المنظمة وغير المنظمة لأغراض ذكاء الأعمال.\n\nتنقيب البيانات يكتشف الأنماط والعلاقات في مجموعات البيانات الكبيرة. التحليلات التنبؤية تتوقع الاتجاهات المستقبلية بناءً على البيانات التاريخية. التحليلات الوصفية تلخص البيانات الماضية لفهم ما حدث. التحليلات التشخيصية تحقق لماذا حدث شيء ما. التحليلات الوصفية توصي بالإجراءات لتحقيق النتائج المرجوة. بحيرات البيانات تخزن البيانات الخام بتنسيقها الأصلي للمعالجة اللاحقة. عمليات ETL تستخرج وتحول وتحمل البيانات بين الأنظمة.\n",
     "language": "arabic"
   },
-  "ar/doc04.txt": {
-    "total_terms": 31,
-    "raw_text": "الحضارة الإسلامية قدمت إسهامات عظيمة في العلوم والرياضيات والطب. العلماء العرب ترجموا الكتب اليونانية وأضافوا اكتشافات جديدة. الخوارزميات والجبر من أهم إنجازات الرياضيات العربية. المكتبات الكبرى كانت مراكز للمعرفة والبحث العلمي في العصور القديمة.",
+  "ar/ar_004.txt": {
+    "total_terms": 92,
+    "raw_text": "الأمن السيبراني يحمي أنظمة الكمبيوتر والشبكات من الهجمات الرقمية والوصول غير المصرح به. التشفير يجعل البيانات غير مقروءة بدون مفتاح فك التشفير الصحيح. الجدران النارية تراقب وتتحكم في حركة الشبكة بناءً على قواعد الأمان. المصادقة تتحقق من هوية المستخدمين والأنظمة قبل منح الوصول. المصادقة متعددة العوامل تضيف طبقة أمان إضافية.\n\nالبرمجيات الخبيثة تشمل الفيروسات والديدان وأحصنة طروادة والبرمجيات الفدية وبرامج التجسس. هجمات التصيد الاحتيالي تخدع المستخدمين للكشف عن معلومات حساسة من خلال رسائل بريد إلكتروني أو مواقع ويب خادعة. الهندسة الاجتماعية تلاعب بالأشخاص لكسر إجراءات الأمان. أنظمة كشف التسلل تراقب حركة الشبكة بحثاً عن نشاط مشبوه. إدارة معلومات الأمان والأحداث تجمع وتحلل بيانات الأمان.\n",
     "language": "arabic"
   },
-  "ar/doc05.txt": {
-    "total_terms": 31,
-    "raw_text": "التعليم الإلكتروني أصبح أساسيا في العصر الحديث. الجامعات تقدم محاضرات رقمية عبر منصات الإنترنت. الطلاب يستفيدون من الموارد التعليمية المتاحة إلكترونيا. تطبيقات الذكاء الاصطناعي تساعد في تخصيص المحتوى التعليمي حسب مستوى كل طالب وقدراته الفردية.",
+  "ar/ar_005.txt": {
+    "total_terms": 85,
+    "raw_text": "تطوير البرمجيات يتضمن تصميم وبرمجة واختبار وصيانة تطبيقات البرمجيات. تركز المنهجيات الرشيكة على التطوير التكراري وملاحظات العملاء. ديفوبس يجمع بين التطوير والعمليات لتحسين التعاون والنشر. أنظمة التحكم في الإصدارات مثل جيت تساعد في إدارة التغييرات في الكود بمرور الوقت. التكامل المستمر والنشر المستمر ي automatize عملية تسليم البرمجيات.\n\nمتطلبات البرمجيات تحدد ما يجب أن تفعله البرمجيات. تصميم البرمجيات ينشئ البنية والهيكل. البرمجة تترجم التصميم إلى برامج قابلة للتنفيذ. الاختبار يتحقق من أن البرمجيات تلبي المتطلبات. الصيانة تحدث وتحسن البرمجيات بعد النشر. منهجية الشلال تتبع المراحل المتسلسلة مع تداخل بسيط. Scrum تستخدم سبرينت لتسليم برمجيات عاملة بشكل تدريجي.\n",
     "language": "arabic"
   },
-  "ar/doc06.txt": {
-    "total_terms": 34,
-    "raw_text": "الطاقة المتجددة تشمل الطاقة الشمسية وطاقة الرياح والطاقة المائية. الألواح الشمسية تحول ضوء الشمس إلى كهرباء نظيفة. توربينات الرياح تنتج طاقة مستدامة دون انبعاثات ضارة. الحكومات تستثمر في البنية التحتية الخضراء للحد من التلوث وحماية البيئة الطبيعية.",
+  "ar/ar_006.txt": {
+    "total_terms": 41,
+    "raw_text": "التعليم الإلكتروني أصبح أساسيا في العصر الحديث. الجامعات تقدم محاضرات رقمية عبر منصات الإنترنت. الطلاب يستفيدون من الموارد التعليمية المتاحة إلكترونيا. تطبيقات الذكاء الاصطناعي تساعد في تخصيص المحتوى التعليمي حسب مستوى كل طالب وقدراته الفردية. المنصات توفر دورات تفاعلية في مختلف المجالات من البرمجة إلى إدارة الأعمال.",
     "language": "arabic"
   },
-  "ar/doc07.txt": {
-    "total_terms": 33,
-    "raw_text": "الطب الحديث يستخدم التقنيات المتقدمة لتشخيص الأمراض وعلاجها. الأجهزة الطبية تساعد الأطباء في إجراء العمليات الجراحية بدقة عالية. البحث العلمي في المجال الصحي يساهم في تطوير أدوية جديدة فعالة. المستشفيات تعتمد على الأنظمة الإلكترونية لإدارة سجلات المرضى.",
+  "ar/ar_007.txt": {
+    "total_terms": 43,
+    "raw_text": "الطاقة المتجددة تشمل الطاقة الشمسية وطاقة الرياح والطاقة المائية. الألواح الشمسية تحول ضوء الشمس إلى كهرباء نظيفة. توربينات الرياح تنتج طاقة مستدامة دون انبعاثات ضارة. الحكومات تستثمر في البنية التحتية الخضراء للحد من التلوث وحماية البيئة الطبيعية. تخزين الطاقة في البطاريات يضمن استمرارية الإمداد حتى عندما تكون المصادر المتجددة غير متاحة.",
     "language": "arabic"
   },
-  "ar/doc08.txt": {
-    "total_terms": 32,
-    "raw_text": "اقتصاد المعرفة يعتمد على الابتكار والإبداع في مجالات التكنولوجيا. الشركات الناشئة تقدم حلولا ذكية لمشاكل معقدة. رواد الأعمال يستثمرون في الذكاء الاصطناعي وتحليل البيانات. الأسواق الرقمية توفر فرص جديدة للتجارة الإلكترونية والتسويق عبر محركات البحث.",
+  "ar/ar_008.txt": {
+    "total_terms": 47,
+    "raw_text": "الطب الحديث يستخدم التقنيات المتقدمة لتشخيص الأمراض وعلاجها. الأجهزة الطبية تساعد الأطباء في إجراء العمليات الجراحية بدقة عالية. البحث العلمي في المجال الصحي يساهم في تطوير أدوية جديدة فعالة. المستشفيات تعتمد على الأنظمة الإلكترونية لإدارة سجلات المرضى وتحسين جودة الرعاية الصحية. الذكاء الاصطناعي يمكنه تحليل الصور الطبية واكتشاف الأمراض في مراحلها المبكرة.",
     "language": "arabic"
   },
-  "ar/doc09.txt": {
-    "total_terms": 35,
-    "raw_text": "علم الفلك يكشف أسرار الكون والنجوم والمجرات. المراصد الفلكية تستخدم التلسكوبات المتقدمة لرصد الكواكب البعيدة. رواد الفضاء يستهلون رحلات استكشافية إلى المحطة الفضائية الدولية. الأبحاث الفضائية تساعد في فهم أصل الكون وتطور المجموعة الشمسية عبر الزمن.",
+  "ar/ar_009.txt": {
+    "total_terms": 45,
+    "raw_text": "علم الفلك يكشف أسرار الكون والنجوم والمجرات. المراصد الفلكية تستخدم التلسكوبات المتقدمة لرصد الكواكب البعيدة. رواد الفضاء يستهلون رحلات استكشافية إلى المحطة الفضائية الدولية. الأبحاث الفضائية تساعد في فهم أصل الكون وتطور المجموعة الشمسية عبر الزمن. الأقمار الصناعية تدور حول الأرض وتوفر البيانات للتنبؤ بالطقس والاتصالات.",
     "language": "arabic"
   },
-  "ar/doc10.txt": {
-    "total_terms": 32,
-    "raw_text": "هندسة البرمجيات تهتم بتصميم وتطوير البرمجيات بشكل منهجي. الخوارزميات وهيكل البيانات أساسيات البرمجة الحاسوبية. المبرمجون يستخدمون لغات البرمجة لكتابة التعليمات التي تنفذها الحواسيب. اختبار البرمجيات يضمن جودة المنتج وموثوقيته قبل نشره للمستخدمين النهائيين.",
+  "ar/ar_010.txt": {
+    "total_terms": 44,
+    "raw_text": "هندسة البرمجيات تهتم بتصميم وتطوير البرمجيات بشكل منهجي. الخوارزميات وهيكل البيانات أساسيات البرمجة الحاسوبية. المبرمجون يستخدمون لغات البرمجة لكتابة التعليمات التي تنفذها الحواسيب. اختبار البرمجيات يضمن جودة المنتج وموثوقيته قبل نشره للمستخدمين النهائيين. منهجيات التطوير الرشيق تساعد الفرق على تسليم البرمجيات بشكل متكرر وتقديم قيمة مستمرة.",
     "language": "arabic"
   }
 }

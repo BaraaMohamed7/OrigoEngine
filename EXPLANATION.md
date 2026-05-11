@@ -531,23 +531,23 @@ Line 12:             continue
 Line 13:         for filename in sorted(os.listdir(dir_path)):  ← alphabetical order
 Line 14:             if filename.endswith(".txt"):  ← only process .txt files
 Line 15:                 docs.append(os.path.join(dir_path, filename))
-Line 16:     return docs                           ← e.g. ["data/corpus/en/doc01.txt", ..., "data/corpus/ar/doc10.txt"]
+Line 16:     return docs                           ← e.g. ["data/corpus/en/en_001.txt", ..., "data/corpus/ar/ar_010.txt"]
 ```
 
-**Why `sorted`?** Ensures deterministic order — doc01 comes before doc02. Important for reproducibility and debugging.
+**Why `sorted`?** Ensures deterministic order — `en_001` comes before `en_002`. Important for reproducibility and debugging.
 
 ### `get_doc_id(doc_path)`
 
 ```
 Line 19: def get_doc_id(doc_path: str) → str:
 Line 20:     parts = doc_path.replace("\\", "/").split("/")  ← normalize Windows paths
-                                              ← "data/corpus/en/doc01.txt" → ["corpus", "en", "doc01.txt"]
+                                              ← "data/corpus/en/en_001.txt" → ["corpus", "en", "en_001.txt"]
 Line 21:     lang_dir = parts[-2]              ← second-to-last part = "en" or "ar"
-Line 22:     filename = parts[-1]             ← last part = "doc01.txt"
-Line 23:     return f"{lang_dir}/{filename}"   ← "en/doc01.txt"
+Line 22:     filename = parts[-1]             ← last part = "en_001.txt"
+Line 23:     return f"{lang_dir}/{filename}"   ← "en/en_001.txt"
 ```
 
-**Why this ID format?** The ID `"en/doc01.txt"` encodes both the language and the document number. This is what gets stored as the key in the index. When the user sees search results, they know immediately which language the doc is in.
+**Why this ID format?** The ID `"en/en_001.txt"` encodes both the language and the document number. This is what gets stored as the key in the index. When the user sees search results, they know immediately which language the doc is in.
 
 ### `build_index(corpus_path)` — The Main Function
 
@@ -556,10 +556,10 @@ Line 26: def build_index(corpus_path: str) → tuple[dict, dict]:
                                               ← returns (index, doc_store) — two dicts
 Line 27:     index: dict[str, dict[str, list[int]]] = {}
                                               ← type annotation: term → {doc_id → [positions]}
-                                              ← e.g. "comput" → {"en/doc01.txt": [0, 6, 18], "en/doc07.txt": [2]}
+                                              ← e.g. "comput" → {"en/en_001.txt": [0, 6, 18], "en/en_008.txt": [2]}
 Line 28:     doc_store: dict[str, dict] = {}  ← type annotation: doc_id → metadata
 Line 30:     for doc_path in get_all_docs(corpus_path):  ← iterate over all 20 docs
-Line 31:         doc_id = get_doc_id(doc_path)  ← e.g. "en/doc01.txt"
+Line 31:         doc_id = get_doc_id(doc_path)  ← e.g. "en/en_001.txt"
 Line 33:         with open(doc_path, "r", encoding="utf-8") as f:
 Line 34:             text = f.read()           ← read entire file content as string
                                               ← encoding="utf-8" is critical for Arabic text
@@ -582,8 +582,8 @@ Line 50:             if doc_id not in index[term]:
 Line 51:                 index[term][doc_id] = []  ← create position list
 Line 52:             index[term][doc_id].append(position)
                                               ← add position to the list
-                                              ← e.g. "comput" appears at position 0 in doc01
-                                              ← later at position 6 → index["comput"]["en/doc01.txt"] = [0, 6]
+                                              ← e.g. "comput" appears at position 0 in en_001
+                                              ← later at position 6 → index["comput"]["en/en_001.txt"] = [0, 6]
 Line 54:         doc_store[doc_id] = {
 Line 55:             "total_terms": len(tokens_with_positions),
                                               ← number of INDEXED terms (after stopword removal + stemming)
@@ -635,7 +635,7 @@ Line 84:     index, doc_store = build_index(corpus_path)  ← main build call
 Line 86:     print(f"Indexed {len(doc_store)} documents")
 Line 87:     print(f"Vocabulary size: {len(index)} terms")
                                               ← len(index) = number of unique terms across all docs
-                                              ← our corpus: ~494 unique terms
+                                              ← our corpus: ~947 unique terms
 Line 89:     print("\nSample index entries (first 10 terms):")
 Line 90:     for i, (term, postings) in enumerate(index.items()):
 Line 91:         if i >= 10:
@@ -692,12 +692,12 @@ Line 24:     result = set(index.get(first_term, {}).keys())
                                               ← index.get(first_term, {}) returns the posting dict for this term
                                               ← {} if term not in index (defensive)
                                               ← .keys() gives us all doc_ids containing this term
-                                              ← e.g. {"en/doc01.txt", "en/doc05.txt"}
+                                              ← e.g. {"en/en_001.txt", "en/en_005.txt"}
 Line 26:     for term in terms[1:]:             ← for each remaining term
 Line 27:         result &= set(index.get(term, {}).keys())
                                               ← INTERSECT with posting list of next term
                                               ← AND logic: only docs containing ALL terms survive
-                                              ← e.g. {"doc01", "doc05"} & {"doc01", "doc03"} = {"doc01"}
+                                              ← e.g. {"en_001", "en_005"} & {"en_001", "en_003"} = {"en_001"}
 Line 29:     return result                       ← set of doc_ids containing all terms
 ```
 
@@ -902,7 +902,7 @@ Line 56:    return ranked[0] if ranked else None
 1. **Jaccard** (set-based) is fast — quickly eliminates very different words
 2. **Levenshtein** (character-by-character) is slower but more accurate — finds the best match among remaining candidates
 
-Without Jaccard, we'd compute Levenshtein distance against ALL 494 terms in our vocabulary. With Jaccard, we typically reduce candidates to ~5-20 terms before the expensive Levenshtein step.
+Without Jaccard, we'd compute Levenshtein distance against ALL 947 terms in our vocabulary. With Jaccard, we typically reduce candidates to ~5-20 terms before the expensive Levenshtein step.
 
 ---
 
@@ -914,14 +914,14 @@ Without Jaccard, we'd compute Levenshtein distance against ALL 494 terms in our 
 Line 4:  def compute_tf(term: str, doc_id: str, index: dict, doc_store: dict) → float:
 Line 5:     positions = index.get(term, {}).get(doc_id, [])
                                               ← get position list for this term in this doc
-                                              ← e.g. index["comput"]["en/doc01.txt"] = [0, 6, 18]
+                                              ← e.g. index["comput"]["en/en_001.txt"] = [0, 6, 18]
 Line 6:     count = len(positions) if isinstance(positions, list) else 0
                                               ← len([...]) = number of times term appears in doc
                                               ← isinstance check handles edge case where JSON loaded
                                               ←  a list vs still being an empty dict
 Line 7:     total_terms = doc_store.get(doc_id, {}).get("total_terms", 0)
                                               ← total indexed terms in this document
-                                              ← e.g. doc_store["en/doc01.txt"]["total_terms"] = 32
+                                              ← e.g. doc_store["en/en_001.txt"]["total_terms"] = 32
 Line 8:     return count / total_terms if total_terms > 0 else 0.0
                                               ← EDGE CASE: avoid division by zero for empty docs
                                               ← TF = count / total_terms
@@ -1010,14 +1010,14 @@ Line 50:    return sorted(scores.items(), key=lambda x: x[1], reverse=True)
 
 ```
 Line 7:  GROUND_TRUTH = {
-Line 8:     "computer science": {
-Line 9:         "relevant": {"en/doc01.txt", "en/doc03.txt", "en/doc07.txt"},
+Line 8:     "machine learning": {
+Line 9:         "relevant": {"en/en_001.txt"},
                                               ← manually defined: which docs SHOULD match this query
                                               ← determined by reading the corpus and checking the index
 Line 10:   },
 ...
 Line 54:    "الذكاء الاصطناعي": {
-Line 55:        "relevant": {"ar/doc01.txt", "ar/doc05.txt", "ar/doc08.txt"},
+Line 55:        "relevant": {"ar/ar_001.txt", "ar/ar_006.txt", "ar/ar_008.txt"},
 Line 56:    },
 Line 57: }
 ```

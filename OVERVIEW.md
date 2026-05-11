@@ -273,8 +273,8 @@ Notice position `3` in `("great", 3)` — `is` was at position 2 but got removed
 ```python
 index = {
     "term": {
-        "en/doc01.txt": [0, 5, 12],   # positions where term appears
-        "en/doc03.txt": [2, 8],
+        "en/en_001.txt": [0, 5, 12],
+        "en/en_003.txt": [2, 8],
     }
 }
 ```
@@ -283,7 +283,7 @@ index = {
 
 ```python
 doc_store = {
-    "en/doc01.txt": {
+    "en/en_001.txt": {
         "total_terms": 32,       # count of (stemmed, non-stopword) terms
         "raw_text": "Computer science...",
         "language": "english",
@@ -313,11 +313,11 @@ For each .txt file in corpus/en/ and corpus/ar/:
 | `save_index(index, doc_store, dir)` | `None` | Save to JSON files |
 | `load_index(dir)` | `(index, doc_store)` | Load from JSON files |
 | `get_all_docs(corpus_path)` | `list[str]` | List all .txt files in corpus |
-| `get_doc_id(doc_path)` | `str` | Convert file path to `"en/doc01.txt"` format |
+| `get_doc_id(doc_path)` | `str` | Convert file path to `"en/en_001.txt"` format |
 
 **Index saved to:** `index_data/index.json` and `index_data/doc_store.json`
 
-**Current stats:** 20 documents indexed, 494 unique terms (253 English, 241 Arabic).
+**Current stats:** 20 documents indexed, 947 unique terms (525 English, 422 Arabic).
 
 ---
 
@@ -383,7 +383,7 @@ Index maps each 2-gram → set of terms containing it:
 | `get_kgrams(term, k=2)` | `list[str]` | Generate k-grams for a term |
 | `build_kgram_index(index, k=2)` | `dict[str, set]` | Build full k-gram index from main index |
 
-**Current stats:** 643 unique 2-grams generated from 494 terms.
+**Current stats:** 786 unique 2-grams generated from 947 terms.
 
 ---
 
@@ -438,13 +438,13 @@ Return best match: "machin"
 
 ```
 Query terms: ["machin", "learn"]
-Candidate docs: {"en/doc01.txt", "en/doc03.txt", "en/doc05.txt"}
+Candidate docs: {"en/en_001.txt", "en/en_003.txt"}
 
 1. Build query vector: {term: IDF(term)}
    → {"machin": 0.51, "learn": 0.69}
 
 2. For each candidate doc, build doc vector: {term: TF-IDF(term, doc)}
-   → e.g. doc01: {"machin": 0.094, "learn": 0.094}
+   → e.g. en_001: {"machin": 0.094, "learn": 0.094}
 
 3. Compute cosine similarity between query and doc vectors
 
@@ -481,8 +481,8 @@ Recall    = |Retrieved ∩ Relevant| / |Relevant|
 ```
 Query                        Type        Precision  Recall RelRet  Ret  Rel
 --------------------------------------------------------------------------------
-machine learning             boolean        1.0000  1.0000      3    3    3
-computer science             boolean        1.0000  0.6667      2    2    3
+machine learning             boolean        1.0000  1.0000      1    1    1
+quantum computing            boolean        1.0000  1.0000      1    1    1
 الذكاء الاصطناعي             boolean        1.0000  1.0000      3    3    3
 ...
 AVERAGE                                     1.0000  0.9744
@@ -528,7 +528,7 @@ User types: "machine learning"
     ↓ parse query → boolean, terms=["machine", "learning"]
     ↓ preprocess → ["machin", "learn"]
     ↓ spelling check each term → "machin" ✓, "learn" ✓
-    ↓ boolean_search → {"en/doc01.txt", "en/doc03.txt", "en/doc05.txt"}
+    ↓ boolean_search → {"en/en_001.txt"}
     ↓ rank_documents → sorted by cosine similarity
     ↓ display results with scores and text previews
 ```

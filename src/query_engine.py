@@ -1,3 +1,7 @@
+# Multi-word queries use AND logic (intersection of posting lists).
+# Each query term must appear in a document for it to be returned.
+# This is a design choice; OR logic (union) could be added as an extension.
+
 import re
 from .language_detector import detect_language
 from .preprocessing import preprocess

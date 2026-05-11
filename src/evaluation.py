@@ -3,44 +3,44 @@ from .ranking import rank_documents
 
 
 GROUND_TRUTH = {
-    "computer science": {
-        "relevant": {"en/doc01.txt", "en/doc03.txt", "en/doc07.txt"},
-    },
     "machine learning": {
-        "relevant": {"en/doc01.txt", "en/doc03.txt", "en/doc05.txt"},
+        "relevant": {"en/en_001.txt"},
     },
     "artificial intelligence": {
-        "relevant": {"en/doc01.txt", "en/doc03.txt"},
+        "relevant": {"en/en_001.txt"},
     },
-    "ocean ecosystem": {
-        "relevant": {"en/doc06.txt"},
+    "computer vision": {
+        "relevant": {"en/en_001.txt"},
     },
-    "basketball championship": {
-        "relevant": {"en/doc02.txt"},
+    "cybersecurity encryption": {
+        "relevant": {"en/en_004.txt"},
     },
-    "ancient history": {
-        "relevant": {"en/doc04.txt"},
+    "data science": {
+        "relevant": {"en/en_003.txt"},
     },
-    "data structures": {
-        "relevant": {"en/doc01.txt", "en/doc10.txt"},
+    "software development": {
+        "relevant": {"en/en_005.txt"},
+    },
+    "blockchain": {
+        "relevant": {"en/en_006.txt"},
     },
     "renewable energy": {
-        "relevant": {"en/doc09.txt"},
+        "relevant": {"en/en_007.txt"},
+    },
+    "quantum computing": {
+        "relevant": {"en/en_008.txt"},
     },
     "robot": {
-        "relevant": {"en/doc07.txt"},
-    },
-    "space exploration": {
-        "relevant": {"en/doc08.txt"},
+        "relevant": {"en/en_009.txt"},
     },
     "الذكاء الاصطناعي": {
-        "relevant": {"ar/doc01.txt", "ar/doc05.txt", "ar/doc08.txt"},
+        "relevant": {"ar/ar_001.txt", "ar/ar_006.txt", "ar/ar_008.txt"},
     },
-    "الحضارة الإسلامية": {
-        "relevant": {"ar/doc04.txt"},
+    "الطاقة المتجددة": {
+        "relevant": {"ar/ar_007.txt"},
     },
-    "تقنية المعلومات": {
-        "relevant": {"ar/doc03.txt"},
+    "الطب الحديث": {
+        "relevant": {"ar/ar_008.txt"},
     },
 }
 

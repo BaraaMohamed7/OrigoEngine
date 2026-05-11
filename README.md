@@ -31,7 +31,7 @@ This starts an interactive REPL:
   OrigoEngine — Bilingual Search Engine
 ============================================================
 Loading existing index...
-Indexed 20 documents | 493 unique terms
+Indexed 20 documents | 947 unique terms
 
 Commands:
   <query>       Search for terms (AND / proximity /k)
@@ -94,8 +94,8 @@ OrigoEngine/
 ├── run.py                       Entry point — run with: python run.py
 ├── data/
 │   ├── corpus/
-│   │   ├── en/doc01-10.txt      10 English documents (~50 words each)
-│   │   └── ar/doc01-10.txt      10 Arabic documents (~50 words each)
+│   │   ├── en/en_001-010.txt    10 English documents
+│   │   └── ar/ar_001-010.txt    10 Arabic documents
 │   ├── stopwords/
 │   │   ├── english_stopwords.txt
 │   │   └── arabic_stopwords.txt

@@ -224,8 +224,8 @@ Split into parallel tracks. Assign one track per person.
 ```
 ir_project/
 ├── corpus/
-│   ├── en/ (doc01–doc10)
-│   └── ar/ (doc01–doc10)
+│   ├── en/ (en_001–en_010)
+│   └── ar/ (ar_001–ar_010)
 ├── stopwords/
 │   ├── english_stopwords.txt
 │   └── arabic_stopwords.txt
